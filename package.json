@@ -1,5 +1,5 @@
 {
-	"name": "gulp-2022",
+	"name": "hapai",
 	"version": "1.0.0",
 	"description": "",
 	"main": "gulpfile.js",
@@ -11,7 +11,7 @@
 		"deploy": "gulp deployFTP --build",
 		"svgSprive": "gulp svgSpriteTask"
 	},
-	"author": "FLS",
+	"author": "",
 	"license": "ISC",
 	"dependencies": {
 		"gulp-cli": "^2.3.0"

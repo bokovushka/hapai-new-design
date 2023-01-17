@@ -87,7 +87,9 @@
 .seo-text-section p,
 .seo-text-section ol,
 .seo-text-section ul {
-	margin-bottom: 15px;
+	color: #777777;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .seo-text-section ol,
@@ -110,7 +112,7 @@
 
 .seo-text-section ul li::before {
 	content: "\2022";
-	color: #6667ab;
+	color: #777777;
 	font-size: 24px;
 	font-weight: 700;
 	display: inline-block;
@@ -125,15 +127,14 @@
 	counter-increment: li;
 }
 .seo-text-section ol li::before {
-	content: counter(li);
-	color: #6667ab;
+	content: counter(li) ". ";
+	color: #777777;
 	display: inline-block;
 	position: absolute;
 	left: 0rem;
 	top: 0;
-	font-weight: 700;
+	font-weight: 400;
 	text-align: right;
-	direction: rtl;
 	width: 2rem;
 }
 
@@ -142,19 +143,19 @@
 .seo-text-section h3,
 .seo-text-section h4,
 .seo-text-section h5 {
-	margin-top: 20px;
-	margin-bottom: 15px;
-	font-weight: 700;
-}
-
-.seo-text-section h1 {
-	font-size: 32px;
-	line-height: 32px;
+	padding-top: 20px;
+	padding-bottom: 8px;
+	font-weight: 500;
 }
 
 .seo-text-section h2 {
-	font-size: 28px;
-	line-height: 28px;
+	font-size: 32px;
+	line-height: 44px;
+	&:not(:first-child) {
+		padding-top: 40px;
+		margin-top: 40px;
+		border-top: 1px solid #e5e5e5;
+	}
 }
 
 .seo-text-section h3 {

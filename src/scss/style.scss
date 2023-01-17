@@ -653,6 +653,12 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	min-width: 360px;
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 img,
 .btn {
@@ -885,7 +891,6 @@ input {
 }
 .title-item__b .btn-favor {
 	bottom: 0;
-	margin: 4px;
 	border: 1px solid #e5e5e5;
 	border-radius: 4px;
 	right: 0;
@@ -1564,7 +1569,7 @@ input {
 	opacity: 0.6;
 }
 .main {
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 	position: relative;
 	overflow: hidden;
 }
@@ -1589,7 +1594,9 @@ input {
 	font-weight: 700;
 }
 .ic-tags {
-	margin: 8px 0 20px 0;
+	margin: 8px 0 12px 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 .ic-tags a {
 	background: rgba(102, 103, 171, 0.15);
@@ -1598,13 +1605,14 @@ input {
 	color: #6667ab;
 	font-weight: 700;
 	margin-right: 8px;
+	margin-bottom: 8px;
 }
 .ic-middle {
-	padding: 20px 0 20px 20px;
+	padding: 8px 0 0 20px;
 	margin-top: 25px;
 }
 .ic-bottom {
-	padding: 20px 0 20px 20px;
+	padding: 24px 0 0 0;
 }
 .ic-quality {
 	padding: 12px 64px;
@@ -3359,7 +3367,7 @@ input.field {
 	margin-right: 8px;
 }
 .how-works {
-	margin-bottom: 80px;
+	padding: 40px 0;
 }
 .how-works__wrap {
 	display: flex;
@@ -4400,7 +4408,7 @@ input.field {
 }
 .ic-top__rb {
 	all: unset;
-	background: #f5f6f8;
+	border: 2px solid #e5e5e5;
 	border-radius: 12px;
 	padding: 20px;
 	position: relative;
@@ -4459,11 +4467,10 @@ input.field {
 	max-width: 310px;
 }
 .buyback {
-	margin-bottom: 20px;
 	text-align: center;
 }
 .buyback .buyback__title {
-	font-weight: 600;
+	font-weight: 400;
 }
 .buyback .buyback__full-price {
 	font-weight: 600;
@@ -4530,7 +4537,7 @@ input.field {
 	background: #6667ab;
 	border-radius: 12px;
 	padding: 20px;
-	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .installment-payment .icon {
 	display: block;
@@ -4540,9 +4547,11 @@ input.field {
 	background: #7f81d5;
 	border-radius: 12px;
 	margin-right: 20px;
+	margin-top: 10px;
 	height: -webkit-max-content;
 	height: -moz-max-content;
 	height: max-content;
+	width: max-content;
 }
 .installment-payment .btn-style-3 {
 	max-width: 270px;
@@ -4552,10 +4561,8 @@ input.field {
 }
 .installment-payment__b {
 	display: flex;
-	align-items: center;
 	width: 100%;
 	margin-bottom: 20px;
-	margin-top: 2px;
 }
 .installment-payment__price-m {
 	font-weight: 600;
@@ -5127,10 +5134,6 @@ input.field {
 .seo-text-section a {
 	color: #6667ab;
 }
-.seo-text-section ol li,
-.seo-text-section ul li {
-	margin-left: 20px;
-}
 .seo-text-section table {
 	border: solid 1px #6667ab;
 }
@@ -5405,24 +5408,8 @@ input.field {
 		flex-basis: 100%;
 		height: 435px;
 	}
-	.ic-img:nth-child(n + 7) {
+	.ic-img:nth-child(n + 2) {
 		display: none;
-	}
-	.ic-img:nth-last-child(-n + 2) {
-		display: block;
-	}
-	.ic-img:nth-last-child(-n + 2) .txt-big {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		z-index: 1;
-		color: #ffffff;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		max-width: 104px;
-	}
-	.ic-img:nth-last-child(-n + 2) img {
-		filter: brightness(0.4);
 	}
 }
 @media only screen and (width: 992px) {
@@ -5438,7 +5425,7 @@ input.field {
 }
 @media only screen and (max-width: 992px) {
 	.container {
-		padding: 0px 12px;
+		padding: 0px 12px !important;
 	}
 	.a-main {
 		padding: 20px 0 0 0;
@@ -5529,9 +5516,6 @@ input.field {
 	.ic-quality {
 		margin-left: 0;
 	}
-	.ic-bottom {
-		padding: 20px 0;
-	}
 	.ic-img {
 		margin: 0;
 		height: auto;
@@ -5571,15 +5555,6 @@ input.field {
 	}
 	.installment-payment {
 		margin-left: 0;
-	}
-	.ic-top__right {
-		margin-left: 20px;
-	}
-	.nav-menu__item {
-		margin-bottom: 8px;
-	}
-	.equ-col {
-		width: calc((100% - 48px) / 3);
 	}
 }
 @media only screen and (max-width: 991px) {
@@ -5748,9 +5723,6 @@ input.field {
 	.partners__swiper > .swiper-wrapper {
 		padding-left: 12px;
 	}
-	.img-wrap {
-		display: none;
-	}
 	.top-banner-search .choice-help__b {
 		padding-right: 0;
 	}
@@ -5847,9 +5819,6 @@ input.field {
 	}
 	.top-banner-sell-car .choice-help__b > p {
 		margin-bottom: 52px !important;
-	}
-	.how-works {
-		margin-bottom: 44px;
 	}
 	.car-buy-description__main {
 		padding: 12px;
@@ -6036,9 +6005,6 @@ input.field {
 	.choice-help__b p {
 		margin-bottom: 60px;
 	}
-	.ic-top {
-		flex-direction: column;
-	}
 	.auction-card {
 		margin: 0 auto;
 		margin-top: 20px;
@@ -6050,11 +6016,7 @@ input.field {
 	}
 	.ic-img-loop,
 	.ic-img img {
-		height: 244px;
-	}
-	.feature {
-		order: 1;
-		padding: 12px 0;
+		height: 234px;
 	}
 	.geo-row {
 		margin-top: 12px;
@@ -6180,23 +6142,6 @@ input.field {
 	.faq-connection__item {
 		width: 100%;
 	}
-	.installment-payment {
-		flex-direction: column;
-		border-radius: inherit;
-		margin: 0 -12px;
-		margin-top: 20px;
-	}
-	.installment-payment .btn-style-3 {
-		max-width: 100%;
-	}
-	.installment-payment__b {
-		width: 100%;
-		justify-content: flex-start;
-		margin-bottom: 40px;
-	}
-	.ic-top__right {
-		margin-left: 0;
-	}
 	.ic-top__rb.auction-card {
 		margin: 0;
 	}
@@ -6243,9 +6188,6 @@ input.field {
 		width: 100%;
 		right: 0;
 		bottom: 0;
-	}
-	.equ-col {
-		width: calc((100% - 32px) / 2);
 	}
 }
 @media only screen and (max-width: 479px) {

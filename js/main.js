@@ -158,3 +158,12 @@ $(document).ready(function () {
 	});
 });
 
+//choose-reality btn show content
+$(document).ready(function () {
+	var btn = $(".choose-reality .btn-style-2");
+	btn.on("click", function (e) {
+		e.preventDefault();
+		$(this).next(".choose-reality__info").addClass("show");
+		$(this).addClass('hide');
+	});
+});
