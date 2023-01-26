@@ -1829,7 +1829,7 @@ input {
 }
 
 .choice-help {
-  background: #000 url(../img/bg-auction.jpeg) no-repeat center;
+  background: #000 url(../img/bg-5.jpeg) no-repeat center;
   background-size: cover;
   padding: 40px;
   color: #ffffff;
@@ -3924,7 +3924,7 @@ video {
 }
 
 .top-banner-search .choice-help__b {
-  max-width: 100%;
+  max-width: 700px;
   position: relative;
   z-index: 2;
 }
@@ -4030,6 +4030,7 @@ video {
 
 .btn-style-3:hover {
   background: #d45279;
+  border-color: #d45279;
 }
 
 .car-style {
@@ -4482,7 +4483,7 @@ input.field {
   margin-bottom: 26px;
 }
 
-.top-banner-sell-car .choice-help__search-main {
+.img-wrap .choice-help__search-main {
   max-width: 474px;
   width: 100%;
 }
@@ -5691,11 +5692,6 @@ input.field {
 
 .questions-lease .top-banner-lease__wrap .selection-car__preferences .selection-car__payments {
   margin-bottom: 20px;
-}
-
-.questions-lease .img-wrap {
-  max-width: 649px;
-  width: 100%;
 }
 
 .questions-lease img {
@@ -7106,10 +7102,6 @@ input.field {
     margin-top: 20px;
   }
 
-  .top-banner-search .choice-help img {
-    left: 60px;
-  }
-
   .car-style__swiper {
     margin: 0 -20px;
     padding-right: 40px;
@@ -7900,16 +7892,6 @@ input.field {
     margin: 32px 0;
   }
 
-  .top-banner-lease__wrap {
-    border-radius: unset;
-    padding: 24px 12px;
-    margin-bottom: 32px;
-  }
-
-  .top-banner-lease__wrap .selection-car__info {
-    max-width: 100%;
-  }
-
   .lease-terms__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7956,10 +7938,6 @@ input.field {
     -ms-transform: translateX(-50%);
         transform: translateX(-50%);
     width: 130%;
-  }
-
-  .questions-lease .top-banner-lease__wrap .selection-car__preferences {
-    max-width: 100%;
   }
 
   .partners .btn-style-2 {
@@ -8234,11 +8212,6 @@ input.field {
     width: 100%;
   }
 
-  .questions-lease .img-wrap {
-    top: -50px;
-    margin-bottom: -100px;
-  }
-
   .accordion-section.lease .title {
     padding-right: 20px;
   }
@@ -8358,11 +8331,6 @@ input.field {
 
   .car-style__button .btn {
     padding: 11px 8px;
-  }
-
-  .questions-lease .img-wrap {
-    top: -30px;
-    margin-bottom: -70px;
   }
 
   .popup-auction .popup__body {

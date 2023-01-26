@@ -233,3 +233,12 @@ new Swiper(".loan-leasing .loan__swiper", {
 		nextEl: ".loan-leasing .loan-swiper__buttons .icon-u_arrow-right"
 	},
 })
+
+//feedback swiper
+new Swiper(".feedback__swiper", {
+	grabCursor: true,
+	navigation: {
+		prevEl: ".feedback-button .icon-left",
+		nextEl: ".feedback-button .icon-right"
+	},
+})

@@ -4,6 +4,41 @@
 body:not(.home-p) .main .container {
 	padding: 0 20px;
 }
+body .main {
+	.seo-text-section,
+	.accordion-section,
+	.how-works,
+	.loan-leasing,
+	.advantage-selection-car,
+	.how-works,
+	.partners,
+	.seo-text-section {
+		.container {
+			padding: 0 40px;
+		}
+	}
+}
+body .main {
+	.become-partner,
+	.about-partners,
+	.aboutService {
+		.container {
+			padding: 0 30px;
+		}
+	}
+}
+input[type="text"]::placeholder {
+	font-family: RFDewi;
+}
+//svg
+.i-user-check,
+.i-book-open {
+	stroke: #7d7eb8;
+	fill: #e0e0ec;
+}
+.i-car-usd {
+	fill: #6667ab;
+}
 //index page
 .h1 {
 	font-weight: 500;
@@ -734,16 +769,8 @@ body:not(.home-p) .main .container {
 }
 //about
 .about-p {
-	.main {
-		.seo-text-section .container,
-		.accordion-section .container,
-		.how-works .container,
-		.loan-leasing .container {
-			padding: 0 40px;
-		}
-		.seo-text-section {
-			padding-top: 20px;
-		}
+	.seo-text-section {
+		padding-top: 20px;
 	}
 }
 .about-p-top {
@@ -941,17 +968,761 @@ body:not(.home-p) .main .container {
 	margin-bottom: 12px;
 }
 .seo-text-section {
-	padding: 40px 0;
+	padding: 40px 0 60px 0;
+}
+//sell-car
+.top-banner-sell-car,
+.top-banner-lease,
+.questions-lease {
+	.img-wrap {
+		height: 100%;
+		width: 470px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		overflow: hidden;
+	}
+}
+.why-we {
+	.why__item {
+		display: block;
+		span {
+			margin-bottom: 12px;
+		}
+		.heading {
+			margin-bottom: 12px;
+		}
+	}
+}
+//leasing
+.top-banner-lease {
+	.img-wrap {
+		width: 540px;
+	}
+}
+.questions-lease .img-wrap {
+	max-width: 649px;
+	width: 100%;
+}
+//car-selection page
+.car-selection-p {
+	.how-works {
+		padding-bottom: 60px;
+		.btn-style-1 {
+			width: max-content;
+		}
+	}
+	.why {
+		padding: 80px 0 0 0;
+	}
+	.seo-text-section {
+		padding-top: 20px;
+	}
+	.partners {
+		.partners__title {
+			padding-bottom: 47px;
+			.title,
+			.txt-big {
+				max-width: 800px;
+			}
+			.title {
+				margin-bottom: 6px;
+			}
+		}
+		.swiper__buttons {
+			bottom: 20px;
+		}
+	}
+}
+//choice-car-wrapper
+.choice-car-wrapper {
+	margin-top: 60px;
+	.breadcrumb-wrap {
+		span,
+		li::after {
+			color: #fff;
+		}
+	}
+}
+.choice-car__content {
+	display: flex;
+}
+.choice-car__main {
+	background: #000 url(@img/car-selection-bg.jpeg) no-repeat center;
+	background-size: cover;
+	padding: 26px 32px 130px 32px;
+	border-radius: 12px;
+	position: relative;
+	.breadcrumb {
+		margin-bottom: 48px;
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
+.choice-car__info {
+	color: #fff;
+	max-width: 506px;
+	.h1 {
+		font-size: 56px;
+		line-height: 64px;
+		margin-bottom: 30px;
+	}
+}
+.choice-car__list {
+	li {
+		position: relative;
+		padding-left: 54px;
+		font-size: 24px;
+		line-height: 42px;
+		&:not(:last-child) {
+			margin-bottom: 6px;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 34px;
+			height: 34px;
+			background: #f5f6f8;
+			border-radius: 4px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			left: 9px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: block;
+			width: 16px;
+			height: 11px;
+			background: url(@img/icons/icons.svg#check) 50% 50% no-repeat;
+			background-size: 100%;
+			z-index: 2;
+		}
+	}
+}
+.form-choice-car {
+	max-width: 438px;
+	background: #ffffff;
+	border-radius: 8px;
+	padding: 30px 20px 20px 20px;
+	position: absolute;
+	right: 175px;
+	top: 50%;
+	transform: translateY(-50%);
+	.h1 {
+		margin-bottom: 35px;
+	}
+	.user-txt {
+		width: 100%;
+	}
+	.user-info {
+		.checkbox {
+			margin-bottom: 15px;
+		}
+	}
+	.btn-style-3 {
+		max-width: 182px;
+	}
+}
+//advantage-selection-car
+.advantage-selection-car {
+	.why__wrap {
+		gap: 30px;
+	}
+	.why__item {
+		width: calc((100% - 30px) / 2);
+		.heading,
+		p {
+			max-width: 360px;
+		}
+	}
+}
+//partners page
+.banner-top {
+	.choice-car__main {
+		padding-bottom: 110px;
+		overflow: hidden;
+	}
+}
+.banner-top-descrp {
+	color: #ffffff;
+}
+.banner-top-descrp__wraper {
+	position: relative;
+	.img-wrap {
+		height: auto;
+		width: 100%;
+		max-width: 681px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 10px;
+	}
+}
+.banner-top-descrp__content {
+	max-width: 492px;
+	padding-left: 40px;
+	.title {
+		font-weight: 500;
+		font-size: 56px;
+		line-height: 64px;
+		margin-bottom: 16px;
+	}
+	.btn-style-3 {
+		margin-top: 24px;
+		padding: 13px 27px;
+		width: max-content;
+	}
+}
+//become-partner
+.become-partner {
+	margin-top: 44px;
+	z-index: 2;
+	position: relative;
+}
+.become-partner__form {
+	height: max-content;
+	max-width: 721px;
+	flex-shrink: 0;
+	width: 100%;
+}
+.become-partner__wrapper {
+	display: flex;
+	gap: 25px;
+	.img-wrap {
+		border-radius: 12px;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+	.img-container {
+		height: 100%;
+	}
+}
+#form-become-partner {
+	width: 100%;
+	border: 2px solid #e5e5e5;
+	border-radius: 12px;
+	padding: 24px 36px 42px 36px;
+	.h1 {
+		margin-bottom: 30px;
+	}
+	.user-info {
+		flex-direction: column;
+	}
+	.user-txt {
+		width: 100%;
+		&.f-user-phone {
+			max-width: 270px;
+		}
+		&.f-user-link {
+			padding-right: 50px;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 20px;
+				height: 20px;
+				background: url(@img/icons/icons.svg#link-icon) 50% 50% no-repeat;
+				background-size: 100%;
+				z-index: 2;
+			}
+		}
+	}
+	.send-wrapper {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	.btn-style-3 {
+		max-width: 232px;
+		margin-right: 32px;
+	}
+	a {
+		color: #6667ab;
+		font-size: 11px;
+		line-height: 18px;
+	}
+}
+//about-partners
+.about-partners {
+	padding: 85px 0 65px 0;
+	z-index: 2;
+	.container {
+		position: relative;
+	}
+	.h1 {
+		margin-bottom: 12px;
+	}
+	.bg {
+		max-width: 934px;
+		position: absolute;
+		top: -160px;
+		right: -280px;
+		z-index: -1;
+	}
+}
+.about-partners__message {
+	border: 1px solid #e5e5e5;
+	border-radius: 0px 25px 25px 25px;
+	padding: 15px 23px;
+	max-width: 520px;
+	margin-bottom: 48px;
+	background: #ffffff;
+	.dots {
+		display: flex;
+		gap: 8.25px;
+		margin-bottom: 68px;
+		span {
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #6667ab;
+			border-radius: 4px;
+			display: block;
+		}
+	}
+}
+.descrpSituatio {
+	font-family: "RFDewi";
+	display: flex;
+	gap: 18px;
+}
+.descrpSituatio__title {
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 28px;
+	color: #6667ab;
+	margin-bottom: 4px;
+}
+.descrpSituatio__name {
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 28px;
+	color: #333333;
+	margin-bottom: 15px;
+}
+.descrpSituatio__item {
+	border: 1px solid #e5e5e5;
+	border-radius: 20px;
+	padding: 24px 40px 24px 85px;
+	width: 100%;
+	background: #fff;
+	z-index: 2;
+	ul {
+		position: relative;
+		&::before {
+			content: "";
+			width: 4px;
+			height: calc(100% - 8px);
+			position: absolute;
+			top: 8px;
+			left: -37px;
+			background: url(@img/icons/icons.svg#dottedLine) center 0px repeat-y;
+			background-size: 44px;
+		}
+		li {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 21px;
+			position: relative;
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				left: -41px;
+				top: 4px;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				background: #e089b7;
+			}
+			a {
+				color: #6667ab;
+			}
+		}
+	}
+}
+.descrpSituatio__info {
+	max-width: 300px;
+}
+//aboutService
+.aboutService {
+	padding-bottom: 60px;
+	.h1 {
+		margin-bottom: 35px;
+	}
+}
+.aboutService__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.aboutService__item {
+	padding: 35px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&:not(.aboutService-plus) {
+		background: #f5f6f8;
+		border-radius: 12px;
+		width: 100%;
+	}
+}
+.aboutService__car {
+	max-width: 372px;
+}
+.aboutService-top {
+	margin-bottom: 24px;
+	p {
+		max-width: 160px;
+		margin: 0 auto;
+		margin-bottom: 14px;
+		font-size: 13px;
+		line-height: 22px;
+	}
+}
+.aboutService__price {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	width: max-content;
+	margin: 0 auto;
+	position: relative;
+	&::before {
+		content: "";
+		width: 21px;
+		height: 21px;
+		background: url(@img/icons/icons.svg#price-ticket) 50% 50% no-repeat;
+		background-size: 100%;
+		position: relative;
+		display: block;
+		margin-right: 10px;
+	}
+}
+.aboutService-bottom {
+	display: flex;
+	gap: 15px;
+	justify-content: space-between;
+	max-width: 300px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+.aboutService-bottom__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: left;
+}
+.aboutService-plus {
+	justify-content: center;
+	svg.plus {
+		width: 50px;
+		height: 50px;
+		background: #e089b7;
+		border-radius: 50%;
+		padding: 10px;
+	}
+	.svg-icon {
+		margin-bottom: 20px;
+		svg {
+			width: 38px;
+			height: 38px;
+		}
+	}
+	.aboutService__price {
+		margin-bottom: 45px;
+	}
+}
+.aboutService-plus___title {
+	font-weight: 700;
+}
+.aboutService-plus__info {
+	text-align: center;
+	margin-bottom: 18px;
+}
+.partners-p {
+	.need-help {
+		padding-top: 0;
+	}
+}
+//reviews page
+.reviews-p {
+	.why {
+		padding-bottom: 35px;
+	}
+	.banner-top .choice-car__main {
+		padding-bottom: 72px;
+	}
+	.banner-top-descrp__content {
+		padding-left: 0;
+	}
+	.choice-car__main .breadcrumb {
+		margin-bottom: 15px;
+	}
+	.banner-top-descrp {
+		.btn {
+			padding: 13px 15px;
+			width: 190px;
+		}
+		.btn-wrapper {
+			display: flex;
+			gap: 16px;
+			margin-top: 25px;
+		}
+		.btn-style-3 {
+			margin-top: 0;
+		}
+	}
+}
+.btn-style-6 {
+	background: transparent;
+	border: 2px solid #ffffff;
+	color: #fff;
+	&:hover {
+		background: #fff;
+		color: #000;
+	}
+}
+.why {
+	.description {
+		font-size: 24px;
+		line-height: 35px;
+		color: #777777;
+		max-width: 1024px;
+		padding: 30px 20px 35px 20px;
+	}
+}
+//reviews-list
+.reviews-list {
+	padding: 0 0 80px 0;
+	.title {
+		margin-bottom: 30px;
+	}
+}
+.reviews-tabs {
+	padding: 0;
+	border: unset !important;
+	.ui-tabs-panel {
+		padding: 0;
+		border: unset;
+	}
+	.ui-tabs-nav {
+		padding: 0;
+		border: unset;
+		background: transparent;
+		width: max-content;
+		border-radius: 4px;
+		overflow: hidden;
+		margin-bottom: 20px;
+		li {
+			margin: 0;
+			border-radius: unset;
+			border: unset;
+			width: 204px;
+			&.ui-tabs-active,
+			&.ui-state-hover {
+				border-radius: 4px;
+			}
+		}
+	}
+	.ui-tabs-anchor {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		padding: 14px !important;
+		text-align: center;
+		width: 100%;
+	}
+}
+.reviews-tabs__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	row-gap: 20px;
+}
+.reviews-tabs__item {
+	border: 1px solid #e5e5e5;
+	border-radius: 12px;
+	padding: 25px 10px 22px 27px;
+	display: flex;
+	gap: 23px;
+	width: calc(50% - 12px);
+	img {
+		max-width: 284px;
+		border-radius: 12px;
+	}
+}
+.reviews-tabs__star {
+	display: flex;
+	gap: 5px;
+	padding-bottom: 17px;
+	.star {
+		&::before {
+			content: "\e91b";
+			font-family: "hapai";
+			font-size: 20px;
+			position: relative;
+			display: block;
+			width: max-content;
+			color: #6667ab;
+		}
+	}
+	.star-paint {
+		&::before {
+			content: "\e91a";
+		}
+	}
+}
+.reviews-tabs__txt {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 24px;
+	color: #777777;
+}
+.reviews-tabs__title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 15px;
+}
+.reviews-tabs__info {
+	a {
+		font-size: 16px;
+		line-height: 24px;
+		color: #2360a5;
+	}
+}
+.reviews-tabs__menu {
+	display: flex;
+	justify-content: space-between;
+	.btn-style-3 {
+		width: max-content;
+		height: 100%;
+		color: #fff;
+		padding: 13px;
+		border: unset;
+	}
+}
+//feedback
+.feedback {
+	padding: 60px 0 95px 0;
+	.reviews-tabs__item {
+		width: 100%;
+		img {
+			max-width: 100%;
+		}
+	}
+	.reviews-tabs__info {
+		max-width: 540px;
+	}
+	.reviews-tabs__txt {
+		all: unset;
+		font-size: 16px;
+		line-height: 24px;
+		color: #777777;
+	}
+	.reviews-tabs__author {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 15px;
+	}
+	.item-gallery-button {
+		all: unset;
+		.btn-item-swiper {
+			position: absolute;
+			top: 50%;
+			z-index: 3;
+			color: #ffffff;
+			&.icon-right {
+				right: 24px;
+				transform: translate(0, -50%) rotate(-90deg);
+			}
+			&.icon-left {
+				left: 24px;
+				transform: translate(0, -50%) rotate(90deg);
+			}
+			&.icon-u_angle-down {
+				font-size: 34px;
+			}
+		}
+	}
+}
+.feedback__swiper {
+	max-width: 540px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+//leasing-taxi page
+.leasing-taxi-p {
+	.choice-car-wrapper {
+		margin-bottom: 65px;
+	}
+	.why {
+		padding-bottom: 20px;
+	}
+	.loan-leasing {
+		margin-top: 0;
+		margin-bottom: 100px;
+		.loan__swiper {
+			.swiper-slide {
+				background: #6667ab;
+			}
+			.heading,
+			p {
+				color: #fff;
+			}
+			a {
+				color: #fff;
+				opacity: 0.5;
+			}
+			.icon-svg {
+				background: rgba(255, 255, 255, 0.15);
+				.i-user-check,
+				.i-book-open {
+					stroke: #fff;
+					fill: #7d7eb8;
+				}
+				.i-car-usd {
+					fill: #fff;
+				}
+			}
+		}
+	}
+	.accordion-section {
+		padding-bottom: 80px;
+		.btn-style-1 {
+			margin: 20px 0;
+		}
+	}
+	.need-help {
+		margin-bottom: 20px;
+	}
 }
 /* mobile */
 @media only screen and (max-width: 1439px) {
 	body.lock-menu-m {
 		overflow: hidden;
-	}
-	.header-menu.active {
-		.logo {
-			margin-left: 50px;
-		}
 	}
 	.nav-menu__item {
 		ul {
@@ -992,7 +1763,6 @@ body:not(.home-p) .main .container {
 		}
 	}
 	.menu-btn.active {
-		position: fixed;
 		span {
 			&:nth-of-type(2) {
 				top: 50%;
@@ -1121,6 +1891,12 @@ body:not(.home-p) .main .container {
 	.about-p-top__wraper .img-wrap {
 		max-width: 600px;
 	}
+	.form-choice-car {
+		right: 125px;
+	}
+	.banner-top-descrp__wraper .img-wrap {
+		max-width: 600px;
+	}
 }
 @media (min-width: 993px) and (max-width: 1439px) {
 	.ic-info {
@@ -1172,13 +1948,99 @@ body:not(.home-p) .main .container {
 	.choose-reality__content .title {
 		padding-top: 310px;
 	}
+	.top-banner-search {
+		.choice-help__b {
+			max-width: 600px;
+		}
+		.choice-help {
+			img {
+				left: 60px;
+				right: unset;
+			}
+		}
+	}
+	.top-banner-lease {
+		.top-banner-lease__wrap {
+			img {
+				left: 130px;
+			}
+		}
+	}
+	.questions-lease .top-banner-lease__wrap img {
+		left: 170px;
+	}
+	.choice-car__main {
+		padding-bottom: 32px;
+	}
+	.choice-car__content {
+		flex-direction: column;
+	}
+	.form-choice-car {
+		position: relative;
+		top: unset;
+		transform: unset;
+		right: unset;
+		max-width: 100%;
+		.user-txt {
+			min-width: 100%;
+		}
+		.btn-style-3 {
+			max-width: 100%;
+		}
+	}
+	.choice-car__info {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	.how-works__wrap {
+		flex-wrap: wrap;
+	}
+	.how-works__item {
+		width: calc(50% - 10px);
+		flex-grow: 0;
+	}
+	.banner-top-descrp__wraper .img-wrap {
+		right: unset;
+		left: 540px;
+	}
+	.become-partner__form {
+		max-width: calc(60% - 12.5px);
+	}
+	#form-become-partner {
+		.send-wrapper {
+			flex-direction: column;
+			.checkbox {
+				margin-bottom: 20px;
+			}
+		}
+		.btn-style-3 {
+			max-width: 100%;
+			margin-right: 0;
+		}
+	}
+	.feedback .reviews-tabs__item {
+		flex-direction: row;
+		img {
+			height: auto;
+		}
+	}
 }
-@media (min-width: 993px) and (max-width: 1279px) {
+@media (min-width: 992px) and (max-width: 1279px) {
 	.footer-nav {
 		max-width: 380px;
 	}
 	.footer-nav__b {
 		width: calc((100% - 48px) / 2);
+	}
+	.reviews-tabs__item {
+		flex-direction: column;
+		padding: 12px;
+		img {
+			max-width: 100%;
+			height: 240px;
+			object-fit: cover;
+			object-position: top;
+		}
 	}
 }
 @media only screen and (max-width: 1023px) {
@@ -1365,6 +2227,141 @@ body:not(.home-p) .main .container {
 	.ui-selectmenu-text {
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+	.top-banner-search .choice-help__b {
+		max-width: 400px;
+		padding-right: 0;
+	}
+	.top-banner-sell-car .choice-help img {
+		left: 160px;
+	}
+	.questions-lease .top-banner-lease__wrap img {
+		left: 35%;
+	}
+	.questions-lease {
+		.container {
+			margin: 0 -12px;
+		}
+		.img-wrap {
+			display: block;
+			position: relative;
+			max-width: 100%;
+			top: -80px;
+			margin-bottom: -140px;
+			img {
+				all: unset;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+			}
+		}
+		.top-banner-lease__wrap {
+			border-radius: unset;
+			padding: 24px 12px;
+			margin-bottom: 32px;
+			.selection-car__preferences {
+				max-width: 100%;
+			}
+		}
+	}
+	.choice-car__main {
+		margin: 0 -12px;
+		padding: 20px 12px;
+		border-radius: unset;
+	}
+	.choice-car__info {
+		.h1 {
+			font-size: 36px;
+			line-height: 44px;
+		}
+	}
+	.advantage-selection-car {
+		.why__wrap {
+			gap: 12px;
+		}
+		.why__item {
+			width: calc((100% - 12px) / 2);
+		}
+	}
+	.car-selection-p .partners .partners__title .title,
+	.car-selection-p .partners .partners__title .txt-big {
+		padding-right: 100px;
+	}
+	.banner-top-descrp__content {
+		max-width: 100%;
+		padding-left: 0;
+	}
+	.banner-top .choice-car__main {
+		padding-bottom: 40px;
+	}
+	.banner-top-descrp__wraper .img-wrap {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: unset;
+		margin: 0 auto;
+		padding-top: 40px;
+	}
+	.become-partner__wrapper {
+		flex-direction: column;
+		.img-wrap {
+			height: 320px;
+			overflow: visible;
+			border-radius: unset;
+		}
+		.img-container {
+			margin: 0 -12px;
+		}
+	}
+	.become-partner__form {
+		max-width: 100%;
+	}
+	.descrpSituatio {
+		flex-direction: column;
+	}
+	.descrpSituatio__info {
+		max-width: 100%;
+	}
+	.about-partners {
+		padding: 40px 0;
+	}
+	.descrpSituatio__item {
+		padding-left: 65px;
+	}
+	.aboutService__wrap {
+		flex-direction: column;
+	}
+	.aboutService {
+		padding-bottom: 40px;
+	}
+	.reviews-tabs__item {
+		width: 100%;
+	}
+	.reviews-tabs__menu {
+		flex-direction: column;
+		.btn-style-3 {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	.feedback {
+		.feedback__swiper {
+			max-width: 100%;
+			height: 360px;
+			overflow: hidden;
+			border-radius: 12px;
+		}
+		.reviews-tabs__item {
+			img {
+				height: 100%;
+				object-fit: cover;
+				object-position: top;
+			}
+		}
+		.reviews-tabs__info {
+			max-width: 50%;
+		}
 	}
 }
 @media only screen and (max-width: 767px) {
@@ -1599,6 +2596,106 @@ body:not(.home-p) .main .container {
 			border: none;
 		}
 	}
+	.top-banner-search {
+		.choice-help {
+			.img-wrap {
+				display: none;
+			}
+		}
+		.choice-help__b {
+			max-width: 100%;
+		}
+	}
+	.top-banner-lease {
+		.img-wrap {
+			display: none;
+		}
+		.top-banner-lease__wrap {
+			border-radius: unset;
+			padding: 24px 12px;
+			margin-bottom: 32px;
+			.selection-car__info {
+				max-width: 100%;
+			}
+		}
+	}
+	.advantage-selection-car {
+		.why__item {
+			width: 100%;
+			.heading,
+			p {
+				max-width: 100%;
+			}
+		}
+	}
+	.car-selection-p .why {
+		padding-top: 40px;
+	}
+	.choice-car-wrapper {
+		margin-top: 0px;
+	}
+	.how-works__item {
+		width: 100%;
+	}
+	.car-selection-p {
+		.partners {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.how-works {
+			padding-bottom: 20px;
+		}
+		.need-help {
+			margin-bottom: 0;
+		}
+	}
+	.reviews-tabs__item {
+		flex-direction: column;
+		padding: 12px;
+		img {
+			max-width: 100%;
+			height: 240px;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+	.reviews-tabs .ui-tabs-nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		li {
+			width: 100%;
+			a {
+				text-align: left;
+			}
+		}
+	}
+	.feedback {
+		padding: 40px 0;
+		.reviews-tabs__item {
+			flex-direction: column;
+		}
+		.reviews-tabs__info {
+			max-width: 100%;
+		}
+	}
+	.leasing-taxi-p {
+		.choice-car-wrapper {
+			margin-bottom: 20px;
+		}
+		.loan-leasing {
+			margin-bottom: 40px;
+		}
+		.accordion-section {
+			padding-bottom: 0;
+		}
+		.need-help {
+			padding-top: 20px;
+		}
+		.accordion-section .btn-style-1 {
+			max-width: 100%;
+		}
+	}
 }
 @media only screen and (max-width: 639px) {
 	.header .phone span {
@@ -1718,6 +2815,19 @@ body:not(.home-p) .main .container {
 	.about-p .accordion-section .title {
 		text-align: center;
 	}
+	.questions-lease .img-wrap {
+		top: -50px;
+		margin-bottom: -100px;
+	}
+	.reviews-p .banner-top-descrp .btn-wrapper {
+		flex-direction: column;
+		.btn {
+			width: 100%;
+		}
+	}
+	.feedback .feedback__swiper {
+		height: 260px;
+	}
 }
 @media only screen and (max-width: 479px) {
 	.right-menu .nav-menu__item.donate-ua {
@@ -1756,6 +2866,13 @@ body:not(.home-p) .main .container {
 	}
 	.choose-reality__wrap {
 		margin: 0 -12px;
+	}
+	.questions-lease .img-wrap {
+		top: -30px;
+		margin-bottom: -70px;
+	}
+	#form-become-partner .user-txt {
+		min-width: 100%;
 	}
 }
 @media only screen and (max-width: 360px) {

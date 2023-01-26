@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<link rel="canonical" href="https://auction.hapai.kiev.ua/" />
+	<link rel="alternate" hreflang="x-default" href="https://auction.hapai.kiev.ua/" />
+	<link rel="alternate" hreflang="uk-UA" href="https://auction.hapai.kiev.ua/" />
+	<link rel="alternate" hreflang="ru-UA" href="https://auction.hapai.kiev.ua/ru" />
+
+	<meta name="csrf-param" content="_csrf">
+	<meta name="csrf-token" content="">
+	<title>Партнерам</title>
+
+	<meta name="description" content="Партнерам">
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<link href="css/swiper-bundle.min.css" rel="stylesheet">
+	<link href="css/fancybox.min.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.min.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.theme.min.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/changes.min.css" rel="stylesheet">
+	<link href="css/style-new-v.min.css" rel="stylesheet">
+	<script>
+		const usdRate = 40.8000;
+		const productCalc = {
+			"OsagoPaymentAmount": 2500,
+			"KaskoPercentage": 0.0127,
+			"Tax": 0,
+			"RegistrationPrice": 4500,
+			"DeregistrationPrice": 500,
+			"ManagerBonusPercentage": 0.025,
+			"TrackerPrice": 3000,
+			"OtherExpences": 700,
+			"DealerBonusPercentage": 0.02,
+			"OtherAnnualAmount": 120,
+			"OfficialJobAnnualAdditionalAmount": 500,
+			"Irr": 0.365
+		};
+	</script>
+	<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "Name": "Хапай Аукціон",
+            "url": "https://auction.hapai.kiev.ua/",
+            "logo": "https://auction.hapai.kiev.ua/img/main-logo-4.png",
+            "image": "https://auction.hapai.kiev.ua/img/main-logo-4.png",
+            "email": "hapai.info@ulf.ua",
+            "telephone": "0800334170"
+        }
+    </script>
+</head>
+
+<body class="partners-p">
+	<div class="popup-bg-body"></div>
+	<!-- Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			<div class="content">
+				<div class="choice-car-wrapper banner-top">
+					<div class="container">
+						<div class="choice-car__main">
+							<section class="breadcrumb">
+								<ul class="breadcrumb-wrap" itemscope itemtype="https://schema.org/BreadcrumbList">
+									<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+										<a itemprop="item" href="/">
+											<span itemprop="name"><span class="icon-u_home-alt"></span></span>
+										</a>
+										<meta itemprop="position" content="0" />
+									</li>
+									<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+										<a itemprop="item" href="/catalog">
+											<span itemprop="name">Партнерам</span>
+										</a>
+										<meta itemprop="position" content="1" />
+									</li>
+								</ul>
+							</section>
+							<section class="banner-top-descrp">
+								<div class="banner-top-descrp__wraper">
+									<div class="banner-top-descrp__content">
+										<div class="title">З вас - авто, з нас - гроші</div>
+										<div class="txt-big">ХАПАЙ авто допоможе вам швидко та вигідно продати автомобіль: 10 років досвіду роботи на фінансовому ринку дали нам змогу налагодити та відточити усі процеси. Сотні проданих авто, наявність власного майданчика, цільова реклама та задоволені покупці - найкраще цьому підтвердження.</div>
+										<a href="##" class="btn btn-style-3">Дізнатися більше</a>
+									</div>
+									<div class="img-wrap">
+										<img src="@img/c4542cd615f44173abe2243c7c451b59.png" alt="leasing-1">
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<section class="become-partner">
+					<div class="container">
+						<div class="become-partner__wrapper">
+							<div class="become-partner__form">
+								<form id="form-become-partner">
+									<div class="h1">Передайте нам свої авто</div>
+									<div class="user-info">
+										<div class="user-txt f-user-phone">
+											<input type="text" name="client_phone" placeholder="Номер телефону">
+											<p class="help-block help-block-error">Невірний телефон</p>
+										</div>
+										<div class="user-txt f-user-link">
+											<input type="text" name="client_link" placeholder="Посилання">
+											<p class="help-block help-block-error">Обов'язкове поле.</p>
+										</div>
+										<div class="send-wrapper">
+											<div class="checkbox">
+												<label for="pre-sell-checkbox-agree"></label>
+												<input type="checkbox" checked name="agreement" id="pre-sell-checkbox-agree">
+												<span class="checkbox__txt">Даю згоду на обробку <a href="#popup-policy" class="popup-link">персональних даних</a></span>
+											</div>
+											<button type="submit" class="btn btn-style-3">Відправити</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="img-wrap">
+								<div class="img-container">
+									<img src="@img/95a976d0afe258065cbcb7475bc0090b.png" alt="leasing-2">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about-partners">
+					<div class="container">
+						<div class="h1">Переваги співпраці з ХАПАЙ авто</div>
+						<div class="about-partners__message">
+							<div class="dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="descrpSituatio">
+							<div class="descrpSituatio__item">
+								<div class="descrpSituatio__info">
+									<div class="descrpSituatio__title">Ситуація 1</div>
+									<div class="descrpSituatio__name">У вас є авто, але немає покупця</div>
+									<ul>
+										<li>Розміщуємо ваше авто на нашому сайті, ставимо на рекламу, знаходимо покупця</li>
+										<li>Зустрічаємось для огляду та технічної перевірки машини</li>
+										<li>Протягом 1 дня ми купуємо ваше авто, ви одразу отримуєте гроші</li>
+									</ul>
+								</div>
+							</div>
+							<div class="descrpSituatio__item">
+								<div class="descrpSituatio__info">
+									<div class="descrpSituatio__title">Ситуація 2</div>
+									<div class="descrpSituatio__name">У вас є і авто, і покупець. Але покупцю не вистачає грошей</div>
+									<ul>
+										<li>Розповідаєте покупцю про ХАПАЙ авто, заповнюєте заявку у нас на сайті <a href="##">https://hapai.kiev.ua/ua</a>, у полі “код партнера” зазначаєте свої контакти</li>
+										<li>Після погодження з покупцем умов фінансування, зустрічаємось для огляду та технічної перевірки машини</li>
+										<li>Протягом 1 дня ми купуємо ваше авто, ви одразу отримуєте гроші</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<img class="bg" src="@img/oval.png" alt="bg-partners">
+					</div>
+				</section>
+				<section class="aboutService">
+					<div class="container">
+						<div class="h1">Як це працює?</div>
+						<div class="aboutService__wrap">
+							<div class="aboutService__item">
+								<div class="aboutService-top">
+									<p>У вашого покупця є гроші на таке авто:</p>
+									<div class="aboutService__price">7 000 $</div>
+								</div>
+								<img class="aboutService__car" src="@img/image4.png" alt="car-1">
+								<div class="aboutService-bottom">
+									<div class="aboutService-bottom__item">
+										<div class="aboutService-bottom__title">Рік:</div>
+										<p>2007</p>
+									</div>
+									<div class="aboutService-bottom__item">
+										<div class="aboutService-bottom__title">Двигун:</div>
+										<p>Бензин 1.6</p>
+									</div>
+									<div class="aboutService-bottom__item">
+										<div class="aboutService-bottom__title">Коробка:</div>
+										<p>Механіка</p>
+									</div>
+								</div>
+							</div>
+							<div class="aboutService__item aboutService-plus">
+								<div class="svg-icon">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#lightning"></use>
+									</svg>
+								</div>
+								<div class="aboutService-plus__info">
+									<div class="aboutService-plus__title">Ми:</div>
+									<p>Додаємо</p>
+								</div>
+								<div class="aboutService__price">9 000 $</div>
+								<svg class="plus">
+									<use xlink:href="@img/icons/icons.svg#plus"></use>
+								</svg>
+							</div>
+							<div class="aboutService__item">
+								<div class="aboutService-top">
+									<p>І ви продаєте таке:</p>
+									<div class="aboutService__price">16 000$</div>
+								</div>
+								<img class="aboutService__car" src="@img/car2.png" alt="car-1">
+								<div class="aboutService-bottom">
+									<div class="aboutService-bottom__item">
+										<div class="aboutService-bottom__title">Рік:</div>
+										<p>2004</p>
+									</div>
+									<div class="aboutService-bottom__item">
+										<div class="aboutService-bottom__title">Двигун:</div>
+										<p>Дизель 2.0</p>
+									</div>
+									<div class="aboutService-bottom__item">
+										<div class="aboutService-bottom__title">Коробка:</div>
+										<p>Автомат</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="need-help">
+					<div class="container">
+						<div class="need-help__wrap">
+							<div class="h1">Потрібна допомога? Ми на звʼязку!</div>
+							<ul>
+								<li>Понеділок - Четвер <span>9:00 - 18:00</span></li>
+								<li>Пʼятниця <span>9:00 - 16:45</span></li>
+								<li>Субота, Неділя <span>- вихідні</span></li>
+							</ul>
+							<div class="number">
+								<a href="tel:0 800 33 07 27">0 800 33 07 27</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		@@include('html/footer.html',{})
+		<a id="button_top" href="javascript:void();"><img src="img/svg/arrow_up.svg" alt="top"></a>
+	</div>
+	@@include('html/popup/popup-policy.html',{})
+	@@include('html/popup/popup-terms.html',{})
+	@@include('html/popup/popup-help.html',{})
+	@@include('html/popup/popup-success.html',{})
+	@@include('html/popup/popup-login.html',{})
+	@@include('html/popup/popup-auth.html',{})
+	<script src="files/assets/45446e13/jquery.js"></script>
+	<script src="files/assets/b1b6c6cc/yii.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/popups.js"></script>
+	<script src="js/fancybox.umd.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/main-new-v.js"></script>
+	<script src="js/calc.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/home.js"></script>
+	<script src="files/assets/b1b6c6cc/yii.validation.js"></script>
+	<script src="files/assets/b1b6c6cc/yii.activeForm.js"></script>
+	<script>jQuery(function ($) {
+			jQuery('#form-popup-login').yiiActiveForm([{
+				"id": "loginform-phone",
+				"name": "phone",
+				"container": ".field-loginform-phone",
+				"input": "#loginform-phone",
+				"error": ".help-block.help-block-error",
+				"enableAjaxValidation": true,
+				"validate": function (attribute, value, messages, deferred, $form) {
+					yii.validation.required(value, messages, { "message": "Поле не може бути незаповненим" });
+					value = yii.validation.trim($form, attribute, {
+						"skipOnArray": true,
+						"skipOnEmpty": false,
+						"chars": false
+					}, value);
+				}
+			}, {
+				"id": "loginform-password",
+				"name": "password",
+				"container": ".field-loginform-password",
+				"input": "#loginform-password",
+				"error": ".help-block.help-block-error",
+				"enableAjaxValidation": true,
+				"validate": function (attribute, value, messages, deferred, $form) {
+					yii.validation.required(value, messages, { "message": "Поле не може бути незаповненим" });
+					value = yii.validation.trim($form, attribute, {
+						"skipOnArray": true,
+						"skipOnEmpty": false,
+						"chars": false
+					}, value);
+				}
+			}], { "validationUrl": "files/auth\/login-validate" });
+		});</script>
+</body>
+
+</html>

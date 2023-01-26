@@ -167,3 +167,17 @@ $(document).ready(function () {
 		$(this).addClass('hide');
 	});
 });
+
+//checkHeight partners page
+$(function checkHeight() {
+
+	if (window.innerWidth > 991) {
+		var height = $('.become-partner__form').height();
+		$('.become-partner .img-wrap').height(height);
+	}
+	setTimeout(checkHeight, 500);
+});
+//reviews tabs
+$(function () {
+	$("#reviews-tabs").tabs();
+});
