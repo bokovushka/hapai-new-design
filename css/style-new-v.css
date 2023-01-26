@@ -2414,6 +2414,10 @@ input[type=text]::placeholder {
   margin-bottom: 20px;
 }
 
+.seo-text-section .choice-help p {
+  color: #fff;
+}
+
 /* mobile */
 
 @media only screen and (max-width: 1439px) {
@@ -3219,6 +3223,10 @@ input[type=text]::placeholder {
 
   .feedback .reviews-tabs__info {
     max-width: 50%;
+  }
+
+  .article-wrapper {
+    display: block;
   }
 }
 

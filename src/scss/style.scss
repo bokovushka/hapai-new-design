@@ -4123,7 +4123,9 @@ input.field {
 }
 .all-catalog {
 	color: #6667ab;
-	padding: 20px;
+	.item-loop__link {
+		padding: 8px 8px 0 8px;
+	}
 }
 .all-catalog .item-loop__link {
 	display: flex;
