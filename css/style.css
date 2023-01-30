@@ -5458,10 +5458,12 @@ input.field {
   margin-bottom: 32px;
 }
 
-.not-found .btn-style-1 {
-  max-width: 200px;
+.not-found .btn-style-4 {
   margin: 0 auto;
   margin-bottom: 42px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .not-found__title {

@@ -181,3 +181,8 @@ $(function checkHeight() {
 $(function () {
 	$("#reviews-tabs").tabs();
 });
+
+//offices
+$(function () {
+	$(".offices-content").tabs();
+});
