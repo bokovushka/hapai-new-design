@@ -443,6 +443,12 @@ input[type=text]::placeholder {
   top: 0;
   padding-top: 50px;
   z-index: 3;
+  border-radius: 4px;
+}
+
+.city-choose:hover .submenu .submenu__list {
+  height: 130px;
+  overflow-y: scroll;
 }
 
 .city-choose:hover .submenu li {
@@ -451,8 +457,8 @@ input[type=text]::placeholder {
   padding: 14px;
   background-color: #ffffff;
   border-radius: 4px;
-  border: 1px solid #e5e5e5;
   cursor: pointer;
+  border: 1px solid #e5e5e5;
 }
 
 .city-choose:hover .submenu li:hover {
@@ -2551,6 +2557,431 @@ input[type=text]::placeholder {
   background-size: 100%;
 }
 
+.also-finance {
+  padding: 40px 0;
+}
+
+.also-finance__wrap {
+  padding: 30px 40px;
+  -webkit-box-shadow: 0 4px 44px rgba(229, 229, 229, 0.5);
+          box-shadow: 0 4px 44px rgba(229, 229, 229, 0.5);
+  border-radius: 20px;
+}
+
+.also-finance__wrap .h1 {
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.also-finance__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.also-finance__buttons .btn-style-4 {
+  width: 25%;
+  padding: 17px 20px;
+  border-radius: 37px;
+}
+
+.catalog-page {
+  position: relative;
+}
+
+.callback {
+  max-width: 120px;
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 10;
+}
+
+.form-popup-callback__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.form-popup-callback__content .h1 {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.form-popup-callback__content.hide {
+  display: none;
+}
+
+.callback-phone.user-txt {
+  width: 100%;
+}
+
+#callback .popup__content {
+  max-width: 520px;
+  padding: 20px;
+}
+
+.form-popup-callback__result {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.form-popup-callback__result.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-popup-callback__social {
+  padding-top: 20px;
+  padding: 0 15px 15px 15px;
+}
+
+.form-popup-callback__social .social__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  padding-top: 10px;
+}
+
+.form-popup-callback__social .social__wrap svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+#popup-cookies .popup__body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#popup-cookies .popup__content {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  border-radius: unset;
+  text-align: center;
+  padding: 20px;
+}
+
+#popup-cookies .btn-style-4 {
+  min-width: 204px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.write-feedback {
+  padding: 60px 0 40px 0;
+}
+
+#form-write-feedback {
+  max-width: 562px;
+  padding: 21px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+#form-write-feedback .h1 {
+  font-family: RFDewi;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+#form-write-feedback .description {
+  margin-bottom: 25px;
+}
+
+#form-write-feedback .title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+#form-write-feedback .user-txt {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#form-write-feedback .user-txt label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#form-write-feedback .user-txt input::-webkit-input-placeholder, #form-write-feedback .user-txt textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+#form-write-feedback .user-txt input::-moz-placeholder, #form-write-feedback .user-txt textarea::-moz-placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+#form-write-feedback .user-txt input:-ms-input-placeholder, #form-write-feedback .user-txt textarea:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+#form-write-feedback .user-txt input::-ms-input-placeholder, #form-write-feedback .user-txt textarea::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+#form-write-feedback .user-txt input::placeholder,
+#form-write-feedback .user-txt textarea::placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+#form-write-feedback .user-txt textarea {
+  height: 100%;
+}
+
+#form-write-feedback .gender__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 44px;
+}
+
+#form-write-feedback #gender {
+  margin-bottom: 20px;
+}
+
+#form-write-feedback #gender .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+}
+
+#form-write-feedback #gender .radio input[type=radio] {
+  display: none;
+}
+
+#form-write-feedback #gender .radio input[type=radio] + .radio-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+#form-write-feedback #gender .radio input[type=radio] + .radio-label:before {
+  content: "";
+  background: #ffffff;
+  border-radius: 100%;
+  border: 2px solid #e9e9e9;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+#form-write-feedback #gender .radio input[type=radio] + .radio-label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: url(../img/icons/icons.svg#radio-check) 50% 50% no-repeat;
+  background-size: 100%;
+  z-index: 2;
+}
+
+#form-write-feedback #gender .radio input[type=radio]:checked + .radio-label:before {
+  background: #6667ab;
+  border: 2px solid #6667ab;
+}
+
+#form-write-feedback #gender .radio input[type=radio] + .radio-label:empty:before {
+  margin-right: 0;
+}
+
+#form-write-feedback .gender__pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+}
+
+#form-write-feedback .gender__pics img {
+  width: 22px;
+  height: auto;
+}
+
+#form-write-feedback .txt-feedback {
+  height: 140px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#form-write-feedback .txt-feedback p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(51, 51, 51, 0.4);
+  text-align: right;
+}
+
+#form-write-feedback .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#form-write-feedback .rating > label {
+  color: #6667ab;
+  cursor: pointer;
+}
+
+#form-write-feedback .rating > label:before {
+  font-size: 20px;
+  font-family: hapai;
+  content: "\e91b";
+  display: block;
+}
+
+#form-write-feedback .rating > input {
+  display: none;
+}
+
+#form-write-feedback .rating > input:checked ~ label::before,
+#form-write-feedback .rating:not(:checked) > label:hover::before,
+#form-write-feedback .rating:not(:checked) > label:hover ~ label::before {
+  content: "\e91a";
+  font-family: hapai;
+}
+
+#form-write-feedback .rating > input:checked + label:hover,
+#form-write-feedback .rating > input:checked ~ label:hover,
+#form-write-feedback .rating > label:hover ~ input:checked ~ label,
+#form-write-feedback .rating > input:checked ~ label:hover ~ label {
+  color: #7f81d4;
+}
+
+#form-write-feedback .attach-files {
+  margin-top: 20px;
+}
+
+#form-write-feedback .attach-files .descrp {
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#form-write-feedback #attach-files {
+  display: none;
+}
+
+#form-write-feedback #attach-files + label {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+#form-write-feedback #attach-files + label:hover::before {
+  background: #7f81d4;
+}
+
+#form-write-feedback #attach-files + label::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background: #6667ab;
+}
+
+#form-write-feedback #attach-files + label::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/icons/icons.svg#plus) 50% 50% no-repeat;
+  background-size: 100%;
+  z-index: 2;
+}
+
+#form-write-feedback .btn-style-4 {
+  min-width: 204px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 /* mobile */
 
 @media only screen and (min-width: 1440px) {
@@ -3804,6 +4235,18 @@ input[type=text]::placeholder {
   .leasing-taxi-p .accordion-section .btn-style-1 {
     max-width: 100%;
   }
+
+  .also-finance__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .also-finance__buttons .btn-style-4 {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 639px) {
@@ -3983,6 +4426,14 @@ input[type=text]::placeholder {
 
   .feedback .feedback__swiper {
     height: 260px;
+  }
+
+  #form-write-feedback .gender__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
 }
 

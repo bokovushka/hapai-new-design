@@ -186,3 +186,26 @@ $(function () {
 $(function () {
 	$(".offices-content").tabs();
 });
+
+//callback form
+$("#form-popup-callback .btn-style-4").click(function () {
+	$('.form-popup-callback__result').addClass("show");
+	$('.form-popup-callback__content').addClass("hide");
+});
+
+//cookies popup
+$(document).ready(function () {
+	setTimeout(function () {
+		$('#btn-cookies').click();
+	}, 1000);
+});
+
+//text lenght
+$(function () {
+	$('#txt-feedback').keyup(function () {
+		var txtlen = $(this).val().length;
+		$('#txt-feedback-count').text(txtlen);
+
+	});
+});
+

@@ -3345,7 +3345,7 @@ body.lock {
   background: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 12;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.8s ease 0s;
@@ -3395,6 +3395,7 @@ body.lock {
   -webkit-transform: translate(0px, -100%);
   -ms-transform: translate(0px, -100%);
       transform: translate(0px, -100%);
+  border-radius: 12px;
 }
 
 .popup__content .title {
@@ -6944,7 +6945,7 @@ input.field {
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
-  z-index: 1000;
+  z-index: 10;
 }
 
 #button_top img {
