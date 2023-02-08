@@ -169,22 +169,32 @@ $(document).ready(function () {
 });
 
 //checkHeight partners page
-$(function checkHeight() {
+// $(function checkHeight() {
 
-	if (window.innerWidth > 991) {
-		var height = $('.become-partner__form').height();
-		$('.become-partner .img-wrap').height(height);
-	}
-	setTimeout(checkHeight, 500);
-});
+// 	if (window.innerWidth > 991) {
+// 		var height = $('.become-partner__form').height();
+// 		$('.become-partner .img-wrap').height(height);
+// 	}
+// 	setTimeout(checkHeight, 500);
+// });
 //reviews tabs
 $(function () {
 	$("#reviews-tabs").tabs();
 });
 
 //offices
-$(function () {
-	$(".offices-content").tabs();
+$(document).ready(function () {
+	const tabs = document.querySelectorAll('.tab');
+	const tabContents = document.querySelectorAll('.tab-content-item');
+
+	tabs.forEach(tab => {
+		tab.addEventListener('click', function () {
+			tabs.forEach(tab => tab.classList.remove('active'));
+			tabContents.forEach(content => content.classList.remove('active'));
+			this.classList.add('active');
+			document.getElementById(this.dataset.tabContent).classList.add('active');
+		});
+	});
 });
 
 //callback form
@@ -209,3 +219,52 @@ $(function () {
 	});
 });
 
+//add form field 
+$(document).ready(function () {
+	var counter = 0;
+	$("#form-become-partner .field-plus").click(function (e) {
+		counter++;
+		if (counter > 3) {
+			return false;
+		}
+		else {
+			$(".more-user-link").append('<div class="user-txt f-user-link"><input type="text" name="client_link" placeholder="Посилання"><p class="help-block help-block-error">Обов&#39;язкове поле.</p ></div >');
+		}
+	});
+});
+
+//popup-automatic-selection
+$("#automatic-car-brand").selectmenu();
+$("#automatic-car-model").selectmenu();
+
+$(function () {
+	$("#slider-range").slider({
+		range: true,
+		min: 10000,
+		max: 45000,
+		values: [10000, 30000],
+		slide: function (event, ui) {
+			$("#amount").val(ui.values[0] + " - " + ui.values[1]);
+		}
+	});
+	$("#amount").val($("#slider-range").slider("values", 0) + " - " + $("#slider-range").slider("values", 1));
+});
+
+$(function () {
+	$("#slider-range2").slider({
+		range: true,
+		min: 80000,
+		max: 150000,
+		values: [80000, 100000],
+		slide: function (event, ui) {
+			$("#amount2").val(ui.values[0] + " - " + ui.values[1]);
+		}
+	});
+	$("#amount2").val($("#slider-range2").slider("values", 0) + " - " + $("#slider-range2").slider("values", 1));
+});
+
+
+$("#popup-automatic-selection .btn-style-4").click(function () {
+	$('#popup-automatic-selection .form-popup-callback__result').addClass("show");
+	$('#popup-automatic-selection .user-info').addClass("hide");
+});

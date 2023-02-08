@@ -1182,7 +1182,7 @@ input {
 }
 
 .filter-sort-box .ui-selectmenu-button {
-  width: 100%;
+  width: 200px;
   height: auto;
   margin: 0;
   background: #ffffff;
@@ -1214,7 +1214,7 @@ input {
 
 .ui-selectmenu-text {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   padding-right: 20px;
   margin: 0;
   font-size: 14px;
@@ -1244,7 +1244,6 @@ input {
 
 .sort-mode {
   margin-right: 8px;
-  max-width: 150px;
   width: 100%;
 }
 
@@ -1485,7 +1484,7 @@ input {
 }
 
 .filter-list.f-range {
-  overflow: hidden;
+  overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1526,9 +1525,11 @@ input {
 
 .f-price .ui-slider-horizontal {
   height: 4px;
-  border: 1px solid #6667ab;
-  width: 100%;
-  margin: 24px 3px 4px 10px;
+  border-radius: 4px;
+  width: calc(100% - 9px);
+  margin-left: auto;
+  margin-top: 24px;
+  margin-bottom: 4px;
 }
 
 .ui-slider-range.ui-widget-header {

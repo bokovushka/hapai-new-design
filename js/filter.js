@@ -190,14 +190,18 @@ function initButtonsFilter() {
 }
 
 //закрытые фильтра вне области
-$(document).mouseup(function (e) {// обрабатываем клик в любой точке
-	if (jQuery(e.target).closest(".a-sidebar.active").length > 0) { // проверка , произошел ли клик вне элемента, который надо по этому клику скрыть
-		return false; // клик по элементу игнорируем
-	} else {
-		$('.popup-bg-body').removeClass("open");
-	}
-	$('.lock').removeClass("lock");
-	$('.a-sidebar.active').removeClass("active");
+$(document).ready(function () {
+	$(".btn-filter").on("click", function () {
+		$(".catalog-page").mouseup(function (e) {// обрабатываем клик в любой точке
+			if (jQuery(e.target).closest(".a-sidebar.active").length > 0) { // проверка , произошел ли клик вне элемента, который надо по этому клику скрыть
+				return false; // клик по элементу игнорируем
+			} else {
+				$('.popup-bg-body').removeClass("open");
+			}
+			$('.lock').removeClass("lock");
+			$('.a-sidebar.active').removeClass("active");
+		});
+	});
 });
 
 selectStyler();
