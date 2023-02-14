@@ -177,12 +177,8 @@ $(document).ready(function () {
 // 	}
 // 	setTimeout(checkHeight, 500);
 // });
-//reviews tabs
-$(function () {
-	$("#reviews-tabs").tabs();
-});
 
-//offices
+//tabs / offices page / purchase-goods page
 $(document).ready(function () {
 	const tabs = document.querySelectorAll('.tab');
 	const tabContents = document.querySelectorAll('.tab-content-item');
@@ -263,8 +259,22 @@ $(function () {
 	$("#amount2").val($("#slider-range2").slider("values", 0) + " - " + $("#slider-range2").slider("values", 1));
 });
 
-
 $("#popup-automatic-selection .btn-style-4").click(function () {
 	$('#popup-automatic-selection .form-popup-callback__result').addClass("show");
 	$('#popup-automatic-selection .user-info').addClass("hide");
+});
+
+//purchase goods page / select
+$("#car-year-production").selectmenu();
+$("#car-basket").selectmenu();
+$("#car-gearbox").selectmenu();
+$("#car-fuel").selectmenu();
+$("#car-engine-capacity").selectmenu();
+
+//purchase goods page / button click
+$("#form-request-purchase-goods .btn-style-3").click(function () {
+	$('.request-purchase-goods .choice-car__content').addClass("hide");
+	$('.request-purchase-goods .request-purchase-goods__thank').addClass("show");
+	$('.about-car').addClass("hide");
+	$('.choice-car__main').addClass("choice-car__thank");
 });

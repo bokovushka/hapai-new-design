@@ -242,3 +242,37 @@ new Swiper(".feedback__swiper", {
 		nextEl: ".feedback-button .icon-right"
 	},
 })
+
+//feedback swiper
+new Swiper(".why-sell-car__swiper", {
+	direction: 'horizontal',
+	grabCursor: true,
+	spaceBetween: 20,
+	freeMode: true,
+	breakpoints: {
+		1440: {
+			slidesPerView: 3.55,
+		},
+		1280: {
+			slidesPerView: 3.15,
+		},
+		992: {
+			slidesPerView: 2.45,
+		},
+		768: {
+			slidesPerView: 1.9,
+		},
+		640: {
+			slidesPerView: 1.6,
+			spaceBetween: 8,
+		},
+		480: {
+			slidesPerView: 1.2,
+			spaceBetween: 8,
+		},
+		360: {
+			slidesPerView: 1.1,
+			spaceBetween: 8,
+		}
+	},
+})

@@ -1452,7 +1452,6 @@ input {
 	overflow: hidden;
 }
 .partners .title {
-	font-weight: 600;
 	margin-bottom: 20px;
 	padding-right: 110px;
 	word-break: break-word;
@@ -3384,6 +3383,8 @@ input.field {
 	border-radius: 12px;
 	padding: 20px;
 	width: calc(100% / 3);
+	display: flex;
+	flex-direction: column;
 }
 .how-works__item .heading {
 	padding: 12px;
@@ -3395,6 +3396,12 @@ input.field {
 }
 .how-works__item p {
 	color: #777777;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	a {
+		display: contents;
+	}
 }
 .car-buy-description__main {
 	padding: 20px;
@@ -5360,6 +5367,9 @@ input.field {
 	}
 	.questions-lease__info .user-txt.has-error {
 		margin-bottom: 12px;
+	}
+	.why-sell-car .swiper-container {
+		overflow: visible;
 	}
 }
 @media (min-width: 993px) and (max-width: 1439px) {
