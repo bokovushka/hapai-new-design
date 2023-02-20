@@ -148,13 +148,20 @@
 	font-weight: 500;
 }
 
-.seo-text-section h2 {
-	font-size: 32px;
-	line-height: 44px;
-	&:not(:first-child) {
-		padding-top: 40px;
-		margin-top: 40px;
-		border-top: 1px solid #e5e5e5;
+.seo-text-section {
+	h1,
+	h2 {
+		font-size: 32px;
+		line-height: 44px;
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 44px;
+		&:not(:first-child) {
+			padding-top: 40px;
+			margin-top: 40px;
+			border-top: 1px solid #e5e5e5;
+		}
 	}
 }
 

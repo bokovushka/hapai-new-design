@@ -78,29 +78,6 @@ function setValuesByType(field, id, nextField) {
 }
 
 //new js update
-
-$("#selection-leasing__price").slider({
-	range: "min",
-	step: 1,
-	value: 10000,
-	min: 1,
-	max: 90000,
-	slide: function (event, ui) {
-		$('#selection-leasing__price-result .v-p').remove();
-		$('#selection-leasing__price-result').append('<div class="v-p">' + '$' + ui.value + '</div>');
-	}
-});
-$("#selection-leasing__have-money").slider({
-	range: "min",
-	step: 1,
-	value: 1500,
-	min: 1,
-	max: 3000,
-	slide: function (event, ui) {
-		$('#selection-leasing__have-money-result .v-p').remove();
-		$('#selection-leasing__have-money-result').append('<div class="v-p">' + '$' + ui.value + '</div>');
-	}
-});
 $("#selection-leasing__month").slider({
 	range: "min",
 	step: 1,

@@ -43,28 +43,29 @@ swiperItemGallery();
 
 // slider gallery
 
-if (window.innerWidth < 993) {
-	var swipercontainer = $('.ic-gallery');
-	var swiperwrapper = $('.ic-img-loop');
-	var swiperslide = $('.ic-img');
+$(function () {
 	$('.ic-gallery').addClass('swiper-container');
 	$('.ic-img-loop').addClass('swiper-wrapper');
 	$('.ic-img').addClass('swiper-slide');
-	var mySwiper2 = new Swiper('.ic-gallery', {
+	var swiperProductGallery = new Swiper('.ic-gallery', {
 		direction: 'horizontal',
 		slidesPerView: 1,
-		spaceBetween: 20,
 		navigation: {
 			prevEl: ".ic-gallery .item-gallery-button .btn__swiper-prev",
 			nextEl: ".ic-gallery .item-gallery-button .btn__swiper-next"
 		},
 		breakpoints: {
+			993: {
+				slidesPerView: 1,
+				spaceBetween: 0,
+			},
 			640: {
 				slidesPerView: 2,
+				spaceBetween: 20,
 			}
 		},
 	});
-}
+});
 
 // article Swiper slider
 
@@ -97,8 +98,8 @@ var articleSwiper = new Swiper('.article__swiper', {
 		}
 	},
 	navigation: {
-		prevEl: ".team .swiper__buttons .icon-u_arrow-left",
-		nextEl: ".team .swiper__buttons .icon-u_arrow-right"
+		prevEl: ".other-article .swiper__buttons .icon-u_arrow-left",
+		nextEl: ".other-article .swiper__buttons .icon-u_arrow-right"
 	},
 });
 

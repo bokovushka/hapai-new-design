@@ -224,7 +224,7 @@ $(document).ready(function () {
 			return false;
 		}
 		else {
-			$(".more-user-link").append('<div class="user-txt f-user-link"><input type="text" name="client_link" placeholder="Посилання"><p class="help-block help-block-error">Обов&#39;язкове поле.</p ></div >');
+			$(".more-user-link").append('<div class="user-txt f-user-link"><input type="text" name="client_link" placeholder="Посилання з авто.ріа"><p class="help-block help-block-error">Обов&#39;язкове поле.</p ></div >');
 		}
 	});
 });
@@ -277,4 +277,140 @@ $("#form-request-purchase-goods .btn-style-3").click(function () {
 	$('.request-purchase-goods .request-purchase-goods__thank').addClass("show");
 	$('.about-car').addClass("hide");
 	$('.choice-car__main').addClass("choice-car__thank");
+});
+
+//purchase goods page / button click
+$(".request-purchase-goods-result .btn-style-2").click(function () {
+	$('.request-purchase-goods-result .result-item-field').toggle("show");
+	if ($(this).text() == "Редагувати дані")
+		$(this).text("Готово")
+	else
+		$(this).text("Редагувати дані");
+});
+
+$(function () {
+	$("#slider-range-rpgr1").slider({
+		range: "min",
+		step: 1,
+		value: 10000,
+		min: 10000,
+		max: 45000,
+		slide: function (event, ui) {
+			$("#rpgr1").val(ui.value);
+		}
+	});
+	$("#rpgr1").val($("#slider-range-rpgr1").slider("values", 0));
+});
+
+$(function () {
+	$("#slider-range-rpgr2").slider({
+		range: "min",
+		step: 1,
+		value: 80000,
+		min: 80000,
+		max: 150000,
+		slide: function (event, ui) {
+			$("#rpgr2").val(ui.value);
+		}
+	});
+	$("#rpgr2").val($("#slider-range-rpgr2").slider("values", 0));
+});
+$(function () {
+	$("#slider-range-rpgr3").slider({
+		range: "min",
+		step: 12,
+		value: 12,
+		min: 12,
+		max: 80,
+		slide: function (event, ui) {
+			$("#rpgr3").val(ui.value);
+		}
+	});
+	$("#rpgr3").val($("#slider-range-rpgr3").slider("values", 0));
+});
+
+//home page / click more brand
+$(function () {
+	let max = 12;
+
+	$('.ch-car-brand').each(function () {
+		let items = $(this).find('ch-car-brand__item'),
+			len = items.length;
+		if (len > max) {
+			items = items.slice(max, len);
+			items.wrapAll('<div class="hide"></div>');
+		}
+	}).on('click', '.btn-style-2', function () {
+		$(this).closest('.ch-car-brand').find('.hide > .ch-car-brand__item').unwrap();
+		$(this).remove();
+	});
+});
+
+//see more
+$(document).ready(function () {
+	var showChar = 50;
+	var ellipsestext = "...";
+	var moretext = "Читати далі";
+	var lesstext = "Згорнути";
+	$(".expandable").each(function () {
+		var content = $(this).html();
+		if (content.length > showChar) {
+			var show_content = content.substr(0, showChar);
+			var hide_content = content.substr(showChar, content.length - showChar);
+			var html =
+				show_content +
+				'<span class="moreelipses">' +
+				ellipsestext +
+				'</span><span class="remaining-content"><span>' +
+				hide_content +
+				'</span>&nbsp;&nbsp;<a href="" class="morelink">' +
+				moretext +
+				"</a></span>";
+			$(this).html(html);
+		}
+	});
+
+	$(".morelink").click(function () {
+		if ($(this).hasClass("less")) {
+			$(this).removeClass("less");
+			$(this).html(moretext);
+		} else {
+			$(this).addClass("less");
+			$(this).html(lesstext);
+		}
+		$(this).parent().prev().toggle(300);
+		$(this).prev().toggle(300);
+		return false;
+	});
+});
+
+
+//product page // more button
+
+$(function () {
+	let max = 6;
+
+	$('.tab-equ').each(function () {
+		let items = $(this).find('equ-col'),
+			len = items.length;
+		if (len > max) {
+			items = items.slice(max, len);
+			items.wrapAll('<div class="hide"></div>');
+		}
+	}).on('click', '.btn-style-2', function () {
+		$(this).closest('.tab-equ').find('.hide > .equ-col').unwrap();
+		$(this).remove();
+	});
+});
+
+// height
+$(function checkHeight() {
+	if (window.innerWidth > 992 && window.innerWidth < 1440) {
+		var height = $('.ic-info__left__wrap').height();
+		$('.ic-info__left').height(height - 395);
+	}
+	else {
+		$('.ic-info__left').height("100%");
+	}
+	setTimeout(checkHeight, 500);
 });

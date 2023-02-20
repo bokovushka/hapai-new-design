@@ -1295,6 +1295,7 @@ input {
 	margin: 0;
 	border-radius: 4px;
 	cursor: pointer;
+	display: block;
 }
 .btn-item-swiper.swiper-button-disabled {
 	opacity: 0;
@@ -1480,6 +1481,9 @@ input {
 	align-items: center;
 	cursor: pointer;
 	font-size: 24px;
+	&.swiper-button-lock {
+		display: none;
+	}
 }
 .footer__info {
 	display: flex;
@@ -1741,8 +1745,8 @@ input {
 	display: flex;
 	position: relative;
 }
-.ic-img-loop {
-	gap: 20px;
+.ic-img:last-child {
+	display: none;
 }
 .geo-box {
 	padding: 12px;
@@ -2553,17 +2557,15 @@ body.lock {
 .news__main {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	gap: 20px;
 	margin-bottom: 20px;
 }
 .news__item {
 	position: relative;
-	width: 295px;
+	width: calc((100% - 260px) / 3);
 	background: #ffffff;
 	color: #000000;
 	padding: 20px 0;
-	flex-grow: 1;
 }
 .news__item:nth-child(9n + 3),
 .news__item:nth-child(9n + 5),
@@ -2921,9 +2923,6 @@ video {
 .other-article {
 	padding-bottom: 40px;
 }
-.other-article .title {
-	padding: 20px 0;
-}
 .other-article .news__item {
 	padding: 0;
 	width: 100%;
@@ -3123,7 +3122,8 @@ video {
 	border-radius: 12px;
 	width: calc((100% - 40px) / 3);
 }
-.why__item span {
+.why__item > span,
+.why__item .why__descrp > span {
 	font-size: 24px;
 	padding: 16px;
 	color: #6667ab;
@@ -3145,6 +3145,12 @@ video {
 .ch-car-brand {
 	padding-top: 20px;
 	margin-bottom: 40px;
+	.btn-style-2 {
+		min-width: 208px;
+		width: max-content;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
 }
 .ch-car-brand__wrap {
 	display: flex;
@@ -3392,13 +3398,12 @@ input.field {
 	background: #6667ab;
 	border-radius: 8px;
 	width: max-content;
-	margin-bottom: 12px;
+	min-width: 100px;
+	text-align: center;
 }
 .how-works__item p {
 	color: #777777;
 	height: 100%;
-	display: flex;
-	align-items: center;
 	a {
 		display: contents;
 	}
@@ -3411,7 +3416,6 @@ input.field {
 }
 .car-buy-description__main .title {
 	color: #0c8d47;
-	margin-bottom: 12px;
 }
 .icon-fi_check-circle {
 	display: block;
@@ -3421,7 +3425,6 @@ input.field {
 	color: #ffffff;
 	border-radius: 12px;
 	padding: 12px;
-	margin-bottom: 12px;
 }
 .car-buy-description__wrap {
 	display: flex;
@@ -4280,7 +4283,8 @@ input.field {
 	z-index: 2;
 }
 .partners .btn-style-2 {
-	max-width: 208px;
+	min-width: 208px;
+	width: max-content;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
@@ -4896,10 +4900,10 @@ input.field {
 	right: 12px;
 }
 .hide {
-	display: none;
+	display: none !important;
 }
 .show {
-	display: block;
+	display: block !important;
 }
 #popup-test-drive .popup-auction__title {
 	margin-bottom: 20px;
@@ -5166,7 +5170,7 @@ input.field {
 	overflow: auto;
 } /* button top */
 #button_top {
-	display: flex;
+	display: flex !important;
 	align-items: center;
 	justify-content: center;
 	background-color: #6667ab;
@@ -5251,13 +5255,8 @@ input.field {
 		max-width: 310px;
 	}
 	.news__item {
+		width: calc((100% - 40px) / 3);
 		flex-basis: auto !important;
-		flex-grow: 1;
-	}
-	.news__item:nth-child(9n + 3),
-	.news__item:nth-child(9n + 5),
-	.news__item:nth-child(9n + 7) {
-		flex: 0 1 100%;
 	}
 	.choice-help__search-main {
 		max-width: 560px;
@@ -5288,11 +5287,11 @@ input.field {
 		padding-right: 110px;
 	}
 	.article__swiper {
-		margin: 0 -20px;
-		padding-right: 40px;
+		margin: 0 -40px;
+		padding-right: 80px;
 	}
 	.article__swiper > .swiper-wrapper {
-		padding-left: 20px;
+		padding-left: 40px;
 	}
 	.happy-customers__swiper {
 		margin: 0 -20px;
@@ -5399,26 +5398,25 @@ input.field {
 	}
 }
 @media only screen and (min-width: 993px) {
-	.ic-content,
-	.ic-img-loop {
+	.ic-content {
 		flex-wrap: wrap;
 	}
-	.ic-gallery .item-gallery-button {
-		display: none;
+	.ic-img {
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
 	}
 	.ic-img {
-		flex: 1 1 calc(50% - 40px);
-		height: 210px;
-	}
-	.ic-img:first-child {
 		width: 100%;
 		max-width: 100%;
 		flex-basis: 100%;
 		height: 435px;
 	}
-	.ic-img:nth-child(n + 2) {
-		display: none;
-	}
+	// .ic-img:nth-child(n + 2) {
+	// 	display: none;
+	// }
 }
 @media only screen and (width: 992px) {
 	.loop-wrap {
@@ -5533,19 +5531,10 @@ input.field {
 		max-height: 400px;
 		gap: 0;
 	}
-	.ic-img-loop .ic-img:nth-last-child(-n + 2) {
-		display: none;
-	}
 	.ic-gallery {
 		max-width: 100%;
 		margin: 0 auto;
 		margin-bottom: 20px;
-	}
-	.item-gallery-button {
-		display: flex;
-	}
-	.ic-gallery .ic-img:last-child {
-		display: none;
 	}
 	.ic-img img {
 		-o-object-fit: cover;
@@ -5700,6 +5689,9 @@ input.field {
 	}
 	.top-banner-search .jq-selectbox__select {
 		width: 100%;
+	}
+	.news__item {
+		width: calc((100% - 20px) / 2);
 	}
 }
 @media only screen and (max-width: 767px) {

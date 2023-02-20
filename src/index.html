@@ -73,27 +73,25 @@
 							<div class="top-banner__wrap">
 								<div class="h1">Купуй. Продавай. Оформлюй лізинг</div>
 								<div class="subtitle">Скористайся калькулятором - дізнайся щомісячний платіж</div>
-								<form id="form-leasing">
+								<form id="form-leasing" class="form-leasing-main">
 									<div class="selection-item">
 										<div id="selection-leasing__price-result" class="selection-item__result">
 											<div class="selection-item__heading">Вартість авто, доларів США</div>
-											<div class="v-p">$10000</div>
-										</div>
-										<div class="line-slider" id="selection-leasing__price">
-											<span class="end-line"></span>
+											<div class="user-txt">
+												<input type="text" id="slpr1" value="10000">
+											</div>
 										</div>
 									</div>
 									<div class="selection-item">
 										<div id="selection-leasing__have-money-result" class="selection-item__result">
 											<div class="selection-item__heading">Яка сума у вас є? доларів США</div>
-											<div class="v-p">$1500</div>
-										</div>
-										<div class="line-slider" id="selection-leasing__have-money">
-											<span class="end-line"></span>
+											<div class="user-txt">
+												<input type="text" id="slpr2" value="1500">
+											</div>
 										</div>
 									</div>
 									<div class="selection-item">
-										<div id="selection-leasing__month-result" class="selection-item__result">
+										<div id="selection-leasing__month-result" class="selection-item__result selection-leasing__month-result">
 											<div class="selection-item__heading">Строк фінансування</div>
 											<div class="v-p">24 місяців</div>
 										</div>
@@ -824,12 +822,42 @@
 									<p class="ch-car-brand__search">від 20000$ <span>(14 авто)</span></p>
 								</div>
 							</a>
+							<div class="hide">
+								<a href="/catalog/filter-gms" class="ch-car-brand__item">
+									<img src="img/car-brand/gmc.png" alt="car-mark-gms">
+									<div class="ch-car-brand__info">
+										<div class="heading">GMC</div>
+										<p class="ch-car-brand__search">від 12000$ <span>(9 авто)</span></p>
+									</div>
+								</a>
+								<a href="/catalog/filter-opel" class="ch-car-brand__item">
+									<img src="img/car-brand/opel.png" alt="car-mark-opel">
+									<div class="ch-car-brand__info">
+										<div class="heading">Opel</div>
+										<p class="ch-car-brand__search">від 7000$ <span>(36 авто)</span></p>
+									</div>
+								</a>
+								<a href="/catalog/filter-porsche" class="ch-car-brand__item">
+									<img src="img/car-brand/porsche.png" alt="car-mark-porsche">
+									<div class="ch-car-brand__info">
+										<div class="heading">Porsche</div>
+										<p class="ch-car-brand__search">від 20000$ <span>(14 авто)</span></p>
+									</div>
+								</a>
+							</div>
 						</div>
+						<button type="button" class="btn btn-style-2">Переглянути більше</button>
 					</div>
 				</section>
-				<section class="other-article">
+				<section class="other-article partners">
 					<div class="container">
-						<div class="title">Новини і огляди</div>
+						<div class="partners__title">
+							<div class="title">Новини і огляди</div>
+							<div class="swiper__buttons">
+								<div class="btn__swiper icon-u_arrow-left btn__swiper-prev"></div>
+								<div class="btn__swiper icon-u_arrow-right btn__swiper-next"></div>
+							</div>
+						</div>
 						<div class="swiper-container article__swiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
@@ -960,142 +988,21 @@
 							<div class="number">
 								<a href="tel:0 800 33 07 27">0 800 33 07 27</a>
 							</div>
-						</div>
-					</div>
-				</section>
-				<section class="loan-leasing partners">
-					<div class="container">
-						<div class="h1">Чим кредит відрізняється від лізингу?</div>
-						<div class="partners__title">
-							<div class="title">Лізинг</div>
-							<div class="swiper__buttons leasing-swiper__buttons">
-								<div class="btn__swiper icon-u_arrow-left btn__swiper-prev"></div>
-								<div class="btn__swiper icon-u_arrow-right btn__swiper-next"></div>
-							</div>
-						</div>
-						<div class="swiper-container leasing__swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-user-check">
-											<use xlink:href="@img/icons/icons.svg#user-check"></use>
+							<div class="social__wrap">
+								<a href="##">
+									<div class="icon-svg icon-telegram">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#telegram-white"></use>
 										</svg>
 									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Що означає для клієнта</div>
-										<p>Фінансова оренда, можливість орендувати автомобіль та одночасно виплачувати.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-								<div class="swiper-slide">
+								</a>
+								<a href="##">
 									<div class="icon-svg">
-										<svg class="i-book-open">
-											<use xlink:href="@img/icons/icons.svg#book-open"></use>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#viber"></use>
 										</svg>
 									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Оформлення</div>
-										<p>Єдиний договір лізингу між клієнтом та компанією. Інших договорів та документів.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-car-usd">
-											<use xlink:href="@img/icons/icons.svg#car-usd"></use>
-										</svg>
-									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Що отримуємо</div>
-										<p>Відразу після підписання договору компанія передає зареєстрований та готовий.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-user-check">
-											<use xlink:href="@img/icons/icons.svg#user-check"></use>
-										</svg>
-									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Що означає для клієнта</div>
-										<p>Фінансова оренда, можливість орендувати автомобіль та одночасно виплачувати.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-book-open">
-											<use xlink:href="@img/icons/icons.svg#book-open"></use>
-										</svg>
-									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Оформлення</div>
-										<p>Єдиний договір лізингу між клієнтом та компанією. Інших договорів та документів.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="partners__title">
-							<div class="title">Банківський автокредит</div>
-							<div class="swiper__buttons loan-swiper__buttons">
-								<div class="btn__swiper icon-u_arrow-left btn__swiper-prev"></div>
-								<div class="btn__swiper icon-u_arrow-right btn__swiper-next"></div>
-							</div>
-						</div>
-						<div class="swiper-container loan__swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-user-check">
-											<use xlink:href="@img/icons/icons.svg#user-check"></use>
-										</svg>
-									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Що означає для клієнта</div>
-										<p>Фінансова оренда, можливість орендувати автомобіль та одночасно виплачувати.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-book-open">
-											<use xlink:href="@img/icons/icons.svg#book-open"></use>
-										</svg>
-									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Оформлення</div>
-										<p>Єдиний договір лізингу між клієнтом та компанією. Інших договорів та документів.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-car-usd">
-											<use xlink:href="@img/icons/icons.svg#car-usd"></use>
-										</svg>
-									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Що отримуємо</div>
-										<p>Відразу після підписання договору компанія передає зареєстрований та готовий.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-user-check">
-											<use xlink:href="@img/icons/icons.svg#user-check"></use>
-										</svg>
-									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Що означає для клієнта</div>
-										<p>Фінансова оренда, можливість орендувати автомобіль та одночасно виплачувати.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="icon-svg">
-										<svg class="i-book-open">
-											<use xlink:href="@img/icons/icons.svg#book-open"></use>
-										</svg>
-									</div>
-									<div class="loan-leasing__descrp">
-										<div class="heading">Оформлення</div>
-										<p>Єдиний договір лізингу між клієнтом та компанією. Інших договорів та документів.. <a href="##">Читати далі</a></p>
-									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
