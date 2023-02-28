@@ -321,9 +321,14 @@ input[type="text"]::placeholder {
 			font-size: 20px;
 			line-height: 28px;
 			color: #6667ab;
+			padding-right: 36px;
 		}
 		&::before {
 			content: "$";
+			position: absolute;
+			top: 50%;
+			right: 12px;
+			transform: translate(0, -50%);
 			display: block;
 			font-weight: 500;
 			font-size: 20px;
@@ -864,6 +869,11 @@ input[type="text"]::placeholder {
 	.seo-text-section {
 		padding-top: 20px;
 	}
+	.how-works {
+		.how-works__title {
+			margin-top: 12px;
+		}
+	}
 }
 .about-p-top {
 	padding-top: 40px;
@@ -1333,9 +1343,7 @@ input[type="text"]::placeholder {
 		}
 		&::after {
 			position: relative;
-			right: 0;
-			top: 50%;
-			transform: translateY(-50%);
+			top: 8px;
 			content: "";
 			display: block;
 			width: 32px;
@@ -1348,8 +1356,7 @@ input[type="text"]::placeholder {
 			content: "";
 			position: absolute;
 			right: 10px;
-			top: 50%;
-			transform: translateY(-50%);
+			top: 17px;
 			display: block;
 			width: 12px;
 			height: 12px;
@@ -1371,10 +1378,13 @@ input[type="text"]::placeholder {
 			padding-right: 50px;
 			position: relative;
 			width: 100%;
+		}
+		.input-wrap {
+			position: relative;
 			&::after {
 				content: "";
 				position: absolute;
-				right: 15px;
+				right: -42px;
 				top: 50%;
 				transform: translateY(-50%);
 				width: 20px;
@@ -1822,6 +1832,14 @@ input[type="text"]::placeholder {
 	overflow: hidden;
 	position: relative;
 }
+.txt-feedback {
+	border-radius: 4px;
+	padding: 3px 12px;
+	border: 1px solid #e5e5e5;
+}
+textarea {
+	resize: none;
+}
 //leasing-taxi page
 .leasing-taxi-p {
 	.choice-car-wrapper {
@@ -2007,6 +2025,9 @@ input[type="text"]::placeholder {
 //catalog page
 .catalog-page {
 	position: relative;
+	.need-help {
+		margin-bottom: 0;
+	}
 }
 .callback {
 	max-width: 90px;
@@ -2627,9 +2648,6 @@ input[type="text"]::placeholder {
 			}
 		}
 	}
-	.user-txt input {
-		width: calc(100% - 28px);
-	}
 	.user-txt-search {
 		position: relative;
 		&::after {
@@ -2873,6 +2891,66 @@ input[type="text"]::placeholder {
 		position: relative;
 	}
 }
+//popular-car index page
+.popular-car {
+	padding: 40px 0 20px 0;
+	.title {
+		margin-bottom: 25px;
+	}
+}
+.popular-car__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 30px;
+	li {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 32px;
+		a {
+			color: #6667ab;
+			display: block;
+		}
+		&:hover {
+			a {
+				color: #d45279;
+			}
+		}
+	}
+}
+//blog page
+.news__menu {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	ul {
+		display: flex;
+		background: #f5f5f5;
+		border-radius: 4px;
+		width: max-content;
+	}
+	li {
+		min-width: 204px;
+		&.active,
+		&:hover {
+			border-radius: 4px;
+			a {
+				color: #fff;
+			}
+		}
+		&:hover {
+			background: #4f4599;
+		}
+		&.active {
+			background: #6667ab;
+		}
+		a {
+			display: block;
+			color: #000;
+			text-align: center;
+			padding: 15px;
+		}
+	}
+}
 /* mobile */
 @media only screen and (min-width: 1440px) {
 	body .main {
@@ -3067,6 +3145,9 @@ input[type="text"]::placeholder {
 	.about-car__content .tab {
 		line-height: 30px;
 	}
+	.popular-car__list {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 @media (min-width: 993px) and (max-width: 1439px) {
 	.ic-info__left__wrap {
@@ -3216,6 +3297,9 @@ input[type="text"]::placeholder {
 	}
 	.equ-col {
 		width: calc((100% - 32px) / 2);
+	}
+	.popular-car__list {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 @media (min-width: 992px) and (max-width: 1279px) {
@@ -3983,6 +4067,12 @@ input[type="text"]::placeholder {
 		.partners {
 			margin-bottom: 0;
 		}
+	}
+	.popular-car {
+		padding-top: 20px;
+	}
+	.popular-car__list {
+		grid-template-columns: 1fr;
 	}
 }
 @media only screen and (max-width: 639px) {

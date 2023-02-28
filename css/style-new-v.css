@@ -681,10 +681,17 @@ input[type=text]::placeholder {
   font-size: 20px;
   line-height: 28px;
   color: #6667ab;
+  padding-right: 36px;
 }
 
 .form-leasing-main .user-txt::before {
   content: "$";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   display: block;
   font-weight: 500;
   font-size: 20px;
@@ -1364,6 +1371,10 @@ input[type=text]::placeholder {
   padding-top: 20px;
 }
 
+.about-p .how-works .how-works__title {
+  margin-top: 12px;
+}
+
 .about-p-top {
   padding-top: 40px;
 }
@@ -1941,11 +1952,7 @@ input[type=text]::placeholder {
 
 #form-become-partner .field-plus::after {
   position: relative;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 8px;
   content: "";
   display: block;
   width: 32px;
@@ -1959,10 +1966,7 @@ input[type=text]::placeholder {
   content: "";
   position: absolute;
   right: 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 17px;
   display: block;
   width: 12px;
   height: 12px;
@@ -1994,10 +1998,14 @@ input[type=text]::placeholder {
   width: 100%;
 }
 
-#form-become-partner .user-txt.f-user-link::after {
+#form-become-partner .user-txt .input-wrap {
+  position: relative;
+}
+
+#form-become-partner .user-txt .input-wrap::after {
   content: "";
   position: absolute;
-  right: 15px;
+  right: -42px;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -2568,6 +2576,16 @@ input[type=text]::placeholder {
   position: relative;
 }
 
+.txt-feedback {
+  border-radius: 4px;
+  padding: 3px 12px;
+  border: 1px solid #e5e5e5;
+}
+
+textarea {
+  resize: none;
+}
+
 .leasing-taxi-p .choice-car-wrapper {
   margin-bottom: 65px;
 }
@@ -2797,6 +2815,10 @@ input[type=text]::placeholder {
 
 .catalog-page {
   position: relative;
+}
+
+.catalog-page .need-help {
+  margin-bottom: 0;
 }
 
 .callback {
@@ -3605,10 +3627,6 @@ input[type=text]::placeholder {
   margin-bottom: 8px;
 }
 
-#form-about-car .user-txt input {
-  width: calc(100% - 28px);
-}
-
 #form-about-car .user-txt-search {
   position: relative;
 }
@@ -3917,6 +3935,87 @@ input[type=text]::placeholder {
   position: relative;
 }
 
+.popular-car {
+  padding: 40px 0 20px 0;
+}
+
+.popular-car .title {
+  margin-bottom: 25px;
+}
+
+.popular-car__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
+
+.popular-car__list li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.popular-car__list li a {
+  color: #6667ab;
+  display: block;
+}
+
+.popular-car__list li:hover a {
+  color: #d45279;
+}
+
+.news__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.news__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f5f5f5;
+  border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.news__menu li {
+  min-width: 204px;
+}
+
+.news__menu li.active,
+.news__menu li:hover {
+  border-radius: 4px;
+}
+
+.news__menu li.active a,
+.news__menu li:hover a {
+  color: #fff;
+}
+
+.news__menu li:hover {
+  background: #4f4599;
+}
+
+.news__menu li.active {
+  background: #6667ab;
+}
+
+.news__menu li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 15px;
+}
+
 /* mobile */
 
 @media only screen and (min-width: 1440px) {
@@ -4172,6 +4271,11 @@ input[type=text]::placeholder {
   .about-car__content .tab {
     line-height: 30px;
   }
+
+  .popular-car__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media only screen and (max-width: 1279px) {
@@ -4365,6 +4469,11 @@ input[type=text]::placeholder {
 
   .equ-col {
     width: calc((100% - 32px) / 2);
+  }
+
+  .popular-car__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -5309,6 +5418,15 @@ input[type=text]::placeholder {
 
   .leasing-p .partners {
     margin-bottom: 0;
+  }
+
+  .popular-car {
+    padding-top: 20px;
+  }
+
+  .popular-car__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 

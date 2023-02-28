@@ -12,8 +12,7 @@
 
 .user-txt.has-error .help-block-error {
   display: block;
-  position: absolute;
-  bottom: -21px;
+  margin-top: 8px;
   color: #d45279;
   font-size: 12px;
 }
@@ -111,24 +110,49 @@
 }
 
 .seo-text-section ol,
-.seo-text-section ul {
-  display: inline-block;
+.seo-text-section ul,
+.accordion__info ol,
+.accordion__info ul {
+  display: block;
   list-style: none;
   padding-left: 0;
 }
 
-.seo-text-section ol {
+.seo-text-section ol,
+.accordion__info ol {
   counter-reset: li;
 }
 
-.seo-text-section li {
+.seo-text-section ol li,
+.accordion__info ol li {
+  counter-increment: li;
+}
+
+.seo-text-section ol li::before,
+.accordion__info ol li::before {
+  content: counter(li) ". ";
+  color: #777777;
+  display: inline-block;
+  position: absolute;
+  left: 0rem;
+  top: 0;
+  font-weight: 400;
+  text-align: right;
+  width: 2rem;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.seo-text-section li,
+.accordion__info li {
   margin-bottom: 5px;
   padding-left: 3rem;
   position: relative;
   list-style: none !important;
 }
 
-.seo-text-section ul li::before {
+.seo-text-section li::before,
+.accordion__info li::before {
   content: "•";
   color: #777777;
   font-size: 24px;
@@ -139,22 +163,6 @@
   top: 0;
   width: 2rem;
   text-align: right;
-}
-
-#seo-text-section ol li {
-  counter-increment: li;
-}
-
-.seo-text-section ol li::before {
-  content: counter(li) ". ";
-  color: #777777;
-  display: inline-block;
-  position: absolute;
-  left: 0rem;
-  top: 0;
-  font-weight: 400;
-  text-align: right;
-  width: 2rem;
 }
 
 .seo-text-section h1,

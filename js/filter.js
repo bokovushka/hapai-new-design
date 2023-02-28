@@ -197,6 +197,7 @@ $(document).ready(function () {
 				return false; // клик по элементу игнорируем
 			} else {
 				$('.popup-bg-body').removeClass("open");
+				$('.btn-filter').removeClass("active");
 			}
 			$('.lock').removeClass("lock");
 			$('.a-sidebar.active').removeClass("active");

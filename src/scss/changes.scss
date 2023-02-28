@@ -6,8 +6,7 @@
 }
 .user-txt.has-error .help-block-error {
 	display: block;
-	position: absolute;
-	bottom: -21px;
+	margin-top: 8px;
 	color: #d45279;
 	font-size: 12px;
 }
@@ -92,50 +91,51 @@
 	line-height: 24px;
 }
 
-.seo-text-section ol,
-.seo-text-section ul {
-	display: inline-block;
-	list-style: none;
-	padding-left: 0;
-}
-
-.seo-text-section ol {
-	counter-reset: li;
-}
-
-.seo-text-section li {
-	margin-bottom: 5px;
-	padding-left: 3rem;
-	position: relative;
-	list-style: none !important;
-}
-
-.seo-text-section ul li::before {
-	content: "\2022";
-	color: #777777;
-	font-size: 24px;
-	font-weight: 700;
-	display: inline-block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 2rem;
-	text-align: right;
-}
-
-#seo-text-section ol li {
-	counter-increment: li;
-}
-.seo-text-section ol li::before {
-	content: counter(li) ". ";
-	color: #777777;
-	display: inline-block;
-	position: absolute;
-	left: 0rem;
-	top: 0;
-	font-weight: 400;
-	text-align: right;
-	width: 2rem;
+.seo-text-section,
+.accordion__info {
+	ol,
+	ul {
+		display: block;
+		list-style: none;
+		padding-left: 0;
+	}
+	ol {
+		counter-reset: li;
+		li {
+			counter-increment: li;
+			&::before {
+				content: counter(li) ". ";
+				color: #777777;
+				display: inline-block;
+				position: absolute;
+				left: 0rem;
+				top: 0;
+				font-weight: 400;
+				text-align: right;
+				width: 2rem;
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+	li {
+		margin-bottom: 5px;
+		padding-left: 3rem;
+		position: relative;
+		list-style: none !important;
+		&::before {
+			content: "\2022";
+			color: #777777;
+			font-size: 24px;
+			font-weight: 700;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 2rem;
+			text-align: right;
+		}
+	}
 }
 
 .seo-text-section h1,

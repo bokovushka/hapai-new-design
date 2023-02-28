@@ -33,7 +33,7 @@ $(document).ready(function () {
 	setEqualHeight($(".item-loop__txtblock .heading"));
 	setEqualHeight($(".article__swiper .swiper-slide"));
 	setEqualHeight($(".happy-customers__swiper .swiper-slide"));
-	setEqualHeight($(".favorite__main .item-loop__link"));
+	setEqualHeight($(".favorite__main .item-loop"));
 	setEqualHeight($(".item-loop__txtblock"));
 });
 
@@ -224,7 +224,7 @@ $(document).ready(function () {
 			return false;
 		}
 		else {
-			$(".more-user-link").append('<div class="user-txt f-user-link"><input type="text" name="client_link" placeholder="Посилання з авто.ріа"><p class="help-block help-block-error">Обов&#39;язкове поле.</p ></div >');
+			$(".more-user-link").append('<div class="user-txt f-user-link"><div class="input-wrap"><input type="text" name="client_link" placeholder="Посилання з авто.ріа"></div><p class="help-block help-block-error">Обов&#39;язкове поле.</p ></div >');
 		}
 	});
 });
