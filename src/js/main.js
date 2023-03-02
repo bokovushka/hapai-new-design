@@ -414,3 +414,12 @@ $(function checkHeight() {
 	}
 	setTimeout(checkHeight, 500);
 });
+
+
+//filter
+$(document).ready(function () {
+	$(".filter-item .filter-title").on("click", function () {
+		$(this).next(".filter-list").toggleClass("show");
+		$(this).toggleClass("active");
+	});
+});

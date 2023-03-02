@@ -153,10 +153,9 @@
 	h2 {
 		font-size: 32px;
 		line-height: 44px;
+		text-align: left !important;
 	}
 	h2 {
-		font-size: 32px;
-		line-height: 44px;
 		&:not(:first-child) {
 			padding-top: 40px;
 			margin-top: 40px;

@@ -230,8 +230,8 @@ new Swiper(".loan-leasing .loan__swiper", {
 		}
 	},
 	navigation: {
-		prevEl: ".loan-leasing .loan-swiper__buttons .icon-u_arrow-left",
-		nextEl: ".loan-leasing .loan-swiper__buttons .icon-u_arrow-right"
+		prevEl: ".loan-leasing .leasing-swiper__buttons .icon-u_arrow-left",
+		nextEl: ".loan-leasing .leasing-swiper__buttons .icon-u_arrow-right"
 	},
 })
 

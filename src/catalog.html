@@ -133,6 +133,10 @@
 									</div>
 									<div class="filter-item f-brand">
 										<div class="filter-title">Марка авто</div>
+										<div class="filter-list f-tags">
+											<input id="f-brand" placeholder="Введіть марку авто">
+										</div>
+										<div class="filter-title">Модель авто</div>
 										<div class="filter-list f-checkbox">
 											<label for="chx-2-200">
 												<span class="name">BMW</span>
@@ -154,116 +158,109 @@
 												<!--span class="i-count">(5авто)</span-->
 												<input type="checkbox" name="chx-2-290" onclick="ajaxReload($(this).val())" value="/catalog/filter-honda" id="chx-2-290">
 											</label>
-											<label for="chx-2-171">
-												<span class="name">Hyundai</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-171" onclick="ajaxReload($(this).val())" value="/catalog/filter-hyundai" id="chx-2-171">
-											</label>
-											<label for="chx-2-229">
-												<span class="name">Jeep</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-229" onclick="ajaxReload($(this).val())" value="/catalog/filter-jeep" id="chx-2-229">
-											</label>
-											<label for="chx-2-204">
-												<span class="name">Kia</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-204" onclick="ajaxReload($(this).val())" value="/catalog/filter-kia" id="chx-2-204">
-											</label>
-											<label for="chx-2-232">
-												<span class="name">Lexus</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-232" onclick="ajaxReload($(this).val())" value="/catalog/filter-lexus" id="chx-2-232">
-											</label>
-											<label for="chx-2-234">
-												<span class="name">Mazda</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-234" onclick="ajaxReload($(this).val())" value="/catalog/filter-mazda" id="chx-2-234">
-											</label>
-											<label for="chx-2-182">
-												<span class="name">Mercedes-Benz</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-182" onclick="ajaxReload($(this).val())" value="/catalog/filter-mercedes-benz" id="chx-2-182">
-											</label>
-											<label for="chx-2-278">
-												<span class="name">MINI</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-278" onclick="ajaxReload($(this).val())" value="/catalog/filter-mini" id="chx-2-278">
-											</label>
-											<label for="chx-2-274">
-												<span class="name">Mitsubishi</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-274" onclick="ajaxReload($(this).val())" value="/catalog/filter-mitsubishi" id="chx-2-274">
-											</label>
-											<label for="chx-2-169">
-												<span class="name">Nissan</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-169" onclick="ajaxReload($(this).val())" value="/catalog/filter-nissan" id="chx-2-169">
-											</label>
-											<label for="chx-2-247">
-												<span class="name">Opel</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-247" onclick="ajaxReload($(this).val())" value="/catalog/filter-opel" id="chx-2-247">
-											</label>
-											<label for="chx-2-176">
-												<span class="name">Peugeot</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-176" onclick="ajaxReload($(this).val())" value="/catalog/filter-peugeot" id="chx-2-176">
-											</label>
-											<label for="chx-2-297">
-												<span class="name">Porsche</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-297" onclick="ajaxReload($(this).val())" value="/catalog/filter-porsche" id="chx-2-297">
-											</label>
-											<label for="chx-2-314">
-												<span class="name">Ravon</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-314" onclick="ajaxReload($(this).val())" value="/catalog/filter-ravon" id="chx-2-314">
-											</label>
-											<label for="chx-2-159">
-												<span class="name">Renault</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-159" onclick="ajaxReload($(this).val())" value="/catalog/filter-renault" id="chx-2-159">
-											</label>
-											<label for="chx-2-174">
-												<span class="name">Skoda</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-174" onclick="ajaxReload($(this).val())" value="/catalog/filter-skoda" id="chx-2-174">
-											</label>
-											<label for="chx-2-306">
-												<span class="name">Smart</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-306" onclick="ajaxReload($(this).val())" value="/catalog/filter-smart" id="chx-2-306">
-											</label>
-											<label for="chx-2-265">
-												<span class="name">Suzuki</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-265" onclick="ajaxReload($(this).val())" value="/catalog/filter-suzuki" id="chx-2-265">
-											</label>
-											<label for="chx-2-312">
-												<span class="name">Tesla</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-312" onclick="ajaxReload($(this).val())" value="/catalog/filter-tesla" id="chx-2-312">
-											</label>
-											<label for="chx-2-202">
-												<span class="name">Toyota</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-202" onclick="ajaxReload($(this).val())" value="/catalog/filter-toyota" id="chx-2-202">
-											</label>
-											<label for="chx-2-164">
-												<span class="name">Volkswagen</span>
-												<!--span class="i-count">(5авто)</span-->
-												<input type="checkbox" name="chx-2-164" onclick="ajaxReload($(this).val())" value="/catalog/filter-volkswagen" id="chx-2-164">
-											</label>
-										</div>
-									</div>
-
-									<div class="filter-item f-price">
-										<div class="filter-title">Об'єм двигуна (мл)</div>
-										<div class="filter-list f-range group-f" data-optionname="volume">
-											<input type="number" data-min="998" data-max="3600" value="998" class="slide-group-input input-min" style="margin-right:7px">
-											<input type="number" data-min="998" data-max="3600" value="3600" class="slide-group-input input-max">
-											<div class="slider-range" data-slider-min="998" data-slider-max="3600" data-slider-step="100" data-slider-value="[998,3600]"></div>
-											<div class="slider-range-line"></div>
+											<div class="fmoreButton">Показати ще (<span class="fmore-count">...</span>)</div>
+											<div class="fshowmore" style="display: none;">
+												<label for="chx-2-171">
+													<span class="name">Hyundai</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-171" onclick="ajaxReload($(this).val())" value="/catalog/filter-hyundai" id="chx-2-171">
+												</label>
+												<label for="chx-2-229">
+													<span class="name">Jeep</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-229" onclick="ajaxReload($(this).val())" value="/catalog/filter-jeep" id="chx-2-229">
+												</label>
+												<label for="chx-2-204">
+													<span class="name">Kia</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-204" onclick="ajaxReload($(this).val())" value="/catalog/filter-kia" id="chx-2-204">
+												</label>
+												<label for="chx-2-232">
+													<span class="name">Lexus</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-232" onclick="ajaxReload($(this).val())" value="/catalog/filter-lexus" id="chx-2-232">
+												</label>
+												<label for="chx-2-234">
+													<span class="name">Mazda</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-234" onclick="ajaxReload($(this).val())" value="/catalog/filter-mazda" id="chx-2-234">
+												</label>
+												<label for="chx-2-182">
+													<span class="name">Mercedes-Benz</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-182" onclick="ajaxReload($(this).val())" value="/catalog/filter-mercedes-benz" id="chx-2-182">
+												</label>
+												<label for="chx-2-278">
+													<span class="name">MINI</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-278" onclick="ajaxReload($(this).val())" value="/catalog/filter-mini" id="chx-2-278">
+												</label>
+												<label for="chx-2-274">
+													<span class="name">Mitsubishi</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-274" onclick="ajaxReload($(this).val())" value="/catalog/filter-mitsubishi" id="chx-2-274">
+												</label>
+												<label for="chx-2-169">
+													<span class="name">Nissan</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-169" onclick="ajaxReload($(this).val())" value="/catalog/filter-nissan" id="chx-2-169">
+												</label>
+												<label for="chx-2-247">
+													<span class="name">Opel</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-247" onclick="ajaxReload($(this).val())" value="/catalog/filter-opel" id="chx-2-247">
+												</label>
+												<label for="chx-2-176">
+													<span class="name">Peugeot</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-176" onclick="ajaxReload($(this).val())" value="/catalog/filter-peugeot" id="chx-2-176">
+												</label>
+												<label for="chx-2-297">
+													<span class="name">Porsche</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-297" onclick="ajaxReload($(this).val())" value="/catalog/filter-porsche" id="chx-2-297">
+												</label>
+												<label for="chx-2-314">
+													<span class="name">Ravon</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-314" onclick="ajaxReload($(this).val())" value="/catalog/filter-ravon" id="chx-2-314">
+												</label>
+												<label for="chx-2-159">
+													<span class="name">Renault</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-159" onclick="ajaxReload($(this).val())" value="/catalog/filter-renault" id="chx-2-159">
+												</label>
+												<label for="chx-2-174">
+													<span class="name">Skoda</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-174" onclick="ajaxReload($(this).val())" value="/catalog/filter-skoda" id="chx-2-174">
+												</label>
+												<label for="chx-2-306">
+													<span class="name">Smart</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-306" onclick="ajaxReload($(this).val())" value="/catalog/filter-smart" id="chx-2-306">
+												</label>
+												<label for="chx-2-265">
+													<span class="name">Suzuki</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-265" onclick="ajaxReload($(this).val())" value="/catalog/filter-suzuki" id="chx-2-265">
+												</label>
+												<label for="chx-2-312">
+													<span class="name">Tesla</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-312" onclick="ajaxReload($(this).val())" value="/catalog/filter-tesla" id="chx-2-312">
+												</label>
+												<label for="chx-2-202">
+													<span class="name">Toyota</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-202" onclick="ajaxReload($(this).val())" value="/catalog/filter-toyota" id="chx-2-202">
+												</label>
+												<label for="chx-2-164">
+													<span class="name">Volkswagen</span>
+													<!--span class="i-count">(5авто)</span-->
+													<input type="checkbox" name="chx-2-164" onclick="ajaxReload($(this).val())" value="/catalog/filter-volkswagen" id="chx-2-164">
+												</label>
+											</div>
 										</div>
 									</div>
 
@@ -293,6 +290,16 @@
 											<input type="number" data-min="5000" data-max="272000" value="5000" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="5000" data-max="272000" value="272000" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="5000" data-slider-max="272000" data-slider-step="100" data-slider-value="[5000,272000]"></div>
+											<div class="slider-range-line"></div>
+										</div>
+									</div>
+
+									<div class="filter-item f-price">
+										<div class="filter-title">Об'єм двигуна (мл)</div>
+										<div class="filter-list f-range group-f" data-optionname="volume">
+											<input type="number" data-min="998" data-max="3600" value="998" class="slide-group-input input-min" style="margin-right:7px">
+											<input type="number" data-min="998" data-max="3600" value="3600" class="slide-group-input input-max">
+											<div class="slider-range" data-slider-min="998" data-slider-max="3600" data-slider-step="100" data-slider-value="[998,3600]"></div>
 											<div class="slider-range-line"></div>
 										</div>
 									</div>
@@ -335,21 +342,24 @@
 												<!--span class="i-count">(1223 авто)</span-->
 												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-4-173" value="/catalog/filter-sirij" id="chx-4-173">
 											</label>
-											<label for="chx-4-166">
-												<span class="name">Синій</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-4-166" value="/catalog/filter-sinij" id="chx-4-166">
-											</label>
-											<label for="chx-4-219">
-												<span class="name">Червоний</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-4-219" value="/catalog/filter-chervonij" id="chx-4-219">
-											</label>
-											<label for="chx-4-178">
-												<span class="name">Чорний</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-4-178" value="/catalog/filter-chornij" id="chx-4-178">
-											</label>
+											<div class="fmoreButton">Показати ще (<span class="fmore-count">...</span>)</div>
+											<div class="fshowmore" style="display: none;">
+												<label for="chx-4-166">
+													<span class="name">Синій</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-4-166" value="/catalog/filter-sinij" id="chx-4-166">
+												</label>
+												<label for="chx-4-219">
+													<span class="name">Червоний</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-4-219" value="/catalog/filter-chervonij" id="chx-4-219">
+												</label>
+												<label for="chx-4-178">
+													<span class="name">Чорний</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-4-178" value="/catalog/filter-chornij" id="chx-4-178">
+												</label>
+											</div>
 										</div>
 									</div>
 									<div class="filter-item">
@@ -375,11 +385,14 @@
 												<!--span class="i-count">(1223 авто)</span-->
 												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-7-162" value="/catalog/filter-dizel" id="chx-7-162">
 											</label>
-											<label for="chx-7-269">
-												<span class="name">Электро</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-7-269" value="/catalog/filter-elektro" id="chx-7-269">
-											</label>
+											<div class="fmoreButton">Показати ще (<span class="fmore-count">...</span>)</div>
+											<div class="fshowmore" style="display: none;">
+												<label for="chx-7-269">
+													<span class="name">Электро</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-7-269" value="/catalog/filter-elektro" id="chx-7-269">
+												</label>
+											</div>
 										</div>
 									</div>
 									<div class="filter-item">
@@ -405,11 +418,14 @@
 												<!--span class="i-count">(1223 авто)</span-->
 												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-18-191" value="/catalog/filter-pozashlyahovik" id="chx-18-191">
 											</label>
-											<label for="chx-18-188">
-												<span class="name">Сімейний</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-18-188" value="/catalog/filter-simejnij" id="chx-18-188">
-											</label>
+											<div class="fmoreButton">Показати ще (<span class="fmore-count">...</span>)</div>
+											<div class="fshowmore" style="display: none;">
+												<label for="chx-18-188">
+													<span class="name">Сімейний</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-18-188" value="/catalog/filter-simejnij" id="chx-18-188">
+												</label>
+											</div>
 										</div>
 									</div>
 									<div class="filter-item">
@@ -435,26 +451,29 @@
 												<!--span class="i-count">(1223 авто)</span-->
 												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-209" value="/catalog/filter-miniven" id="chx-15-209">
 											</label>
-											<label for="chx-15-210">
-												<span class="name">Позашляховик</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-210" value="/catalog/filter-vnedorozhnik" id="chx-15-210">
-											</label>
-											<label for="chx-15-214">
-												<span class="name">Седан</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-214" value="/catalog/filter-sedan" id="chx-15-214">
-											</label>
-											<label for="chx-15-207">
-												<span class="name">Універсал</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-207" value="/catalog/filter-universal" id="chx-15-207">
-											</label>
-											<label for="chx-15-208">
-												<span class="name">Хетчбек</span>
-												<!--span class="i-count">(1223 авто)</span-->
-												<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-208" value="/catalog/filter-hetchbek" id="chx-15-208">
-											</label>
+											<div class="fmoreButton">Показати ще (<span class="fmore-count">...</span>)</div>
+											<div class="fshowmore" style="display: none;">
+												<label for="chx-15-210">
+													<span class="name">Позашляховик</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-210" value="/catalog/filter-vnedorozhnik" id="chx-15-210">
+												</label>
+												<label for="chx-15-214">
+													<span class="name">Седан</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-214" value="/catalog/filter-sedan" id="chx-15-214">
+												</label>
+												<label for="chx-15-207">
+													<span class="name">Універсал</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-207" value="/catalog/filter-universal" id="chx-15-207">
+												</label>
+												<label for="chx-15-208">
+													<span class="name">Хетчбек</span>
+													<!--span class="i-count">(1223 авто)</span-->
+													<input type="checkbox" onclick="ajaxReload($(this).val())" name="chx-15-208" value="/catalog/filter-hetchbek" id="chx-15-208">
+												</label>
+											</div>
 										</div>
 									</div>
 									<div class="filter-item filter-place">
