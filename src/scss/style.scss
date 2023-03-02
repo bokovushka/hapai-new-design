@@ -458,7 +458,6 @@ select:-webkit-autofill:focus {
 	-webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
 }
 .title,
-.title-item__b .title,
 .choice-help__b .title,
 .partners .title,
 .price,
@@ -881,6 +880,18 @@ input {
 }
 .title-item__b .title {
 	padding-right: 60px;
+	font-weight: 600;
+	font-size: unset;
+	line-height: unset;
+	.title__car-name {
+		font-size: 32px;
+		line-height: 44px;
+	}
+	.title__car-id {
+		font-size: 14px;
+		line-height: 17px;
+		color: #a9a9a9;
+	}
 }
 .title-item__b .heading {
 	position: absolute;
