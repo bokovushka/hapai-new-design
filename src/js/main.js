@@ -423,3 +423,5 @@ $(document).ready(function () {
 		$(this).toggleClass("active");
 	});
 });
+
+$("table").wrapAll($("<div style='overflow: scroll;'></div>"));

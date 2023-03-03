@@ -84,7 +84,7 @@ video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	// font: inherit;
 	vertical-align: baseline;
 } /* make sure to set some focus styles for accessibility */
 :focus {
@@ -1162,16 +1162,19 @@ input {
 	border-radius: 4px;
 	width: 228px;
 }
-.filter-list.f-tags:after {
-	font-family: "hapai";
-	text-align: center;
-	content: "\e928";
-	color: #a9a9a9;
-	position: absolute;
-	right: 50px;
-	bottom: 0;
-	transform: translate(-50%, -50%);
-	font-size: 20px;
+.f-tags {
+	position: relative;
+	&:after {
+		font-family: "hapai";
+		text-align: center;
+		content: "\e928";
+		color: #a9a9a9;
+		position: absolute;
+		right: 50px;
+		bottom: 0;
+		transform: translate(-50%, -50%);
+		font-size: 20px;
+	}
 }
 .filter-list.f-range {
 	overflow: visible;
@@ -4752,9 +4755,6 @@ input.field {
 }
 #popup-installment .popup__content .authorization__wrap .popup-auction__title {
 	margin-bottom: 20px;
-}
-#popup-installment .popup__content .authorization__wrap .user-txt {
-	padding: 12px;
 }
 #popup-installment .popup__content .popup__close .icon-fi_x {
 	font-size: 24px;

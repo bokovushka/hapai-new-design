@@ -213,6 +213,13 @@
 					</div>
 				</section>
 
+				<section class="redemption-place">
+					<div class="container">
+						<div class="title">Місця викупу</div>
+						<div id="map" class="map"></div>
+					</div>
+				</section>
+
 				<section id="qa-loop" class="partners sell-car-slider">
 					<div class="container">
 						<div class="partners__title">
@@ -1238,7 +1245,8 @@
 	<script src="js/script.js"></script>
 	<script src="files/assets/b1b6c6cc/yii.validation.js"></script>
 	<script src="files/assets/b1b6c6cc/yii.activeForm.js"></script>
-	<script>jQuery(function ($) {
+	<script>
+		jQuery(function ($) {
 			jQuery('#form-popup-login').yiiActiveForm([{
 				"id": "loginform-phone",
 				"name": "phone",
@@ -1270,7 +1278,50 @@
 					}, value);
 				}
 			}], { "validationUrl": "auth\/login-validate" });
-		});</script>
+		});
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUf9Jypy7RWv2rQFR2CWaTvbCQ4zMXzmQ&callback=initMap&libraries=&v=weekly&_v=20220811142707"></script>
+	<script>
+		function initMap() {
+			const tourStops = [
+				[{ lat: 48.50293200157937, lng: 35.08718195599924 }, "м. Дніпро, вул. Осіння 3к"],
+				[{ lat: 50.46010897151771, lng: 30.531091868470828 }, "м. Київ"],
+				[{ lat: 46.48022186869828, lng: 30.720706665158588 }, "м. Одеса"],
+				[{ lat: 49.81279485039029, lng: 24.01805524069895 }, "м. Львів, вул. Стрийська 98а"]
+			];
+			var centerMap = new google.maps.LatLng(48.946043807436794, 31.262548574552813);
+			map = new google.maps.Map(document.getElementById("map"), {
+				center: centerMap,
+				zoom: 6.5,
+				disableDefaultUI: true,
+				// fullscreenControl: false,
+				// mapTypeControl: false,
+				scaleControl: true,
+				zoomControl: true,
+				scrollwheel: false,
+			});
+
+			const infoWindow = new google.maps.InfoWindow();
+
+			image = 'img/marker.png',
+
+				tourStops.forEach(([position, title], i) => {
+					const marker = new google.maps.Marker({
+						position,
+						map,
+						title: `${title}`,
+						animation: google.maps.Animation.BOUNCE,
+						icon: image
+					});
+
+					marker.addListener("click", () => {
+						infoWindow.close();
+						infoWindow.setContent(marker.getTitle());
+						infoWindow.open(marker.getMap(), marker);
+					});
+				});
+		}
+	</script>
 </body>
 
 </html>

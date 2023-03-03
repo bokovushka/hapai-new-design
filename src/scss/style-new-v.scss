@@ -2983,9 +2983,13 @@ textarea {
 	}
 	.filter-list {
 		display: none;
+		&.f-range.show {
+			display: flex !important;
+		}
 	}
 	.filter-title {
 		position: relative;
+		cursor: pointer;
 		&::before {
 			content: "";
 			position: absolute;
@@ -3010,6 +3014,38 @@ textarea {
 	&::placeholder {
 		color: #777777 !important;
 	}
+}
+// google map
+.map {
+	height: 480px;
+	width: 100%;
+}
+
+.gm-style {
+	.gm-style-iw {
+		padding: 15px 20px;
+		font-size: 20px;
+		button.gm-ui-hover-effect {
+			top: -4px !important;
+			right: -4px !important;
+		}
+	}
+}
+// .gm-style-mtc,
+// .gmnoprint,
+// .gm-svpc,
+// .gm-style button,
+// .gm-style > div > a > div > img {
+// 	display: none;
+// }
+.redemption-place {
+	padding: 40px 0 0 0;
+	.title {
+		margin-bottom: 20px;
+	}
+}
+.aticle-main {
+	padding-bottom: 20px;
 }
 /* mobile */
 @media only screen and (min-width: 1440px) {
@@ -3207,6 +3243,14 @@ textarea {
 	}
 	.popular-car__list {
 		grid-template-columns: repeat(3, 1fr);
+	}
+	.redemption-place {
+		.container {
+			padding: 0 !important;
+		}
+		.title {
+			padding: 0 20px;
+		}
 	}
 }
 @media (min-width: 993px) and (max-width: 1439px) {
@@ -3574,6 +3618,11 @@ textarea {
 	}
 	.filter-item:last-child {
 		margin-bottom: 20px;
+	}
+	.redemption-place {
+		.title {
+			padding: 0 12px;
+		}
 	}
 }
 @media only screen and (max-width: 991px) {

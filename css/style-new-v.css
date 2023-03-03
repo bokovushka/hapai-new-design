@@ -4058,8 +4058,15 @@ textarea {
   display: none;
 }
 
+.filter-item .filter-list.f-range.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .filter-item .filter-title {
   position: relative;
+  cursor: pointer;
 }
 
 .filter-item .filter-title::before {
@@ -4102,6 +4109,33 @@ input::-ms-input-placeholder, textarea::-ms-input-placeholder {
 input::placeholder,
 textarea::placeholder {
   color: #777777 !important;
+}
+
+.map {
+  height: 480px;
+  width: 100%;
+}
+
+.gm-style .gm-style-iw {
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.gm-style .gm-style-iw button.gm-ui-hover-effect {
+  top: -4px !important;
+  right: -4px !important;
+}
+
+.redemption-place {
+  padding: 40px 0 0 0;
+}
+
+.redemption-place .title {
+  margin-bottom: 20px;
+}
+
+.aticle-main {
+  padding-bottom: 20px;
 }
 
 /* mobile */
@@ -4363,6 +4397,14 @@ textarea::placeholder {
   .popular-car__list {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .redemption-place .container {
+    padding: 0 !important;
+  }
+
+  .redemption-place .title {
+    padding: 0 20px;
   }
 }
 
@@ -4799,6 +4841,10 @@ textarea::placeholder {
 
   .filter-item:last-child {
     margin-bottom: 20px;
+  }
+
+  .redemption-place .title {
+    padding: 0 12px;
   }
 }
 
