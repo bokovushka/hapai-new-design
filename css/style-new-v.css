@@ -3936,7 +3936,7 @@ textarea {
   color: #2360a5;
 }
 
-.remaining-content span {
+.remaining-content > .continued-content {
   display: none;
 }
 
@@ -3944,7 +3944,7 @@ textarea {
   height: 100%;
 }
 
-.tab-equ .btn-style-2 {
+.tab-equ .show-more-button {
   margin: 0 8px;
   margin-top: 20px;
 }
@@ -4136,6 +4136,15 @@ textarea::placeholder {
 
 .aticle-main {
   padding-bottom: 20px;
+}
+
+.title-item .title-item__b {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.ic-excerpt .expandable .morelink.less {
+  display: block;
 }
 
 /* mobile */

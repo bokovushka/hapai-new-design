@@ -349,6 +349,7 @@ $(function () {
 //see more
 $(document).ready(function () {
 	var showChar = 50;
+	var showCharProduct = 600;
 	var ellipsestext = "...";
 	var moretext = "Читати далі";
 	var lesstext = "Згорнути";
@@ -361,14 +362,33 @@ $(document).ready(function () {
 				show_content +
 				'<span class="moreelipses">' +
 				ellipsestext +
-				'</span><span class="remaining-content"><span>' +
+				'</span><span class="remaining-content"><span class="continued-content">' +
 				hide_content +
-				'</span>&nbsp;&nbsp;<a href="" class="morelink">' +
+				'<span>&nbsp;</span></span><a href="" class="morelink">' +
 				moretext +
 				"</a></span>";
 			$(this).html(html);
 		}
 	});
+
+	$(".ic-excerpt .expandable-product").each(function () {
+		var content = $(this).html();
+		if (content.length > showCharProduct) {
+			var show_content = content.substr(0, showCharProduct);
+			var hide_content = content.substr(showCharProduct, content.length - showCharProduct);
+			var html =
+				show_content +
+				'<span class="moreelipses">' +
+				ellipsestext +
+				'</span><span class="remaining-content"><span class="continued-content">' +
+				hide_content +
+				'<span>&nbsp;</span></span><a href="" class="morelink">' +
+				moretext +
+				"</a></span>";
+			$(this).html(html);
+		}
+	});
+
 
 	$(".morelink").click(function () {
 		if ($(this).hasClass("less")) {
@@ -384,26 +404,7 @@ $(document).ready(function () {
 	});
 });
 
-
-//product page // more button
-
-$(function () {
-	let max = 6;
-
-	$('.tab-equ').each(function () {
-		let items = $(this).find('equ-col'),
-			len = items.length;
-		if (len > max) {
-			items = items.slice(max, len);
-			items.wrapAll('<div class="hide"></div>');
-		}
-	}).on('click', '.btn-style-2', function () {
-		$(this).closest('.tab-equ').find('.hide > .equ-col').unwrap();
-		$(this).remove();
-	});
-});
-
-// height
+// height product
 $(function checkHeight() {
 	if (window.innerWidth > 992 && window.innerWidth < 1440) {
 		var height = $('.ic-info__left__wrap').height();
@@ -424,4 +425,34 @@ $(document).ready(function () {
 	});
 });
 
+//table scroll
 $("table").wrapAll($("<div style='overflow: scroll;'></div>"));
+
+//show more //product page //more button
+$(function () {
+	$('.tab-equ').each(function () {
+		let max = 6;
+		let items = $(this).find('.equ-col'),
+			len = items.length;
+		if (len > max) {
+			items = items.slice(max, len);
+			items.wrapAll('<div class="hide"></div>');
+		}
+	})
+}).on('click', '.btn-style-2', function () {
+	$(this).closest('.tab-equ').toggleClass("show-more").find('.hide > .equ-col').unwrap();
+	if ($(".tab-equ").hasClass("show-more")) {
+		$(this).text("Сховати");
+	} else {
+		$(this).text("Переглянути більше");
+		let max = 6;
+		$('.tab-equ').each(function () {
+			let items = $(this).find('.equ-col'),
+				len = items.length;
+			if (len > max) {
+				items = items.slice(max, len);
+				items.wrapAll('<div class="hide"></div>');
+			}
+		})
+	}
+});

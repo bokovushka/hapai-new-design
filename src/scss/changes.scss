@@ -149,10 +149,14 @@
 }
 
 .seo-text-section {
-	h1,
-	h2 {
+	h1 {
 		font-size: 32px;
 		line-height: 44px;
+		font-weight: 600;
+	}
+	h2 {
+		font-size: 28px;
+		line-height: 32px;
 		text-align: left !important;
 	}
 	h2 {
