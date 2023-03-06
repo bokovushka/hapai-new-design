@@ -1303,14 +1303,14 @@
 
 			const infoWindow = new google.maps.InfoWindow();
 
-			image = 'img/marker.png',
+			image = 'img/marker.svg',
 
 				tourStops.forEach(([position, title], i) => {
 					const marker = new google.maps.Marker({
 						position,
 						map,
 						title: `${title}`,
-						animation: google.maps.Animation.BOUNCE,
+						// animation: google.maps.Animation.BOUNCE,
 						icon: image
 					});
 
