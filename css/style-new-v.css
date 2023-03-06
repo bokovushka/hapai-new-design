@@ -3946,7 +3946,18 @@ textarea {
 
 .tab-equ .show-more-button {
   margin: 0 8px;
-  margin-top: 20px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.tab-equ .show-more-button .btn {
+  background: transparent;
+  text-decoration: underline;
+  color: #2360a5;
+  font-weight: 400;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .product-page .recommend {
@@ -4143,7 +4154,7 @@ textarea::placeholder {
   line-height: 42px;
 }
 
-.ic-excerpt .expandable .morelink.less {
+.ic-excerpt .expandable-product .morelink.less {
   display: block;
 }
 
@@ -4719,12 +4730,9 @@ textarea::placeholder {
     margin-right: 0;
   }
 
-  .ic-middle {
-    padding-left: 20px;
-  }
-
   .ic-bottom {
-    padding-top: 8px;
+    padding-top: 20px;
+    padding-left: 0;
   }
 
   .ic-top__right {
@@ -4854,6 +4862,26 @@ textarea::placeholder {
 
   .redemption-place .title {
     padding: 0 12px;
+  }
+
+  .ic-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .ic-middle {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .equ-col {
+    width: calc((100% - 48px) / 3);
   }
 }
 
@@ -5809,6 +5837,10 @@ textarea::placeholder {
   .car-buy-description__title .title {
     margin-left: 0;
     margin-top: 20px;
+  }
+
+  .equ-col {
+    width: calc((100% - 32px) / 2);
   }
 }
 
