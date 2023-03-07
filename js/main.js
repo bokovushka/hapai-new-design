@@ -31,8 +31,8 @@ $(document).ready(function () {
 	}
 
 	setEqualHeight($(".item-loop__txtblock .heading"));
-	setEqualHeight($(".article__swiper .swiper-slide"));
-	setEqualHeight($(".happy-customers__swiper .swiper-slide"));
+	// setEqualHeight($(".article__swiper .swiper-slide"));
+	// setEqualHeight($(".happy-customers__swiper .swiper-slide"));
 	setEqualHeight($(".favorite__main .item-loop"));
 	setEqualHeight($(".item-loop__txtblock"));
 });
@@ -47,18 +47,18 @@ $(document).on('click', '.btn-favor', function () {
 	}
 });
 
-$(document).on('click', 'a[href^="#"]', function (e) {
-	var anchor = $(this);
-	$("html, body")
-		.stop()
-		.animate(
-			{
-				scrollTop: $(anchor.attr("href")).offset().top - 20,
-			},
-			800
-		);
-	e.preventDefault();
-});
+// $(document).on('click', 'a[href^="#"]', function (e) {
+// 	var anchor = $(this);
+// 	$("html, body")
+// 		.stop()>>
+// 		.animate(
+// 			{
+// 				scrollTop: $(anchor.attr("href")).offset().top - 20,
+// 			},
+// 			800
+// 		);
+// 	e.preventDefault();
+// });
 
 //popup-authorization
 
@@ -441,7 +441,7 @@ $(function () {
 		}
 
 	})
-}).on('click', '.btn', function () {
+}).on('click', '.tab-equ .btn', function () {
 	$(this).closest('.tab-equ').toggleClass("show-more").find('.hide > .equ-col').unwrap();
 	if ($(".tab-equ").hasClass("show-more")) {
 		$(this).text("Сховати");

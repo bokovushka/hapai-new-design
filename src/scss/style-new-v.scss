@@ -125,32 +125,50 @@ input[type="text"]::placeholder {
 			padding-top: 50px;
 			z-index: 3;
 			border-radius: 4px;
+			.submenu__wrap {
+				box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+				border-radius: 12px;
+				background: #fff;
+				overflow: hidden;
+				padding: 15px 0 12px 22px;
+			}
 			.submenu__list {
-				height: 130px;
+				height: 100%;
+				max-height: 205px;
+				min-width: 185px;
 				overflow-y: scroll;
+				padding-right: 10px;
+				margin-right: 10px;
 				&::-webkit-scrollbar {
 					width: 8px;
 				}
 				&::-webkit-scrollbar-track {
 					background: #f5f6f8;
-					border-radius: 4px;
+					border-radius: 20px;
 				}
 				&::-webkit-scrollbar-thumb {
 					background-color: #dfe0ed;
-					border-radius: 4px;
+					border-radius: 20px;
 				}
 			}
 			li {
-				line-height: 22px;
-				font-size: 16px;
-				padding: 14px;
+				font-weight: 300;
+				font-size: 12px;
+				line-height: 15px;
+				padding: 8px 0;
 				background-color: #ffffff;
-				border-radius: 4px;
 				cursor: pointer;
-				border: 1px solid #e5e5e5;
+				&:first-child {
+					padding-top: 0;
+				}
+				&:last-child {
+					padding-bottom: 0;
+				}
 				&:hover {
-					background: #4f4599;
-					color: #ffffff;
+					color: #4f4599;
+				}
+				&:not(:last-child) {
+					border-bottom: 1px solid #e5e5e5;
 				}
 			}
 		}
@@ -494,6 +512,12 @@ input[type="text"]::placeholder {
 		line-height: 20px;
 		color: #777777;
 		text-decoration: line-through;
+	}
+}
+.happy-customers,
+.other-article {
+	.swiper-slide {
+		height: auto;
 	}
 }
 .happy-customers__item {
@@ -1633,8 +1657,8 @@ input[type="text"]::placeholder {
 		padding-top: 0;
 	}
 	.banner-top-descrp__content .title {
-		font-size: 42px;
-		line-height: 54px;
+		font-size: 44px;
+		line-height: 50px;
 	}
 	.choice-car__list li {
 		line-height: 25px;
@@ -2794,11 +2818,15 @@ textarea {
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 32px;
+		font-style: normal;
 		span {
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 21px;
 			color: #777777;
+		}
+		i {
+			font-style: normal;
 		}
 	}
 	.btn-style-2 {
@@ -3271,6 +3299,13 @@ textarea {
 		}
 		.title {
 			padding: 0 20px;
+		}
+	}
+	.city-choose:hover .submenu .submenu__wrap {
+		box-shadow: unset;
+		padding: 0;
+		li {
+			font-weight: 400;
 		}
 	}
 }
