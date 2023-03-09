@@ -1171,7 +1171,7 @@ input {
 		color: #a9a9a9;
 		position: absolute;
 		right: 50px;
-		bottom: 0;
+		top: 50%;
 		transform: translate(-50%, -50%);
 		font-size: 20px;
 	}
@@ -1686,6 +1686,7 @@ input {
 	display: inline-flex;
 	justify-content: end;
 	align-items: center;
+	text-align: right;
 }
 .feature-col2.c-red:before {
 	content: "";
@@ -2577,16 +2578,16 @@ body.lock {
 }
 .news__item {
 	position: relative;
-	width: calc((100% - 260px) / 3);
+	width: calc((100% - 60px) / 4);
 	background: #ffffff;
 	color: #000000;
 	padding: 20px 0;
 }
-.news__item:nth-child(9n + 3),
-.news__item:nth-child(9n + 5),
-.news__item:nth-child(9n + 7) {
-	flex-basis: 600px;
-}
+// .news__item:nth-child(9n + 3),
+// .news__item:nth-child(9n + 5),
+// .news__item:nth-child(9n + 7) {
+// 	flex-basis: 600px;
+// }
 .news__item img {
 	margin-bottom: 8px;
 	height: 204px;
@@ -3152,6 +3153,7 @@ video {
 }
 .why__item .heading {
 	font-weight: 500;
+	margin-bottom: 4px;
 }
 .why__item p {
 	color: #777777;
@@ -4585,6 +4587,7 @@ input.field {
 	border-radius: 12px;
 	padding: 20px;
 	margin-bottom: 20px;
+	height: 100%;
 }
 .installment-payment .icon {
 	display: block;
@@ -5509,8 +5512,7 @@ input.field {
 	}
 	.a-sidebar,
 	.sort-mode,
-	.filter-result-v,
-	.filter-result-txt {
+	.filter-result-v {
 		display: none;
 	}
 	.user-profile span:last-child {

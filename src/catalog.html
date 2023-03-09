@@ -505,7 +505,7 @@
 								</div>
 							</div>
 							<div class="a-main" data-reload="ajax-reload-product">
-								<!-- <div class="loop-wrap" data-more="ajax-more-product">
+								<div class="loop-wrap" data-more="ajax-more-product">
 									<div class="loop-cover">
 										<div class="item-loop">
 											<div class="item-loop__link">
@@ -592,13 +592,14 @@
 														</div>
 													</div>
 													<div class="sell-car__button">
-														<button type="button" class="btn btn-style-4">Розрахувати платіж</button>
-														<button type="button" class="btn btn-style-1">Купити за повну ціну</button>
+														<a href="#popup-installment" class="btn btn-style-4 popup-link">Розрахувати платіж</a>
+														<a href="#popup-pre-sell" class="btn btn-style-1 popup-link">Купити за повну ціну</a>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+									<!-- 
 									<div class="loop-cover">
 										<div class="item-loop">
 											<div class="item-loop__link">
@@ -5229,7 +5230,8 @@
 											</div>
 										</div>
 									</div>
-								</div> -->
+								-->
+								</div>
 								<div data-reload="ajax-reload-navigation">
 									<div id="load-more-container">
 										<a href="javascript:void(0);" onclick="ajaxReload('/catalog?page=2&sort=default', 'more', true);" class="btn btn-style-2">Показати ще</a>
@@ -5311,6 +5313,8 @@
 	@@include('html/popup/popup-callback.html',{})
 	@@include('html/popup/popup-cookies.html',{})
 	@@include('html/popup/popup-automatic-selection.html',{})
+	@@include('html/popup/popup-pre-sell.html',{})
+	@@include('html/popup/popup-installment.html',{})
 	<script src="files/assets/45446e13/jquery.js"></script>
 	<script src="files/assets/b1b6c6cc/yii.js"></script>
 	<script src="js/jquery-ui.js"></script>

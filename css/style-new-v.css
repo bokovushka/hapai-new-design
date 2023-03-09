@@ -903,10 +903,10 @@ input[type=text]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 12px;
 }
 
@@ -1798,7 +1798,7 @@ input[type=text]::placeholder {
 .choice-car__info .h1 {
   font-size: 56px;
   line-height: 64px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .choice-car__list li {
@@ -3576,6 +3576,7 @@ textarea {
   color: #777777;
   position: relative;
   padding-left: 54px;
+  cursor: pointer;
 }
 
 .about-car__content .tab:not(:last-child) {
@@ -3590,10 +3591,15 @@ textarea {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 34px;
-  height: 34px;
-  background: #6667ab;
+  width: 32px;
+  height: 32px;
+  background: #e5e5e5;
   border-radius: 4px;
+  border: 2px solid #e5e5e5;
+}
+
+.about-car__content .tab:hover::after {
+  border: 2px solid #6667ab;
 }
 
 .about-car__content .tab.active::before {
@@ -3610,6 +3616,11 @@ textarea {
   background: url(../img/icons/icons.svg#check-white) 50% 50% no-repeat;
   background-size: 100%;
   z-index: 2;
+}
+
+.about-car__content .tab.active::after {
+  background: #6667ab;
+  border: 2px solid #6667ab;
 }
 
 .about-car__content .checkbox label .ui-checkboxradio-icon.ui-state-checked {
@@ -3755,7 +3766,7 @@ textarea {
 
 .request-purchase-goods .subtitle {
   font-size: 16px;
-  line-height: 42px;
+  line-height: 24px;
   margin-bottom: 16px;
 }
 
@@ -4197,6 +4208,20 @@ textarea::placeholder {
 
 .ic-excerpt .expandable-product .morelink.less {
   display: block;
+}
+
+.user-txt .help-block {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.user-txt .help-block.help-descrp__top {
+  margin-bottom: 8px;
+}
+
+.user-txt .help-block.help-descrp__bottom {
+  margin-top: 8px;
 }
 
 /* mobile */
@@ -4934,6 +4959,17 @@ textarea::placeholder {
   .equ-col {
     width: calc((100% - 48px) / 3);
   }
+
+  .filter-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .filter-result-txt {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -5178,6 +5214,10 @@ textarea::placeholder {
 
   .reviews-tabs__menu {
     margin-bottom: 0;
+  }
+
+  .form-leasing-main .btn-style-1 {
+    max-width: 100%;
   }
 }
 
