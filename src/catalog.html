@@ -22,6 +22,8 @@
 	<link href="css/fancybox.min.css" rel="stylesheet">
 	<link href="css/jquery.formstyler.min.css" rel="stylesheet">
 	<link href="css/jquery.formstyler.theme.min.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.theme.min.css" rel="stylesheet">
+	<link href="css/fastselect.min.css" rel="stylesheet">
 	<link href="css/style.min.css" rel="stylesheet">
 	<link href="css/changes.min.css" rel="stylesheet">
 	<link href="css/style-new-v.min.css" rel="stylesheet">
@@ -132,12 +134,57 @@
 										<div class="subtitle">Фільтр</div>
 									</div>
 									<div class="filter-item f-brand">
-										<div class="filter-title">Марка авто</div>
-										<div class="filter-list f-tags">
-											<input id="f-brand" placeholder="Введіть марку авто">
+										<div class="filter-title active">Марка авто</div>
+										<div class="filter-list show f-tags">
+											<!-- <input id="f-brand" placeholder="Введіть марку авто"> -->
+											<form class="form-f-brand" action="">
+
+												<select class="singleSelect " name="language">
+													<option value="Acura">Acura</option>
+													<option value="Alfa Romeo">Alfa Romeo</option>
+													<option value="Audi">Audi</option>
+													<option value="BMW">BMW</option>
+													<option value="Daewoo">Daewoo</option>
+													<option value="Dodge">Dodge</option>
+													<option value="Fiat">Fiat</option>
+													<option value="Ford">Ford</option>
+													<option value="Geely">Geely</option>
+													<option value="Great Wall">Great Wall</option>
+													<option value="Honda">Honda</option>
+													<option value="Hyundai">Hyundai</option>
+													<option value="Infiniti">Infiniti</option>
+													<option value="Jaguar">Jaguar</option>
+													<option value="Jeep">Jeep</option>
+													<option value="Kia">Kia</option>
+													<option value="Land Rover">Land Rover</option>
+													<option value="Lexus">Lexus</option>
+													<option value="Mazda">Mazda</option>
+													<option value="Mercedes-Benz">Mercedes-Benz</option>
+													<option value="MG">MG</option>
+													<option value="MINI">MINI</option>
+													<option value="Mitsubishi">Mitsubishi</option>
+													<option value="Nissan">Nissan</option>
+													<option value="Opel">Opel</option>
+													<option value="Peugeot">Peugeot</option>
+													<option value="Porsche">Porsche</option>
+													<option value="Ravon">Ravon</option>
+													<option value="Renault">Renault</option>
+													<option value="SEAT">SEAT</option>
+													<option value="Skoda">Skoda</option>
+													<option value="Smart">Smart</option>
+													<option value="Subaru">Subaru</option>
+													<option value="Suzuki">Suzuki</option>
+													<option value="Tesla">Tesla</option>
+													<option value="Toyota">Toyota</option>
+													<option value="Triumph">Triumph</option>
+													<option value="Volkswagen">Volkswagen</option>
+													<option value="Volvo">Volvo</option>
+												</select>
+												<button class="submitBtn" type="submit">Submit</button>
+											</form>
 										</div>
-										<div class="filter-title">Модель авто</div>
-										<div class="filter-list">
+										<div class="filter-title active">Модель авто</div>
+										<div class="filter-list show">
 											<div class="f-tags">
 												<input id="f-model" placeholder="Введіть модель авто">
 											</div>
@@ -270,8 +317,8 @@
 									</div>
 
 									<div class="filter-item f-price">
-										<div class="filter-title">Ціна авто (USD)</div>
-										<div class="filter-list f-range group-f" data-optionname="price">
+										<div class="filter-title active">Ціна авто (USD)</div>
+										<div class="filter-list show f-range group-f" data-optionname="price">
 											<input type="number" data-min="5300" data-max="98000" value="5300" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="5300" data-max="98000" value="98000" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="5300" data-slider-max="98000" data-slider-step="100" data-slider-value="[5300,98000]"></div>
@@ -280,8 +327,8 @@
 									</div>
 
 									<div class="filter-item f-price">
-										<div class="filter-title">Рік авто</div>
-										<div class="filter-list f-range group-f" data-optionname="year">
+										<div class="filter-title active">Рік авто</div>
+										<div class="filter-list show f-range group-f" data-optionname="year">
 											<input type="number" data-min="2008" data-max="2022" value="2008" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="2008" data-max="2022" value="2022" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="2008" data-slider-max="2022" data-slider-step="1" data-slider-value="[2008,2022]"></div>
@@ -290,8 +337,8 @@
 									</div>
 
 									<div class="filter-item f-price">
-										<div class="filter-title">Пробіг авто (км)</div>
-										<div class="filter-list f-range group-f" data-optionname="mileage">
+										<div class="filter-title active">Пробіг авто (км)</div>
+										<div class="filter-list show f-range group-f" data-optionname="mileage">
 											<input type="number" data-min="5000" data-max="272000" value="5000" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="5000" data-max="272000" value="272000" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="5000" data-slider-max="272000" data-slider-step="100" data-slider-value="[5000,272000]"></div>
@@ -300,8 +347,8 @@
 									</div>
 
 									<div class="filter-item f-price">
-										<div class="filter-title">Об'єм двигуна (мл)</div>
-										<div class="filter-list f-range group-f" data-optionname="volume">
+										<div class="filter-title active">Об'єм двигуна (мл)</div>
+										<div class="filter-list show f-range group-f" data-optionname="volume">
 											<input type="number" data-min="998" data-max="3600" value="998" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="998" data-max="3600" value="3600" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="998" data-slider-max="3600" data-slider-step="100" data-slider-value="[998,3600]"></div>
@@ -310,8 +357,8 @@
 									</div>
 
 									<div class="filter-item">
-										<div class="filter-title">Трансмісія</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Трансмісія</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-3-168">
 												<span class="name">Автомат</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -325,8 +372,8 @@
 										</div>
 									</div>
 									<div class="filter-item">
-										<div class="filter-title">Колір</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Колір</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-4-161">
 												<span class="name">Білий</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -368,8 +415,8 @@
 										</div>
 									</div>
 									<div class="filter-item">
-										<div class="filter-title">Тип двигуна</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Тип двигуна</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-7-167">
 												<span class="name">Бензин</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -401,8 +448,8 @@
 										</div>
 									</div>
 									<div class="filter-item">
-										<div class="filter-title">Клас</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Клас</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-18-189">
 												<span class="name">Екологічний</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -434,8 +481,8 @@
 										</div>
 									</div>
 									<div class="filter-item">
-										<div class="filter-title">Кузов</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Кузов</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-15-212">
 												<span class="name">Кабріолет</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -482,8 +529,8 @@
 										</div>
 									</div>
 									<div class="filter-item filter-place">
-										<div class="filter-title">Звідки авто</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Звідки авто</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-19-271">
 												<span class="name">Київ</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -5318,7 +5365,8 @@
 	<script src="files/assets/45446e13/jquery.js"></script>
 	<script src="files/assets/b1b6c6cc/yii.js"></script>
 	<script src="js/jquery-ui.js"></script>
-	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<!-- <script src="js/jquery.ui.touch-punch.min.js"></script> -->
+	<script src="js/fastselect.standalone.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
 	<script src="js/filter.js"></script>
