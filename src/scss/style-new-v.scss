@@ -744,6 +744,9 @@ input[type="text"]::placeholder {
 	line-height: 22px;
 	color: #ffffff;
 	padding: 10px;
+	&:nth-child(2) {
+		padding: 2px 10px;
+	}
 }
 .auction-section {
 	#load-more-container {

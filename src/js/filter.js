@@ -267,6 +267,6 @@ $(document).on('change', '.input-min, .input-max', function () {
 
 //filter choosen
 $(".chosen-select-deselect").chosen({
-	// no_results_text: "Не знайдено",
+	no_results_text: "Не знайдено",
 	allow_single_deselect: true
 }); 

@@ -1236,6 +1236,10 @@ input[type=text]::placeholder {
   padding: 10px;
 }
 
+.category-standard:nth-child(2) {
+  padding: 2px 10px;
+}
+
 .auction-section #load-more-container {
   padding-top: 12px;
 }
