@@ -4228,31 +4228,48 @@ textarea::placeholder {
   color: #6667ab;
 }
 
-.submitBtn {
-  display: none;
+.filter-result-v .r-f-tags {
+  margin-top: 0;
+  border-radius: 4px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.fstElement {
-  width: 228px;
+.chosen-container-single {
+  width: 228px !important;
+}
+
+.chosen-container-single .chosen-single {
+  padding: 8px 32px 8px 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  height: auto;
+  background: transparent;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.fstElement.fstActive .fstToggleBtn::after {
-  -webkit-transform: translateY(-50%) rotate(-180deg);
-      -ms-transform: translateY(-50%) rotate(-180deg);
-          transform: translateY(-50%) rotate(-180deg);
-}
-
-.fstToggleBtn {
-  min-width: auto;
-  padding: 8px 32px 8px 8px;
+.chosen-container-single .chosen-single span {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
 }
 
-.fstToggleBtn::after {
+.chosen-container-single .chosen-single div b {
   content: "";
   position: absolute;
   top: 50%;
@@ -4269,32 +4286,42 @@ textarea::placeholder {
   margin-top: unset;
 }
 
-.fstResultItem,
-.fstSingleMode .fstQueryInput {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
+.chosen-container-single .chosen-single abbr {
+  all: unset;
 }
 
-.fstResultItem.fstFocused,
-.fstResultItem.fstSelected {
-  background-color: #6667ab;
-  border-color: #6667ab;
+.chosen-container-single .chosen-single abbr::after {
+  content: "\e90e";
+  font-family: "hapai";
+  font-size: 16px;
+  margin-left: 4px;
+  color: #d45279;
+  display: block;
 }
 
-.fstSingleMode .fstControls {
+.chosen-container-single.chosen-container-active .chosen-single {
+  border-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-image: unset;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #e5e5e5;
+}
+
+.chosen-container-single.chosen-container-active.chosen-with-drop .chosen-single div b {
+  -webkit-transform: translateY(-40%) rotate(-180deg);
+      -ms-transform: translateY(-40%) rotate(-180deg);
+          transform: translateY(-40%) rotate(-180deg);
+  background-position: unset;
+}
+
+.chosen-container-single .chosen-search {
   padding: 4px;
-}
-
-.fstSingleMode .fstQueryInput {
-  padding-right: 32px;
-}
-
-.fstControls {
   position: relative;
 }
 
-.fstControls:after {
+.chosen-container-single .chosen-search:after {
   font-family: "hapai";
   text-align: center;
   content: "\e928";
@@ -4308,20 +4335,53 @@ textarea::placeholder {
   font-size: 20px;
 }
 
-.fstSingleMode.fstActive .fstResults {
+.chosen-container-single .chosen-search input[type=text] {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 32px;
+  border: 1px solid #e5e5e5;
+  background: unset;
+}
+
+.chosen-container .chosen-drop {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #e5e5e5;
+}
+
+.chosen-container .chosen-results {
+  margin: 0;
   max-height: 160px;
 }
 
-.filter-result-v .r-f-tags {
-  margin-top: 0;
-  border-radius: 4px;
+.chosen-container .chosen-results li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 -4px;
+}
+
+.chosen-container .chosen-results li.active-result {
+  display: list-item;
+  cursor: pointer;
+}
+
+.chosen-container .chosen-results li.active-result.result-selected,
+.chosen-container .chosen-results li.active-result.highlighted {
+  background-color: #6667ab;
+  border-color: #6667ab;
+  color: #fff;
+  background-image: unset;
+}
+
+.chosen-container .chosen-results .no-results {
+  font-weight: 600;
+}
+
+.chosen-container .chosen-results .no-results span {
+  color: #000;
   font-weight: 400;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* mobile */

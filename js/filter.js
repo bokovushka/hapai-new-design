@@ -263,4 +263,10 @@ $(document).on('change', '.input-min, .input-max', function () {
 
 
 //filter fastselect
-$('.singleSelect').fastselect();
+// $('.singleSelect').fastselect();
+
+//filter choosen
+$(".chosen-select-deselect").chosen({
+	// no_results_text: "Не знайдено",
+	allow_single_deselect: true
+}); 

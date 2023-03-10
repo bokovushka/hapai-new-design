@@ -23,7 +23,7 @@
 	<link href="css/jquery.formstyler.min.css" rel="stylesheet">
 	<link href="css/jquery.formstyler.theme.min.css" rel="stylesheet">
 	<link href="css/jquery.formstyler.theme.min.css" rel="stylesheet">
-	<link href="css/fastselect.min.css" rel="stylesheet">
+	<link href="css/chosen.min.css" rel="stylesheet">
 	<link href="css/style.min.css" rel="stylesheet">
 	<link href="css/changes.min.css" rel="stylesheet">
 	<link href="css/style-new-v.min.css" rel="stylesheet">
@@ -139,7 +139,8 @@
 											<!-- <input id="f-brand" placeholder="Введіть марку авто"> -->
 											<form class="form-f-brand" action="">
 
-												<select class="singleSelect " name="language">
+												<select data-placeholder="Марка авто" class="chosen-select-deselect" tabindex="12">
+													<option value=""></option>
 													<option value="Acura">Acura</option>
 													<option value="Alfa Romeo">Alfa Romeo</option>
 													<option value="Audi">Audi</option>
@@ -180,7 +181,6 @@
 													<option value="Volkswagen">Volkswagen</option>
 													<option value="Volvo">Volvo</option>
 												</select>
-												<button class="submitBtn" type="submit">Submit</button>
 											</form>
 										</div>
 										<div class="filter-title active">Модель авто</div>
@@ -5365,8 +5365,8 @@
 	<script src="files/assets/45446e13/jquery.js"></script>
 	<script src="files/assets/b1b6c6cc/yii.js"></script>
 	<script src="js/jquery-ui.js"></script>
-	<!-- <script src="js/jquery.ui.touch-punch.min.js"></script> -->
-	<script src="js/fastselect.standalone.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/chosen.jquery.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
 	<script src="js/filter.js"></script>
