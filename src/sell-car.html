@@ -112,21 +112,30 @@
 					</div>
 				</section>
 
-				<section class="how-works">
+				<section class="how-works why-we">
 					<div class="container">
 						<div class="title">Як швидко та вигідно продати авто?</div>
 						<div class="how-works__wrap">
 							<div class="how-works__item">
-								<div class="heading">Крок 1</div>
-								<p>Зв’яжись з нами - домовимося за зустріч та разом пройдемо техогляд.</p>
+								<div class="how-works__descrp">
+									<div class="heading">Крок 1.</div>
+									<div class="how-works__title">Надішли заявку</div>
+								</div>
+								<p>Перевір вартість авто за держномером. Якщо попередня оцінка тебе влаштовує, надішли заявку.</p>
 							</div>
 							<div class="how-works__item">
-								<div class="heading">Крок 2</div>
-								<p>Погодимо вартість та підпишемо договір.</p>
+								<div class="how-works__descrp">
+									<div class="heading">Крок 2.</div>
+									<div class="how-works__title">Погодь вартість</div>
+								</div>
+								<p>Привези авто на огляд, погодь вартість із менеджером та підпиши договір.</p>
 							</div>
 							<div class="how-works__item">
-								<div class="heading">Крок 3</div>
-								<p>Отримай кошти на рахунок одразу після переоформлення авто.</p>
+								<div class="how-works__descrp">
+									<div class="heading">Крок 3.</div>
+									<div class="how-works__title">Отримай кошти</div>
+								</div>
+								<p>Одразу після переоформлення, отримай кошти на рахунок.</p>
 							</div>
 						</div>
 					</div>
@@ -1284,22 +1293,44 @@
 	<script>
 		function initMap() {
 			const tourStops = [
-				[{ lat: 48.50293200157937, lng: 35.08718195599924 }, "м. Дніпро, вул. Осіння 3к"],
-				[{ lat: 50.46010897151771, lng: 30.531091868470828 }, "м. Київ"],
-				[{ lat: 46.48022186869828, lng: 30.720706665158588 }, "м. Одеса"],
-				[{ lat: 49.81279485039029, lng: 24.01805524069895 }, "м. Львів, вул. Стрийська 98а"]
+				[{ lat: 48.502991, lng: 35.087846 }, "м. Дніпро, вул. Осіння, 3К. Лівий берег,<br>0800330877"],
+				[{ lat: 50.5208549, lng: 30.4976437 }, "м. Київ, Оболонський проспект 43,<br>0800330877"],
+				[{ lat: 50.4282203, lng: 30.3624384 }, "м. Київ, вул. Кільцева, офіс №8,<br>0800330877"],
+				[{ lat: 46.4817733, lng: 30.6849691 }, "м. Одеса, вул. Грушевського, 39Є,<br>0800330877"],
+				[{ lat: 49.8126311, lng: 24.017753 }, "м. Львів, вул. Стрийська 98а,<br>0800330877"],
 			];
 			var centerMap = new google.maps.LatLng(48.946043807436794, 31.262548574552813);
-			map = new google.maps.Map(document.getElementById("map"), {
-				center: centerMap,
-				zoom: 6.5,
-				disableDefaultUI: true,
-				// fullscreenControl: false,
-				// mapTypeControl: false,
-				scaleControl: true,
-				zoomControl: true,
-				scrollwheel: false,
-			});
+			if (window.innerWidth >= 640 && window.innerWidth < 992) {
+				map = new google.maps.Map(document.getElementById("map"), {
+					center: centerMap,
+					zoom: 5.9,
+					disableDefaultUI: true,
+					// fullscreenControl: false,
+					// mapTypeControl: false,
+					scaleControl: true,
+					zoomControl: true,
+					scrollwheel: false,
+				});
+			} else if (window.innerWidth < 640) {
+				map = new google.maps.Map(document.getElementById("map"), {
+					center: centerMap,
+					zoom: 5.0,
+					disableDefaultUI: true,
+					scaleControl: true,
+					zoomControl: true,
+					scrollwheel: false,
+				});
+			}
+			else {
+				map = new google.maps.Map(document.getElementById("map"), {
+					center: centerMap,
+					zoom: 6.5,
+					disableDefaultUI: true,
+					scaleControl: true,
+					zoomControl: true,
+					scrollwheel: false,
+				});
+			}
 
 			const infoWindow = new google.maps.InfoWindow();
 

@@ -1372,6 +1372,7 @@ input {
 	display: inline-flex;
 	align-items: baseline;
 	font-weight: 600;
+	gap: 5px;
 }
 .il-price__description {
 	font-size: 12px;
@@ -1674,13 +1675,15 @@ input {
 	font-weight: 400;
 	justify-content: space-between;
 	padding: 8px 0;
+	gap: 20px;
 }
 .feature-col {
 	color: #a9a9a9;
-	flex: 1;
+	width: 30%;
+	// flex: 1;
 }
 .feature-col2 {
-	flex: 1;
+	// flex: 1;
 	font-weight: 600;
 	color: #000000;
 	display: inline-flex;
@@ -3174,35 +3177,19 @@ video {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px 0;
-	margin: 0 -4px;
-	row-gap: 7px;
+	margin: 0 -8px;
 }
 .ch-car-brand__item {
 	display: flex;
-	flex-direction: column;
+	padding: 12px 14px;
+	margin: 8px;
 	background: #ffffff;
-	box-sizing: border-box;
-	width: calc((100% - 32px) / 4);
-	color: #000000;
-	margin: 4px;
-}
-.ch-car-brand__name {
 	border: 1px solid #e5e5e5;
-	border-radius: 8px;
 	box-sizing: border-box;
-	padding: 10px;
-	display: flex;
+	border-radius: 8px;
+	width: calc((100% / 4) - 16px);
+	color: #000000;
 	overflow: hidden;
-	height: 100%;
-	.heading {
-		color: #000;
-	}
-}
-.ch-car-brand__leasing {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 32px;
-	color: #777777;
 }
 .ch-car-brand__item img {
 	height: 72px;
@@ -5345,7 +5332,7 @@ input.field {
 		flex-direction: column;
 	}
 	.ch-car-brand__item {
-		width: calc((100% - 24px) / 3);
+		width: calc((100% - 48px) / 3);
 	}
 	.top-banner-sell-car .btn-style-3 {
 		margin-top: 0;
@@ -5663,7 +5650,7 @@ input.field {
 		margin-top: 0;
 	}
 	.ch-car-brand__item {
-		width: calc(50% - 8px);
+		width: calc(50% - 16px);
 	}
 	.how-works__item {
 		width: calc(50% - 10px);
@@ -6138,14 +6125,11 @@ input.field {
 		padding: 8px;
 		margin-bottom: 10px;
 	}
-	.ch-car-brand__leasing {
-		font-size: 10px;
-		line-height: 11px;
-		min-height: 24px;
-	}
 	.ch-car-brand__item {
+		flex-direction: column;
+		width: calc((100% - 12px) / 2);
+		padding: 8px;
 		margin: 3px;
-		width: calc((100% / 2) - 6px);
 	}
 	.ch-car-brand__item img {
 		position: relative;

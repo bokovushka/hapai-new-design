@@ -315,6 +315,7 @@ body:not(.leasing-p) .main .how-works .container,
 body:not(.leasing-p) .main .loan-leasing .container,
 body:not(.leasing-p) .main .advantage-selection-car .container,
 body:not(.leasing-p) .main .how-works .container,
+body:not(.leasing-p) .main .why .container,
 body:not(.leasing-p) .main .partners .container,
 body:not(.leasing-p) .main .seo-text-section .container {
   padding: 0 40px;
@@ -3593,9 +3594,8 @@ textarea {
           transform: translateY(-50%);
   width: 32px;
   height: 32px;
-  background: #e5e5e5;
   border-radius: 4px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #e8e8e8;
 }
 
 .about-car__content .tab:hover::after {
@@ -4222,6 +4222,10 @@ textarea::placeholder {
 
 .user-txt .help-block.help-descrp__bottom {
   margin-top: 8px;
+}
+
+.checkbox__txt a {
+  color: #6667ab;
 }
 
 /* mobile */

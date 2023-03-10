@@ -13,6 +13,7 @@ body {
 			.loan-leasing,
 			.advantage-selection-car,
 			.how-works,
+			.why,
 			.partners,
 			.seo-text-section {
 				.container {
@@ -2616,9 +2617,8 @@ textarea {
 			transform: translateY(-50%);
 			width: 32px;
 			height: 32px;
-			background: #e5e5e5;
 			border-radius: 4px;
-			border: 2px solid #e5e5e5;
+			border: 2px solid #e8e8e8;
 		}
 		&:hover {
 			&::after {
@@ -3116,6 +3116,11 @@ textarea {
 	}
 	&.help-descrp__bottom {
 		margin-top: 8px;
+	}
+}
+.checkbox__txt {
+	a {
+		color: #6667ab;
 	}
 }
 /* mobile */
