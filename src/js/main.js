@@ -31,8 +31,8 @@ $(document).ready(function () {
 	}
 
 	setEqualHeight($(".item-loop__txtblock .heading"));
-	setEqualHeight($(".article__swiper .swiper-slide"));
-	setEqualHeight($(".happy-customers__swiper .swiper-slide"));
+	// setEqualHeight($(".article__swiper .swiper-slide"));
+	// setEqualHeight($(".happy-customers__swiper .swiper-slide"));
 	setEqualHeight($(".favorite__main .item-loop"));
 	setEqualHeight($(".item-loop__txtblock"));
 });
@@ -47,18 +47,18 @@ $(document).on('click', '.btn-favor', function () {
 	}
 });
 
-$(document).on('click', 'a[href^="#"]', function (e) {
-	var anchor = $(this);
-	$("html, body")
-		.stop()
-		.animate(
-			{
-				scrollTop: $(anchor.attr("href")).offset().top - 20,
-			},
-			800
-		);
-	e.preventDefault();
-});
+// $(document).on('click', 'a[href^="#"]', function (e) {
+// 	var anchor = $(this);
+// 	$("html, body")
+// 		.stop()>>
+// 		.animate(
+// 			{
+// 				scrollTop: $(anchor.attr("href")).offset().top - 20,
+// 			},
+// 			800
+// 		);
+// 	e.preventDefault();
+// });
 
 //popup-authorization
 
@@ -405,16 +405,16 @@ $(document).ready(function () {
 });
 
 // height product
-$(function checkHeight() {
-	if (window.innerWidth > 992 && window.innerWidth < 1440) {
-		var height = $('.ic-info__left__wrap').height();
-		$('.ic-info__left').height(height - 395);
-	}
-	else {
-		$('.ic-info__left').height("100%");
-	}
-	setTimeout(checkHeight, 500);
-});
+// $(function checkHeight() {
+// 	if (window.innerWidth > 992 && window.innerWidth < 1440) {
+// 		var height = $('.ic-info__left__wrap').height();
+// 		$('.ic-info__left').height(height - 395);
+// 	}
+// 	else {
+// 		$('.ic-info__left').height("100%");
+// 	}
+// 	setTimeout(checkHeight, 500);
+// });
 
 
 //filter
@@ -437,14 +437,16 @@ $(function () {
 		if (len > max) {
 			items = items.slice(max, len);
 			items.wrapAll('<div class="hide"></div>');
+			$(this).append('<div class="show-more-button"><button type="button" class="btn">Показати ще</button></div>');
 		}
+
 	})
-}).on('click', '.btn-style-2', function () {
+}).on('click', '.tab-equ .btn', function () {
 	$(this).closest('.tab-equ').toggleClass("show-more").find('.hide > .equ-col').unwrap();
 	if ($(".tab-equ").hasClass("show-more")) {
 		$(this).text("Сховати");
 	} else {
-		$(this).text("Переглянути більше");
+		$(this).text("Показати ще");
 		let max = 6;
 		$('.tab-equ').each(function () {
 			let items = $(this).find('.equ-col'),

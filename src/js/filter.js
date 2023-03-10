@@ -260,3 +260,7 @@ $(document).on('change', '.input-min, .input-max', function () {
 		makeRangeUrl(name, min, max)
 	}, 500);
 });
+
+
+//filter fastselect
+$('.singleSelect').fastselect();

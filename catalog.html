@@ -17,14 +17,16 @@
 	<title>Активний аукціон на ХАПАЙ аукціон авто</title>
 
 	<meta name="description" content="⓵ Перший в Україні Аукціон авто ☼ Купити перевірені авто в Україні онлайн на автоаукціоні ✔ Швидке оформлення з ХАПАЙ аукціон авто">
-	<link href="css/jquery-ui.min.css?_v=20230304183610" rel="stylesheet">
-	<link href="css/swiper-bundle.min.css?_v=20230304183610" rel="stylesheet">
-	<link href="css/fancybox.min.css?_v=20230304183610" rel="stylesheet">
-	<link href="css/jquery.formstyler.min.css?_v=20230304183610" rel="stylesheet">
-	<link href="css/jquery.formstyler.theme.min.css?_v=20230304183610" rel="stylesheet">
-	<link href="css/style.min.css?_v=20230304183610" rel="stylesheet">
-	<link href="css/changes.min.css?_v=20230304183610" rel="stylesheet">
-	<link href="css/style-new-v.min.css?_v=20230304183610" rel="stylesheet">
+	<link href="css/jquery-ui.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/swiper-bundle.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/fancybox.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/jquery.formstyler.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/jquery.formstyler.theme.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/jquery.formstyler.theme.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/fastselect.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/style.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/changes.min.css?_v=20230310152910" rel="stylesheet">
+	<link href="css/style-new-v.min.css?_v=20230310152910" rel="stylesheet">
 	<script>
 		const usdRate = 40.8000;
 		const productCalc = {
@@ -116,13 +118,25 @@
 						<li class="nav-menu__item city-choose city-choose-d">
 							<div class="city-choose__ch">Київ</div>
 							<div class="submenu">
-								<ul class="submenu__list">
-									<li>Луцьк</li>
-									<li>Львів</li>
-									<li>Київ</li>
-									<li>Івано-Франківськ</li>
-									<li>Запоріжжя</li>
-								</ul>
+								<div class="submenu__wrap">
+									<ul class="submenu__list">
+										<li>Луцьк</li>
+										<li>Львів</li>
+										<li>Київ</li>
+										<li>Івано-Франківськ</li>
+										<li>Запоріжжя</li>
+										<li>Луцьк</li>
+										<li>Львів</li>
+										<li>Київ</li>
+										<li>Івано-Франківськ</li>
+										<li>Запоріжжя</li>
+										<li>Луцьк</li>
+										<li>Львів</li>
+										<li>Київ</li>
+										<li>Івано-Франківськ</li>
+										<li>Запоріжжя</li>
+									</ul>
+								</div>
 							</div>
 						</li>
 						<li class="nav-menu__item donate-m donate-ua">
@@ -256,12 +270,57 @@
 										<div class="subtitle">Фільтр</div>
 									</div>
 									<div class="filter-item f-brand">
-										<div class="filter-title">Марка авто</div>
-										<div class="filter-list f-tags">
-											<input id="f-brand" placeholder="Введіть марку авто">
+										<div class="filter-title active">Марка авто</div>
+										<div class="filter-list show f-tags">
+											<!-- <input id="f-brand" placeholder="Введіть марку авто"> -->
+											<form class="form-f-brand" action="">
+
+												<select class="singleSelect " name="language">
+													<option value="Acura">Acura</option>
+													<option value="Alfa Romeo">Alfa Romeo</option>
+													<option value="Audi">Audi</option>
+													<option value="BMW">BMW</option>
+													<option value="Daewoo">Daewoo</option>
+													<option value="Dodge">Dodge</option>
+													<option value="Fiat">Fiat</option>
+													<option value="Ford">Ford</option>
+													<option value="Geely">Geely</option>
+													<option value="Great Wall">Great Wall</option>
+													<option value="Honda">Honda</option>
+													<option value="Hyundai">Hyundai</option>
+													<option value="Infiniti">Infiniti</option>
+													<option value="Jaguar">Jaguar</option>
+													<option value="Jeep">Jeep</option>
+													<option value="Kia">Kia</option>
+													<option value="Land Rover">Land Rover</option>
+													<option value="Lexus">Lexus</option>
+													<option value="Mazda">Mazda</option>
+													<option value="Mercedes-Benz">Mercedes-Benz</option>
+													<option value="MG">MG</option>
+													<option value="MINI">MINI</option>
+													<option value="Mitsubishi">Mitsubishi</option>
+													<option value="Nissan">Nissan</option>
+													<option value="Opel">Opel</option>
+													<option value="Peugeot">Peugeot</option>
+													<option value="Porsche">Porsche</option>
+													<option value="Ravon">Ravon</option>
+													<option value="Renault">Renault</option>
+													<option value="SEAT">SEAT</option>
+													<option value="Skoda">Skoda</option>
+													<option value="Smart">Smart</option>
+													<option value="Subaru">Subaru</option>
+													<option value="Suzuki">Suzuki</option>
+													<option value="Tesla">Tesla</option>
+													<option value="Toyota">Toyota</option>
+													<option value="Triumph">Triumph</option>
+													<option value="Volkswagen">Volkswagen</option>
+													<option value="Volvo">Volvo</option>
+												</select>
+												<button class="submitBtn" type="submit">Submit</button>
+											</form>
 										</div>
-										<div class="filter-title">Модель авто</div>
-										<div class="filter-list">
+										<div class="filter-title active">Модель авто</div>
+										<div class="filter-list show">
 											<div class="f-tags">
 												<input id="f-model" placeholder="Введіть модель авто">
 											</div>
@@ -394,8 +453,8 @@
 									</div>
 
 									<div class="filter-item f-price">
-										<div class="filter-title">Ціна авто (USD)</div>
-										<div class="filter-list f-range group-f" data-optionname="price">
+										<div class="filter-title active">Ціна авто (USD)</div>
+										<div class="filter-list show f-range group-f" data-optionname="price">
 											<input type="number" data-min="5300" data-max="98000" value="5300" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="5300" data-max="98000" value="98000" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="5300" data-slider-max="98000" data-slider-step="100" data-slider-value="[5300,98000]"></div>
@@ -404,8 +463,8 @@
 									</div>
 
 									<div class="filter-item f-price">
-										<div class="filter-title">Рік авто</div>
-										<div class="filter-list f-range group-f" data-optionname="year">
+										<div class="filter-title active">Рік авто</div>
+										<div class="filter-list show f-range group-f" data-optionname="year">
 											<input type="number" data-min="2008" data-max="2022" value="2008" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="2008" data-max="2022" value="2022" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="2008" data-slider-max="2022" data-slider-step="1" data-slider-value="[2008,2022]"></div>
@@ -414,8 +473,8 @@
 									</div>
 
 									<div class="filter-item f-price">
-										<div class="filter-title">Пробіг авто (км)</div>
-										<div class="filter-list f-range group-f" data-optionname="mileage">
+										<div class="filter-title active">Пробіг авто (км)</div>
+										<div class="filter-list show f-range group-f" data-optionname="mileage">
 											<input type="number" data-min="5000" data-max="272000" value="5000" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="5000" data-max="272000" value="272000" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="5000" data-slider-max="272000" data-slider-step="100" data-slider-value="[5000,272000]"></div>
@@ -424,8 +483,8 @@
 									</div>
 
 									<div class="filter-item f-price">
-										<div class="filter-title">Об'єм двигуна (мл)</div>
-										<div class="filter-list f-range group-f" data-optionname="volume">
+										<div class="filter-title active">Об'єм двигуна (мл)</div>
+										<div class="filter-list show f-range group-f" data-optionname="volume">
 											<input type="number" data-min="998" data-max="3600" value="998" class="slide-group-input input-min" style="margin-right:7px">
 											<input type="number" data-min="998" data-max="3600" value="3600" class="slide-group-input input-max">
 											<div class="slider-range" data-slider-min="998" data-slider-max="3600" data-slider-step="100" data-slider-value="[998,3600]"></div>
@@ -434,8 +493,8 @@
 									</div>
 
 									<div class="filter-item">
-										<div class="filter-title">Трансмісія</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Трансмісія</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-3-168">
 												<span class="name">Автомат</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -449,8 +508,8 @@
 										</div>
 									</div>
 									<div class="filter-item">
-										<div class="filter-title">Колір</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Колір</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-4-161">
 												<span class="name">Білий</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -492,8 +551,8 @@
 										</div>
 									</div>
 									<div class="filter-item">
-										<div class="filter-title">Тип двигуна</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Тип двигуна</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-7-167">
 												<span class="name">Бензин</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -525,8 +584,8 @@
 										</div>
 									</div>
 									<div class="filter-item">
-										<div class="filter-title">Клас</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Клас</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-18-189">
 												<span class="name">Екологічний</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -558,8 +617,8 @@
 										</div>
 									</div>
 									<div class="filter-item">
-										<div class="filter-title">Кузов</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Кузов</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-15-212">
 												<span class="name">Кабріолет</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -606,8 +665,8 @@
 										</div>
 									</div>
 									<div class="filter-item filter-place">
-										<div class="filter-title">Звідки авто</div>
-										<div class="filter-list f-checkbox">
+										<div class="filter-title active">Звідки авто</div>
+										<div class="filter-list show f-checkbox">
 											<label for="chx-19-271">
 												<span class="name">Київ</span>
 												<!--span class="i-count">(1223 авто)</span-->
@@ -629,7 +688,7 @@
 								</div>
 							</div>
 							<div class="a-main" data-reload="ajax-reload-product">
-								<!-- <div class="loop-wrap" data-more="ajax-more-product">
+								<div class="loop-wrap" data-more="ajax-more-product">
 									<div class="loop-cover">
 										<div class="item-loop">
 											<div class="item-loop__link">
@@ -716,13 +775,14 @@
 														</div>
 													</div>
 													<div class="sell-car__button">
-														<button type="button" class="btn btn-style-4">Розрахувати платіж</button>
-														<button type="button" class="btn btn-style-1">Купити за повну ціну</button>
+														<a href="#automatic-selection" class="btn btn-style-4 popup-link">Розрахувати платіж</a>
+														<a href="#popup-pre-sell" class="btn btn-style-1 popup-link">Купити за повну ціну</a>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+									<!-- 
 									<div class="loop-cover">
 										<div class="item-loop">
 											<div class="item-loop__link">
@@ -5353,7 +5413,8 @@
 											</div>
 										</div>
 									</div>
-								</div> -->
+								-->
+								</div>
 								<div data-reload="ajax-reload-navigation">
 									<div id="load-more-container">
 										<a href="javascript:void(0);" onclick="ajaxReload('/catalog?page=2&sort=default', 'more', true);" class="btn btn-style-2">Показати ще</a>
@@ -5784,9 +5845,9 @@
 					<div class="checkbox">
 						<label for="help-checkbox-agree"></label>
 						<input type="checkbox" checked name="agreement" id="help-checkbox-agree">
-						<span class="checkbox__txt">Даю згоду на збір, обробку, зберігання та використання своїх персональних даних.</span>
+						<span class="checkbox__txt">Даю згоду на збір, обробку, зберігання та використання своїх <a href="##">персональних даних</a>.</span>
 					</div>
-					<button type="submit" class="btn btn-style-1">Відправити</button>
+					<button type="submit" class="btn btn-style-4">Відправити</button>
 				</div>
 			</form>
 		</div>
@@ -5997,22 +6058,97 @@
 		</div>
 	</div>
 </div>
-	<script src="files/assets/45446e13/jquery.js?_v=20230304183610"></script>
-	<script src="files/assets/b1b6c6cc/yii.js?_v=20230304183610"></script>
-	<script src="js/jquery-ui.js?_v=20230304183610"></script>
-	<script src="js/jquery.ui.touch-punch.min.js?_v=20230304183610"></script>
-	<script src="js/jquery.formstyler.min.js?_v=20230304183610"></script>
-	<script src="js/jquery.mask.min.js?_v=20230304183610"></script>
-	<script src="js/filter.js?_v=20230304183610"></script>
-	<script src="js/swiper-bundle.min.js?_v=20230304183610"></script>
-	<script src="js/slider.js?_v=20230304183610"></script>
-	<script src="js/popups.js?_v=20230304183610"></script>
-	<script src="js/fancybox.umd.js?_v=20230304183610"></script>
-	<script src="js/main.js?_v=20230304183610"></script>
-	<script src="js/calc.js?_v=20230304183610"></script>
-	<script src="js/script.js?_v=20230304183610"></script>
-	<script src="files/assets/b1b6c6cc/yii.validation.js?_v=20230304183610"></script>
-	<script src="files/assets/b1b6c6cc/yii.activeForm.js?_v=20230304183610"></script>
+	<div id="popup-pre-sell" class="popup petty-popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close close-popup"><span class="icon-fi_x"></span></a>
+			<div class="popup-test-drive__main">
+				<div class="title">Викуп авто</div>
+				<form id="form-pre-sale">
+					<input type="hidden" name="subject" value="Выкуп авто">
+					<input type="hidden" name="car_mark" value="BMW">
+					<input type="hidden" name="car_model" value="X1">
+					<input type="hidden" name="car_year" value="2012">
+					<input type="hidden" name="price" value="13 100">
+					<p class="mb-10">Ціна викупу: 13 100$</p>
+					<div class="user-info">
+						<div class="user-txt">
+							<input type="text" name="client_name" placeholder="Ваше ім'я">
+							<p class="help-block help-block-error">Обов'язкове поле. Тільки кирилиця</p>
+						</div>
+						<div class="user-txt">
+							<input type="text" name="client_phone" placeholder="Ваш номер телефону">
+							<p class="help-block help-block-error">Невірний телефон</p>
+						</div>
+						<div class="checkbox">
+							<label for="pre-sell-checkbox-agree"></label>
+							<input type="checkbox" checked name="agreement" id="pre-sell-checkbox-agree">
+							<span class="checkbox__txt">Даю згоду на збір, обробку, зберігання та використання своїх <a href="##">персональних даних</a>.</span>
+						</div>
+						<button type="submit" class="btn btn-style-4">Відправити</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="popup-installment" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close close-popup"><span class="icon-fi_x"></span></a>
+			<div class="authorization__wrap">
+				<div class="installment">
+					<div class="popup-auction__title">Оформити авто в розстрочку</div>
+					<form id="form-installment">
+						<input type="hidden" name="subject" value="Рассрочка">
+						<input type="hidden" name="price" value="">
+						<input type="hidden" name="car_mark" value="BMW">
+						<input type="hidden" name="car_model" value="X1">
+						<input type="hidden" name="car_year" value="2012">
+						<div class="user-info">
+							<div class="user-txt">
+								<input type="text" name="client_name" placeholder="Ваше ім'я">
+								<p class="help-block help-block-error">Обов'язкове поле. Тільки кирилиця</p>
+							</div>
+							<div class="user-txt">
+								<input type="text" name="client_phone" placeholder="Ваш номер телефону">
+								<p class="help-block help-block-error">Невірний телефон</p>
+							</div>
+							<div class="user-txt">
+								<p class="help-block help-descrp__top">* для отримання швидкого рішення, заповніть рядок нижче</p>
+								<input type="text" name="client_inn" placeholder="Ваш ІНП">
+								<p class="help-block help-block-error">Невірний ІНП</p>
+							</div>
+							<div class="checkbox">
+								<label for="installment-checkbox-agree"></label>
+								<input type="checkbox" checked name="agreement" id="installment-checkbox-agree">
+								<span class="checkbox__txt">Даю згоду на збір, обробку, зберігання та використання своїх <a href="##">персональних даних</a>.</span>
+							</div>
+							<button type="submit" class="btn btn-style-4">Відправити</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="files/assets/45446e13/jquery.js?_v=20230310152910"></script>
+	<script src="files/assets/b1b6c6cc/yii.js?_v=20230310152910"></script>
+	<script src="js/jquery-ui.js?_v=20230310152910"></script>
+	<!-- <script src="js/jquery.ui.touch-punch.min.js?_v=20230310152910"></script> -->
+	<script src="js/fastselect.standalone.js?_v=20230310152910"></script>
+	<script src="js/jquery.formstyler.min.js?_v=20230310152910"></script>
+	<script src="js/jquery.mask.min.js?_v=20230310152910"></script>
+	<script src="js/filter.js?_v=20230310152910"></script>
+	<script src="js/swiper-bundle.min.js?_v=20230310152910"></script>
+	<script src="js/slider.js?_v=20230310152910"></script>
+	<script src="js/popups.js?_v=20230310152910"></script>
+	<script src="js/fancybox.umd.js?_v=20230310152910"></script>
+	<script src="js/main.js?_v=20230310152910"></script>
+	<script src="js/calc.js?_v=20230310152910"></script>
+	<script src="js/script.js?_v=20230310152910"></script>
+	<script src="files/assets/b1b6c6cc/yii.validation.js?_v=20230310152910"></script>
+	<script src="files/assets/b1b6c6cc/yii.activeForm.js?_v=20230310152910"></script>
 	<script>jQuery(function ($) {
 			jQuery('#form-popup-login').yiiActiveForm([{
 				"id": "loginform-phone",

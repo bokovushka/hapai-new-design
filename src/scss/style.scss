@@ -932,7 +932,7 @@ input {
 	justify-content: flex-end;
 }
 .filter-sort-box .ui-selectmenu-button {
-	width: 200px;
+	width: 160px;
 	height: auto;
 	margin: 0;
 	background: #ffffff;
@@ -1162,20 +1162,20 @@ input {
 	border-radius: 4px;
 	width: 228px;
 }
-.f-tags {
-	position: relative;
-	&:after {
-		font-family: "hapai";
-		text-align: center;
-		content: "\e928";
-		color: #a9a9a9;
-		position: absolute;
-		right: 50px;
-		bottom: 0;
-		transform: translate(-50%, -50%);
-		font-size: 20px;
-	}
-}
+// .f-tags {
+// 	position: relative;
+// 	&:after {
+// 		font-family: "hapai";
+// 		text-align: center;
+// 		content: "\e928";
+// 		color: #a9a9a9;
+// 		position: absolute;
+// 		right: 50px;
+// 		top: 50%;
+// 		transform: translate(-50%, -50%);
+// 		font-size: 20px;
+// 	}
+// }
 .filter-list.f-range {
 	overflow: visible;
 	display: flex;
@@ -1372,6 +1372,7 @@ input {
 	display: inline-flex;
 	align-items: baseline;
 	font-weight: 600;
+	gap: 5px;
 }
 .il-price__description {
 	font-size: 12px;
@@ -1628,7 +1629,7 @@ input {
 	margin-top: 25px;
 }
 .ic-bottom {
-	padding: 24px 0 0 0;
+	padding: 24px 0 0 20px;
 }
 .ic-quality {
 	padding: 12px 64px;
@@ -1674,18 +1675,21 @@ input {
 	font-weight: 400;
 	justify-content: space-between;
 	padding: 8px 0;
+	gap: 20px;
 }
 .feature-col {
 	color: #a9a9a9;
-	flex: 1;
+	width: 30%;
+	// flex: 1;
 }
 .feature-col2 {
-	flex: 1;
+	// flex: 1;
 	font-weight: 600;
 	color: #000000;
 	display: inline-flex;
 	justify-content: end;
 	align-items: center;
+	text-align: right;
 }
 .feature-col2.c-red:before {
 	content: "";
@@ -1757,8 +1761,11 @@ input {
 	display: flex;
 	position: relative;
 }
+.ic-img-loop {
+	gap: 20px;
+}
 .ic-img:last-child {
-	display: none;
+	display: none !important;
 }
 .geo-box {
 	padding: 12px;
@@ -2574,16 +2581,16 @@ body.lock {
 }
 .news__item {
 	position: relative;
-	width: calc((100% - 260px) / 3);
+	width: calc((100% - 60px) / 4);
 	background: #ffffff;
 	color: #000000;
 	padding: 20px 0;
 }
-.news__item:nth-child(9n + 3),
-.news__item:nth-child(9n + 5),
-.news__item:nth-child(9n + 7) {
-	flex-basis: 600px;
-}
+// .news__item:nth-child(9n + 3),
+// .news__item:nth-child(9n + 5),
+// .news__item:nth-child(9n + 7) {
+// 	flex-basis: 600px;
+// }
 .news__item img {
 	margin-bottom: 8px;
 	height: 204px;
@@ -3149,6 +3156,7 @@ video {
 }
 .why__item .heading {
 	font-weight: 500;
+	margin-bottom: 4px;
 }
 .why__item p {
 	color: #777777;
@@ -3169,35 +3177,19 @@ video {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px 0;
-	margin: 0 -4px;
-	row-gap: 7px;
+	margin: 0 -8px;
 }
 .ch-car-brand__item {
 	display: flex;
-	flex-direction: column;
+	padding: 12px 14px;
+	margin: 8px;
 	background: #ffffff;
-	box-sizing: border-box;
-	width: calc((100% - 32px) / 4);
-	color: #000000;
-	margin: 4px;
-}
-.ch-car-brand__name {
 	border: 1px solid #e5e5e5;
-	border-radius: 8px;
 	box-sizing: border-box;
-	padding: 10px;
-	display: flex;
+	border-radius: 8px;
+	width: calc((100% / 4) - 16px);
+	color: #000000;
 	overflow: hidden;
-	height: 100%;
-	.heading {
-		color: #000;
-	}
-}
-.ch-car-brand__leasing {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 32px;
-	color: #777777;
 }
 .ch-car-brand__item img {
 	height: 72px;
@@ -4582,6 +4574,7 @@ input.field {
 	border-radius: 12px;
 	padding: 20px;
 	margin-bottom: 20px;
+	height: 100%;
 }
 .installment-payment .icon {
 	display: block;
@@ -5265,6 +5258,12 @@ input.field {
 .start-price .start-price__icon img {
 	max-width: 24px;
 }
+.product-page {
+	.title-item .title-item__b {
+		font-size: unset;
+		line-height: unset;
+	}
+}
 /* mobile */
 @media only screen and (max-width: 1439px) {
 	.nav-menu__item .nav-menu__link {
@@ -5333,7 +5332,7 @@ input.field {
 		flex-direction: column;
 	}
 	.ch-car-brand__item {
-		width: calc((100% - 24px) / 3);
+		width: calc((100% - 48px) / 3);
 	}
 	.top-banner-sell-car .btn-style-3 {
 		margin-top: 0;
@@ -5427,24 +5426,57 @@ input.field {
 	}
 }
 @media only screen and (min-width: 993px) {
-	.ic-content {
+	.ic-content,
+	.ic-img-loop {
 		flex-wrap: wrap;
 	}
-	.ic-img {
-		a {
-			display: block;
-			width: 100%;
-			height: 100%;
-		}
+	.ic-gallery .item-gallery-button {
+		display: none;
 	}
 	.ic-img {
+		flex: 1 1 calc(50% - 40px);
+		height: 210px;
+	}
+	.ic-img:first-child {
 		width: 100%;
 		max-width: 100%;
 		flex-basis: 100%;
 		height: 435px;
 	}
-	// .ic-img:nth-child(n + 2) {
-	// 	display: none;
+	.ic-img:nth-child(n + 7) {
+		display: none;
+	}
+	.ic-img:nth-last-child(-n + 2) {
+		display: block;
+	}
+	.ic-img:nth-last-child(-n + 2) .txt-big {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		color: #ffffff;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		max-width: 104px;
+	}
+	.ic-img:nth-last-child(-n + 2) img {
+		filter: brightness(0.4);
+	}
+	// .ic-content {
+	// 	flex-wrap: wrap;
+	// }
+	// .ic-img {
+	// 	a {
+	// 		display: block;
+	// 		width: 100%;
+	// 		height: 100%;
+	// 	}
+	// }
+	// .ic-img {
+	// 	width: 100%;
+	// 	max-width: 100%;
+	// 	flex-basis: 100%;
+	// 	height: 435px;
 	// }
 }
 @media only screen and (width: 992px) {
@@ -5467,8 +5499,7 @@ input.field {
 	}
 	.a-sidebar,
 	.sort-mode,
-	.filter-result-v,
-	.filter-result-txt {
+	.filter-result-v {
 		display: none;
 	}
 	.user-profile span:last-child {
@@ -5619,7 +5650,7 @@ input.field {
 		margin-top: 0;
 	}
 	.ch-car-brand__item {
-		width: calc(50% - 8px);
+		width: calc(50% - 16px);
 	}
 	.how-works__item {
 		width: calc(50% - 10px);
@@ -6094,14 +6125,11 @@ input.field {
 		padding: 8px;
 		margin-bottom: 10px;
 	}
-	.ch-car-brand__leasing {
-		font-size: 10px;
-		line-height: 11px;
-		min-height: 24px;
-	}
 	.ch-car-brand__item {
+		flex-direction: column;
+		width: calc((100% - 12px) / 2);
+		padding: 8px;
 		margin: 3px;
-		width: calc((100% / 2) - 6px);
 	}
 	.ch-car-brand__item img {
 		position: relative;
