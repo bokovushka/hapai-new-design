@@ -474,3 +474,12 @@ $(document).ready(function () {
 		});
 	});
 });
+
+//menu phone modal click
+$(".header-menu .nav-menu__item.phone").click(function () {
+	$("body").removeClass("lock-menu-m");
+	$(".menu-btn").removeClass("active");
+	$(".menu").removeClass("active");
+	$(".language").removeClass("active");
+	$(".header-menu").removeClass("active");
+});

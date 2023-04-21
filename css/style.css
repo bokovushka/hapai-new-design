@@ -7361,7 +7361,7 @@ input.field {
   .a-sidebar {
     display: block;
     position: absolute;
-    z-index: 5;
+    z-index: 11;
     position: fixed;
     overflow: scroll;
     top: 0;

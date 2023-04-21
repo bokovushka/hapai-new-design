@@ -2089,11 +2089,28 @@ textarea {
 	}
 }
 .callback {
-	max-width: 90px;
+	width: 80px;
+	height: 80px;
+	background: #d45279;
+	box-shadow: 0 0 0 6px rgb(212 82 125 / 30%);
 	position: fixed;
 	bottom: 40px;
 	left: 40px;
+	border-radius: 50%;
 	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		box-shadow: 0 0 0 6px rgb(212 82 125 / 60%);
+	}
+	svg {
+		padding: 7px;
+		width: 46px;
+		height: 46px;
+		background-image: none;
+		transform: rotate(115deg);
+	}
 }
 .form-popup-callback__content {
 	display: flex;
@@ -4329,6 +4346,9 @@ textarea {
 		.container {
 			padding: 0 12px !important;
 		}
+	}
+	.callback {
+		left: 18px;
 	}
 }
 @media only screen and (max-width: 991px) {

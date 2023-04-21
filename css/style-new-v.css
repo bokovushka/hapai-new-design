@@ -2914,11 +2914,40 @@ textarea {
 }
 
 .callback {
-  max-width: 90px;
+  width: 80px;
+  height: 80px;
+  background: #d45279;
+  -webkit-box-shadow: 0 0 0 6px rgba(212, 82, 125, 0.3);
+          box-shadow: 0 0 0 6px rgba(212, 82, 125, 0.3);
   position: fixed;
   bottom: 40px;
   left: 40px;
+  border-radius: 50%;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.callback:hover {
+  -webkit-box-shadow: 0 0 0 6px rgba(212, 82, 125, 0.6);
+          box-shadow: 0 0 0 6px rgba(212, 82, 125, 0.6);
+}
+
+.callback svg {
+  padding: 7px;
+  width: 46px;
+  height: 46px;
+  background-image: none;
+  -webkit-transform: rotate(115deg);
+      -ms-transform: rotate(115deg);
+          transform: rotate(115deg);
 }
 
 .form-popup-callback__content {
@@ -5694,6 +5723,10 @@ textarea::placeholder {
 
   .why-we-about .container {
     padding: 0 12px !important;
+  }
+
+  .callback {
+    left: 18px;
   }
 }
 
