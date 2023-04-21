@@ -2591,12 +2591,21 @@ body.lock {
 // .news__item:nth-child(9n + 7) {
 // 	flex-basis: 600px;
 // }
-.news__item img {
-	margin-bottom: 8px;
-	height: 204px;
-	-o-object-fit: cover;
-	object-fit: cover;
-	border-radius: 4px;
+.news__item {
+	.wrap-img {
+		margin-bottom: 8px;
+		height: 204px;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+	img {
+		-o-object-fit: cover;
+		object-fit: cover;
+		height: 100%;
+		width: 130%;
+		object-fit: cover;
+		object-position: -30px center;
+	}
 }
 .news__date {
 	font-weight: 700;

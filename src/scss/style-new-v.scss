@@ -245,7 +245,7 @@ input[type="text"]::placeholder {
 		position: absolute;
 		right: 16px;
 		top: 0;
-		padding-top: 50px;
+		padding-top: 40px;
 	}
 }
 .right-menu {
@@ -667,7 +667,6 @@ input[type="text"]::placeholder {
 		padding: 20px;
 		display: flex;
 		gap: 12px;
-		height: auto;
 	}
 	.heading {
 		font-weight: 600;
@@ -714,7 +713,7 @@ input[type="text"]::placeholder {
 		font-size: 12px;
 		line-height: 14px;
 		margin-top: 0;
-		height: 100%;
+		height: auto;
 	}
 }
 .btn-style-4 {
@@ -951,21 +950,32 @@ input[type="text"]::placeholder {
 }
 .property__wrap {
 	display: flex;
-	gap: 24px;
-	padding: 20px;
+	gap: 7px;
 }
 .property__item {
-	width: calc((100% - 120px) / 6);
+	width: calc((100% - 35px) / 6);
+	background: #f5f6f8;
+	border-radius: 12px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	word-break: break-all;
 	.figure {
 		font-weight: 500;
 		font-size: 32px;
 		line-height: 44px;
 		color: #6667ab;
+		margin-bottom: 10px;
 	}
 	.property__descrp {
-		font-size: 20px;
-		line-height: 28px;
+		font-size: 16px;
+		line-height: 22px;
 		color: #777777;
+		display: flex;
+		align-items: center;
+		height: 100%;
 	}
 }
 //customers-reputation
@@ -1290,7 +1300,7 @@ input[type="text"]::placeholder {
 		width: calc((100% - 30px) / 2);
 		.heading,
 		p {
-			max-width: 360px;
+			max-width: 100%;
 		}
 	}
 }
@@ -2934,6 +2944,7 @@ textarea {
 }
 .morelink {
 	color: #2360a5;
+	display: inline;
 }
 .remaining-content > .continued-content {
 	display: none;
@@ -3169,6 +3180,16 @@ textarea {
 .filter-result-v {
 	.filter-tags {
 		height: 100%;
+		.r-f-tags {
+			height: 100%;
+			&:hover {
+				background: #6667ab;
+				color: #fff;
+				&::after {
+					color: #fff;
+				}
+			}
+		}
 	}
 	.r-f-tags {
 		margin-top: 0;
@@ -3333,7 +3354,6 @@ textarea {
 			height: 100%;
 			max-height: 205px;
 			min-width: 150px;
-			overflow-y: scroll;
 			padding-right: 10px;
 			margin-right: 10px;
 		}
@@ -3349,6 +3369,15 @@ textarea {
 			}
 			&:hover {
 				color: #4f4599;
+				a {
+					color: #4f4599;
+					background: #fff;
+				}
+			}
+			a {
+				padding: 0;
+				padding: 0;
+				border: unset;
 			}
 		}
 	}
@@ -3478,7 +3507,149 @@ textarea {
 		color: #6667ab;
 	}
 }
+//new-about-p
+.about-p-top__button {
+	.btn-style-3 {
+		width: max-content;
+		min-width: 182px;
+		margin-top: 20px;
+	}
+}
+.about__swiper {
+	overflow: hidden;
+	position: relative;
+	.swiper-slide {
+		border-radius: 12px;
+		overflow: hidden;
+		padding: 60px 100px;
+		height: auto;
+		.bg-wrap {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 1;
+				background: linear-gradient(83.45deg, #7476c3 23.12%, rgba(116, 118, 195, 0) 80%);
+			}
+		}
+		.bg-down {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: -1;
+			min-width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+		}
+		.content {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			color: #fff;
+			padding-top: 70px;
+			padding-bottom: 70px;
+			.title {
+				font-weight: 500;
+				font-size: 56px;
+				line-height: 64px;
+				margin-bottom: 25px;
+			}
+			p {
+				max-width: 600px;
+			}
+		}
+	}
+	.swiper__buttons {
+		right: unset;
+		left: 100px;
+	}
+}
+.financing-conditions {
+	.car-buy-description__main {
+		margin-bottom: 0;
+	}
+	.car-buy-description__wrap {
+		ul {
+			&:first-child {
+				width: 40%;
+			}
+			&:last-child {
+				width: 60%;
+			}
+		}
+		li {
+			padding-left: 24px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 26px;
+			margin-bottom: 35px;
+			&::after {
+				all: unset;
+				content: "\e903";
+				font-family: "hapai";
+				position: absolute;
+				left: 0;
+				top: 0;
+				color: #0c8d47;
+			}
+		}
+	}
+}
+.why-we-about__swiper {
+	.why__item {
+		width: 100%;
+	}
+}
+.why-we-about {
+	.container {
+		overflow: hidden;
+		padding: 0 20px !important;
+	}
+	.why__item {
+		height: 100%;
+	}
+	.swiper-slide {
+		height: auto;
+	}
+	.btn-style-3 {
+		width: max-content;
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+}
+.why-we-about {
+	margin: 20px 0;
+	padding-bottom: 0;
+}
+.btn__swiper {
+	&.swiper-button-disabled {
+		background: #e5e5e5;
+		cursor: default;
+	}
+}
+.user-txt {
+	#f-date,
+	#f-time {
+		cursor: pointer;
+	}
+}
+.form-request-purchase-goods-result {
+	.user-range {
+		&.f-price .ui-slider-horizontal {
+			margin-left: 0;
+		}
+	}
+}
 /* mobile */
+@media only screen and (min-width: 1441px) {
+	.why-we-about__swiper {
+		overflow: hidden;
+	}
+}
 @media only screen and (min-width: 1440px) {
 	body .main {
 		.offices {
@@ -3494,6 +3665,10 @@ textarea {
 		overflow: hidden;
 	}
 	.nav-menu__item {
+		&.donate-ua {
+			width: max-content;
+			margin: 0 auto;
+		}
 		ul {
 			right: 12px;
 			z-index: 4;
@@ -3759,7 +3934,7 @@ textarea {
 		flex-wrap: wrap;
 	}
 	.property__item {
-		width: calc((100% - 48px) / 3);
+		width: calc((100% - 14px) / 3);
 	}
 	.customers-reputation__item {
 		height: 115px;
@@ -3913,7 +4088,33 @@ textarea {
 }
 @media only screen and (max-width: 1023px) {
 }
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 992px) {
+	.about__swiper .swiper__buttons {
+		bottom: 70px;
+		.btn__swiper {
+			width: 32px;
+			height: 32px;
+			position: relative;
+			&:before {
+				all: unset;
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: block;
+				width: 22px;
+				height: 22px;
+				background: url(@img/icons/icons.svg#arrow-swiper) 50% 50% no-repeat;
+				background-size: auto;
+			}
+			&.btn__swiper-prev {
+				&::before {
+					transform: translate(-50%, -50%) scaleX(-1);
+				}
+			}
+		}
+	}
 }
 @media only screen and (width: 992px) {
 }
@@ -4047,6 +4248,7 @@ textarea {
 	}
 	.customers-reputation {
 		padding: 20px 0;
+		padding-top: 50px;
 	}
 	.customers-reputation__content {
 		padding: 0;
@@ -4115,6 +4317,18 @@ textarea {
 	}
 	.filter-result-txt {
 		margin-bottom: 20px;
+	}
+	.about-p-top__button {
+		.btn-style-3 {
+			min-width: 400px;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}
+	.why-we-about {
+		.container {
+			padding: 0 12px !important;
+		}
 	}
 }
 @media only screen and (max-width: 991px) {
@@ -4317,6 +4531,53 @@ textarea {
 		max-width: 100%;
 		height: 260px;
 	}
+	.about__swiper {
+		.swiper__buttons {
+			position: relative;
+			left: 0;
+		}
+		.swiper-slide {
+			padding: 0;
+			.bg-wrap {
+				position: relative;
+				border-radius: 12px;
+				overflow: hidden;
+				&::before {
+					background: linear-gradient(82.91deg, #7476c3 -5.02%, rgba(116, 118, 195, 0.14) 70.74%);
+				}
+				.bg-down {
+					position: relative;
+					object-position: top;
+					height: 400px;
+				}
+			}
+			.content {
+				color: #000;
+				padding: 0;
+				padding-top: 5px;
+				margin-bottom: 20px;
+				max-width: 100%;
+				.title {
+					font-size: 32px;
+					line-height: 44px;
+					margin-bottom: 5px;
+				}
+				p {
+					color: #777777;
+				}
+			}
+		}
+	}
+	.financing-conditions {
+		.car-buy-description__wrap {
+			flex-direction: column;
+			gap: 0;
+			ul {
+				padding-left: 0;
+				width: 100% !important;
+			}
+		}
+	}
 }
 @media only screen and (max-width: 767px) {
 	.logo {
@@ -4498,9 +4759,6 @@ textarea {
 	}
 	.about-p-top__wraper {
 		border-radius: 0;
-	}
-	.property {
-		margin-bottom: 5px;
 	}
 	.property__item {
 		width: calc((100% - 12px) / 2);
@@ -4695,6 +4953,25 @@ textarea {
 	.popular-car__list {
 		grid-template-columns: 1fr;
 	}
+	.about-p-top__button {
+		.btn-style-3 {
+			min-width: 100%;
+		}
+	}
+	.about__swiper .swiper-slide .bg-wrap .bg-down {
+		height: 225px;
+		width: 160%;
+	}
+	.why-we-about {
+		.swiper__buttons {
+			position: relative;
+			margin-left: auto;
+			margin-bottom: 12px;
+		}
+		.partners__title .title {
+			padding-right: 0;
+		}
+	}
 }
 @media only screen and (max-width: 639px) {
 	.header .phone span {
@@ -4875,6 +5152,14 @@ textarea {
 	.equ-col {
 		width: calc((100% - 32px) / 2);
 	}
+	.loan-leasing .leasing__swiper,
+	.loan-leasing .loan__swiper {
+		margin: 0 -12px;
+		padding-right: 24px;
+		.swiper-wrapper {
+			padding-left: 12px;
+		}
+	}
 }
 @media only screen and (max-width: 479px) {
 	.right-menu .nav-menu__item.donate-ua {
@@ -4907,9 +5192,14 @@ textarea {
 		padding: 0;
 	}
 	.property__item {
-		width: 100%;
-		text-align: center;
-		padding: 12px;
+		text-align: left;
+		align-items: flex-start;
+		.figure {
+			margin-bottom: 0;
+		}
+		.property__descrp {
+			align-items: flex-start;
+		}
 	}
 	.choose-reality__wrap {
 		margin: 0 -12px;

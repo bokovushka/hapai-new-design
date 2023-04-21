@@ -3435,12 +3435,21 @@ body.lock {
   padding: 20px 0;
 }
 
-.news__item img {
+.news__item .wrap-img {
   margin-bottom: 8px;
   height: 204px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.news__item img {
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 4px;
+  height: 100%;
+  width: 130%;
+  object-fit: cover;
+  -o-object-position: -30px center;
+     object-position: -30px center;
 }
 
 .news__date {

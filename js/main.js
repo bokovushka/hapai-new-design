@@ -289,7 +289,7 @@ $(".request-purchase-goods-result .btn-style-2").click(function () {
 });
 
 $(function () {
-	$("#slider-range-rpgr1").slider({
+	$("#slider-range-rpgr1").addClass("line-slider").slider({
 		range: "min",
 		step: 1,
 		value: 10000,
@@ -303,7 +303,7 @@ $(function () {
 });
 
 $(function () {
-	$("#slider-range-rpgr2").slider({
+	$("#slider-range-rpgr2").addClass("line-slider").slider({
 		range: "min",
 		step: 1,
 		value: 80000,
@@ -316,7 +316,7 @@ $(function () {
 	$("#rpgr2").val($("#slider-range-rpgr2").slider("values", 0));
 });
 $(function () {
-	$("#slider-range-rpgr3").slider({
+	$("#slider-range-rpgr3").addClass("line-slider").slider({
 		range: "min",
 		step: 12,
 		value: 12,
@@ -328,6 +328,7 @@ $(function () {
 	});
 	$("#rpgr3").val($("#slider-range-rpgr3").slider("values", 0));
 });
+
 
 //home page / click more brand
 $(function () {
@@ -364,9 +365,9 @@ $(document).ready(function () {
 				ellipsestext +
 				'</span><span class="remaining-content"><span class="continued-content">' +
 				hide_content +
-				'<span>&nbsp;</span></span><a href="" class="morelink">' +
+				'<span>&nbsp;</span></span><div class="morelink">' +
 				moretext +
-				"</a></span>";
+				"</div></span>";
 			$(this).html(html);
 		}
 	});
@@ -382,9 +383,9 @@ $(document).ready(function () {
 				ellipsestext +
 				'</span><span class="remaining-content"><span class="continued-content">' +
 				hide_content +
-				'<span>&nbsp;</span></span><a href="" class="morelink">' +
+				'<span>&nbsp;</span></span><div class="morelink">' +
 				moretext +
-				"</a></span>";
+				"</div></span>";
 			$(this).html(html);
 		}
 	});

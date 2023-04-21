@@ -175,12 +175,19 @@ function initButtonsFilter() {
 	let sidebar = document.querySelector('.a-sidebar');
 	let body_lock = document.querySelector('body');
 	let popup_bg_body = document.querySelector('.popup-bg-body');
-	filterBtn.addEventListener('click', function () {
-		this.classList.add('active');
-		sidebar.classList.add("active");
-		body_lock.classList.add("lock");
-		popup_bg_body.classList.add("open");
-	})
+	if (window.innerWidth < 993) {
+		filterBtn.addEventListener('click', function () {
+			this.classList.add('active');
+			sidebar.classList.add("active");
+			body_lock.classList.add("lock");
+			popup_bg_body.classList.add("open");
+		})
+	} else {
+		filterBtn.classList.remove("active");
+		sidebar.classList.remove("active");
+		body_lock.classList.remove("lock");
+		popup_bg_body.classList.remove("open");
+	}
 	filterClose.addEventListener('click', function () {
 		filterBtn.classList.remove("active");
 		sidebar.classList.remove("active");
@@ -188,6 +195,7 @@ function initButtonsFilter() {
 		popup_bg_body.classList.remove("open");
 	})
 }
+setInterval(initButtonsFilter, 500);
 
 //закрытые фильтра вне области
 $(document).ready(function () {

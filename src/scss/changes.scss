@@ -138,6 +138,12 @@
 	}
 }
 
+.accordion__info {
+	li::before {
+		line-height: 18px;
+	}
+}
+
 .seo-text-section h1,
 .seo-text-section h2,
 .seo-text-section h3,

@@ -591,7 +591,7 @@ input[type=text]::placeholder {
   position: absolute;
   right: 16px;
   top: 0;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .right-menu .nav-menu__item:not(:last-child) {
@@ -1136,7 +1136,6 @@ input[type=text]::placeholder {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  height: auto;
 }
 
 .loan-leasing .heading {
@@ -1196,7 +1195,7 @@ input[type=text]::placeholder {
   font-size: 12px;
   line-height: 14px;
   margin-top: 0;
-  height: 100%;
+  height: auto;
 }
 
 .btn-style-4 {
@@ -1477,12 +1476,26 @@ input[type=text]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 24px;
-  padding: 20px;
+  gap: 7px;
 }
 
 .property__item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 35px) / 6);
+  background: #f5f6f8;
+  border-radius: 12px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  word-break: break-all;
 }
 
 .property__item .figure {
@@ -1490,12 +1503,20 @@ input[type=text]::placeholder {
   font-size: 32px;
   line-height: 44px;
   color: #6667ab;
+  margin-bottom: 10px;
 }
 
 .property__item .property__descrp {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 22px;
   color: #777777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .customers-reputation {
@@ -1886,7 +1907,7 @@ input[type=text]::placeholder {
 
 .advantage-selection-car .why__item .heading,
 .advantage-selection-car .why__item p {
-  max-width: 360px;
+  max-width: 100%;
 }
 
 .banner-top .choice-car__main {
@@ -4002,6 +4023,7 @@ textarea {
 
 .morelink {
   color: #2360a5;
+  display: inline;
 }
 
 .remaining-content > .continued-content {
@@ -4281,6 +4303,19 @@ textarea::placeholder {
   height: 100%;
 }
 
+.filter-result-v .filter-tags .r-f-tags {
+  height: 100%;
+}
+
+.filter-result-v .filter-tags .r-f-tags:hover {
+  background: #6667ab;
+  color: #fff;
+}
+
+.filter-result-v .filter-tags .r-f-tags:hover::after {
+  color: #fff;
+}
+
 .filter-result-v .r-f-tags {
   margin-top: 0;
   border-radius: 4px;
@@ -4471,7 +4506,6 @@ textarea::placeholder {
   height: 100%;
   max-height: 205px;
   min-width: 150px;
-  overflow-y: scroll;
   padding-right: 10px;
   margin-right: 10px;
 }
@@ -4491,6 +4525,17 @@ textarea::placeholder {
 
 .about-choose:hover li:hover {
   color: #4f4599;
+}
+
+.about-choose:hover li:hover a {
+  color: #4f4599;
+  background: #fff;
+}
+
+.about-choose:hover li a {
+  padding: 0;
+  padding: 0;
+  border: unset;
 }
 
 .about-choose .submenu {
@@ -4655,7 +4700,186 @@ textarea::placeholder {
   color: #6667ab;
 }
 
+.about-p-top__button .btn-style-3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 182px;
+  margin-top: 20px;
+}
+
+.about__swiper {
+  overflow: hidden;
+  position: relative;
+}
+
+.about__swiper .swiper-slide {
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 60px 100px;
+  height: auto;
+}
+
+.about__swiper .swiper-slide .bg-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: -o-linear-gradient(6.55deg, #7476c3 23.12%, rgba(116, 118, 195, 0) 80%);
+  background: linear-gradient(83.45deg, #7476c3 23.12%, rgba(116, 118, 195, 0) 80%);
+}
+
+.about__swiper .swiper-slide .bg-down {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__swiper .swiper-slide .content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about__swiper .swiper-slide .content .title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 25px;
+}
+
+.about__swiper .swiper-slide .content p {
+  max-width: 600px;
+}
+
+.about__swiper .swiper__buttons {
+  right: unset;
+  left: 100px;
+}
+
+.financing-conditions .car-buy-description__main {
+  margin-bottom: 0;
+}
+
+.financing-conditions .car-buy-description__wrap ul:first-child {
+  width: 40%;
+}
+
+.financing-conditions .car-buy-description__wrap ul:last-child {
+  width: 60%;
+}
+
+.financing-conditions .car-buy-description__wrap li {
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.financing-conditions .car-buy-description__wrap li::after {
+  all: unset;
+  content: "\e903";
+  font-family: "hapai";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0c8d47;
+}
+
+.why-we-about__swiper .why__item {
+  width: 100%;
+}
+
+.why-we-about .container {
+  overflow: hidden;
+  padding: 0 20px !important;
+}
+
+.why-we-about .why__item {
+  height: 100%;
+}
+
+.why-we-about .swiper-slide {
+  height: auto;
+}
+
+.why-we-about .btn-style-3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.why-we-about {
+  margin: 20px 0;
+  padding-bottom: 0;
+}
+
+.btn__swiper.swiper-button-disabled {
+  background: #e5e5e5;
+  cursor: default;
+}
+
+.user-txt #f-date,
+.user-txt #f-time {
+  cursor: pointer;
+}
+
+.form-request-purchase-goods-result .user-range.f-price .ui-slider-horizontal {
+  margin-left: 0;
+}
+
 /* mobile */
+
+@media only screen and (min-width: 992px) {
+  .about__swiper .swiper__buttons {
+    bottom: 70px;
+  }
+
+  .about__swiper .swiper__buttons .btn__swiper {
+    width: 32px;
+    height: 32px;
+    position: relative;
+  }
+
+  .about__swiper .swiper__buttons .btn__swiper:before {
+    all: unset;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../img/icons/icons.svg#arrow-swiper) 50% 50% no-repeat;
+    background-size: auto;
+  }
+
+  .about__swiper .swiper__buttons .btn__swiper.btn__swiper-prev::before {
+    -webkit-transform: translate(-50%, -50%) scaleX(-1);
+        -ms-transform: translate(-50%, -50%) scaleX(-1);
+            transform: translate(-50%, -50%) scaleX(-1);
+  }
+}
 
 @media only screen and (min-width: 1440px) {
   body .main .offices .container {
@@ -4664,9 +4888,22 @@ textarea::placeholder {
   }
 }
 
+@media only screen and (min-width: 1441px) {
+  .why-we-about__swiper {
+    overflow: hidden;
+  }
+}
+
 @media only screen and (max-width: 1439px) {
   body.lock-menu-m {
     overflow: hidden;
+  }
+
+  .nav-menu__item.donate-ua {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
   }
 
   .nav-menu__item ul {
@@ -5011,7 +5248,7 @@ textarea::placeholder {
   }
 
   .property__item {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 14px) / 3);
   }
 
   .customers-reputation__item {
@@ -5346,6 +5583,7 @@ textarea::placeholder {
 
   .customers-reputation {
     padding: 20px 0;
+    padding-top: 50px;
   }
 
   .customers-reputation__content {
@@ -5446,6 +5684,16 @@ textarea::placeholder {
 
   .filter-result-txt {
     margin-bottom: 20px;
+  }
+
+  .about-p-top__button .btn-style-3 {
+    min-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .why-we-about .container {
+    padding: 0 12px !important;
   }
 }
 
@@ -5717,6 +5965,64 @@ textarea::placeholder {
     max-width: 100%;
     height: 260px;
   }
+
+  .about__swiper .swiper__buttons {
+    position: relative;
+    left: 0;
+  }
+
+  .about__swiper .swiper-slide {
+    padding: 0;
+  }
+
+  .about__swiper .swiper-slide .bg-wrap {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .about__swiper .swiper-slide .bg-wrap::before {
+    background: -o-linear-gradient(7.09deg, #7476c3 -5.02%, rgba(116, 118, 195, 0.14) 70.74%);
+    background: linear-gradient(82.91deg, #7476c3 -5.02%, rgba(116, 118, 195, 0.14) 70.74%);
+  }
+
+  .about__swiper .swiper-slide .bg-wrap .bg-down {
+    position: relative;
+    -o-object-position: top;
+       object-position: top;
+    height: 400px;
+  }
+
+  .about__swiper .swiper-slide .content {
+    color: #000;
+    padding: 0;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .about__swiper .swiper-slide .content .title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 5px;
+  }
+
+  .about__swiper .swiper-slide .content p {
+    color: #777777;
+  }
+
+  .financing-conditions .car-buy-description__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+
+  .financing-conditions .car-buy-description__wrap ul {
+    padding-left: 0;
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -5944,10 +6250,6 @@ textarea::placeholder {
 
   .about-p-top__wraper {
     border-radius: 0;
-  }
-
-  .property {
-    margin-bottom: 5px;
   }
 
   .property__item {
@@ -6192,6 +6494,25 @@ textarea::placeholder {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .about-p-top__button .btn-style-3 {
+    min-width: 100%;
+  }
+
+  .about__swiper .swiper-slide .bg-wrap .bg-down {
+    height: 225px;
+    width: 160%;
+  }
+
+  .why-we-about .swiper__buttons {
+    position: relative;
+    margin-left: auto;
+    margin-bottom: 12px;
+  }
+
+  .why-we-about .partners__title .title {
+    padding-right: 0;
+  }
 }
 
 @media only screen and (max-width: 639px) {
@@ -6431,6 +6752,17 @@ textarea::placeholder {
   .equ-col {
     width: calc((100% - 32px) / 2);
   }
+
+  .loan-leasing .leasing__swiper,
+  .loan-leasing .loan__swiper {
+    margin: 0 -12px;
+    padding-right: 24px;
+  }
+
+  .loan-leasing .leasing__swiper .swiper-wrapper,
+  .loan-leasing .loan__swiper .swiper-wrapper {
+    padding-left: 12px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -6481,9 +6813,20 @@ textarea::placeholder {
   }
 
   .property__item {
-    width: 100%;
-    text-align: center;
-    padding: 12px;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .property__item .figure {
+    margin-bottom: 0;
+  }
+
+  .property__item .property__descrp {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .choose-reality__wrap {

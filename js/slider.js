@@ -208,6 +208,9 @@ new Swiper(".loan-leasing .leasing__swiper", {
 		},
 		640: {
 			slidesPerView: 2,
+		},
+		360: {
+			slidesPerView: 1.15,
 		}
 	},
 	navigation: {
@@ -226,6 +229,9 @@ new Swiper(".loan-leasing .loan__swiper", {
 		},
 		640: {
 			slidesPerView: 2,
+		},
+		360: {
+			slidesPerView: 1.15,
 		}
 	},
 	navigation: {
@@ -274,5 +280,45 @@ new Swiper(".why-sell-car__swiper", {
 			slidesPerView: 1.1,
 			spaceBetween: 8,
 		}
+	},
+})
+
+//about__swiper
+new Swiper(".about__swiper", {
+	direction: 'horizontal',
+	grabCursor: true,
+	navigation: {
+		prevEl: ".about__swiper .swiper__buttons .btn__swiper-prev",
+		nextEl: ".about__swiper .swiper__buttons .btn__swiper-next"
+	},
+	breakpoints: {
+
+	},
+})
+//why-we-about__swiper
+new Swiper(".why-we-about__swiper", {
+	grabCursor: true,
+	spaceBetween: 20,
+	loop: true,
+	navigation: {
+		prevEl: ".why-we-about .swiper__buttons .btn__swiper-prev",
+		nextEl: ".why-we-about .swiper__buttons .btn__swiper-next"
+	},
+	breakpoints: {
+		1441: {
+			slidesPerView: 3,
+		},
+		1280: {
+			slidesPerView: 3.1,
+		},
+		992: {
+			slidesPerView: 2.5,
+		},
+		640: {
+			slidesPerView: 1.6,
+		},
+		360: {
+			slidesPerView: 1.15,
+		},
 	},
 })
