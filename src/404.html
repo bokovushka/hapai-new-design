@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<link rel="canonical" href="https://auction.hapai.kiev.ua/" />
+	<link rel="alternate" hreflang="x-default" href="https://auction.hapai.kiev.ua/" />
+	<link rel="alternate" hreflang="uk-UA" href="https://auction.hapai.kiev.ua/" />
+	<link rel="alternate" hreflang="ru-UA" href="https://auction.hapai.kiev.ua/ru" />
+
+	<meta name="csrf-param" content="_csrf">
+	<meta name="csrf-token" content="">
+	<title>Підбір авто</title>
+
+	<meta name="description" content="Підбір авто">
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<link href="css/swiper-bundle.min.css" rel="stylesheet">
+	<link href="css/fancybox.min.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.min.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.theme.min.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/changes.min.css" rel="stylesheet">
+	<link href="css/style-new-v.min.css" rel="stylesheet">
+	<script>
+		const usdRate = 40.8000;
+		const productCalc = {
+			"OsagoPaymentAmount": 2500,
+			"KaskoPercentage": 0.0127,
+			"Tax": 0,
+			"RegistrationPrice": 4500,
+			"DeregistrationPrice": 500,
+			"ManagerBonusPercentage": 0.025,
+			"TrackerPrice": 3000,
+			"OtherExpences": 700,
+			"DealerBonusPercentage": 0.02,
+			"OtherAnnualAmount": 120,
+			"OfficialJobAnnualAdditionalAmount": 500,
+			"Irr": 0.365
+		};
+	</script>
+	<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "Name": "Хапай Аукціон",
+            "url": "https://auction.hapai.kiev.ua/",
+            "logo": "https://auction.hapai.kiev.ua/img/main-logo-4.png",
+            "image": "https://auction.hapai.kiev.ua/img/main-logo-4.png",
+            "email": "hapai.info@ulf.ua",
+            "telephone": "0800334170"
+        }
+    </script>
+</head>
+
+<body>
+	<div class="popup-bg-body"></div>
+	<!-- Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			<div class="content">
+				<section class="not-found">
+					<div class="container">
+						<div class="not-found__title">Ошибка 404</div>
+						<div class="title">Страница не найдена</div>
+						<p>Неправильно набран адрес или такой страницы на сайте больше не существует.</p>
+						<a href="/" class="btn btn-style-4">Вернуться на главную</a>
+						<div class="not-found__img">
+							<img src="@img/5cae3bed59062cc4b6c910312b6c580b.png" alt="">
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		@@include('html/footer.html',{})
+		<a id="button_top" href="javascript:void();"><img src="img/svg/arrow_up.svg" alt="top"></a>
+	</div>
+	@@include('html/popup/popup-policy.html',{})
+	@@include('html/popup/popup-terms.html',{})
+	@@include('html/popup/popup-help.html',{})
+	@@include('html/popup/popup-success.html',{})
+	@@include('html/popup/popup-login.html',{})
+	@@include('html/popup/popup-auth.html',{})
+	<script src="files/assets/45446e13/jquery.js"></script>
+	<script src="files/assets/b1b6c6cc/yii.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/popups.js"></script>
+	<script src="js/fancybox.umd.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/main-new-v.js"></script>
+	<script src="js/calc.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/home.js"></script>
+	<script src="files/assets/b1b6c6cc/yii.validation.js"></script>
+	<script src="files/assets/b1b6c6cc/yii.activeForm.js"></script>
+	<script>jQuery(function ($) {
+			jQuery('#form-popup-login').yiiActiveForm([{
+				"id": "loginform-phone",
+				"name": "phone",
+				"container": ".field-loginform-phone",
+				"input": "#loginform-phone",
+				"error": ".help-block.help-block-error",
+				"enableAjaxValidation": true,
+				"validate": function (attribute, value, messages, deferred, $form) {
+					yii.validation.required(value, messages, { "message": "Поле не може бути незаповненим" });
+					value = yii.validation.trim($form, attribute, {
+						"skipOnArray": true,
+						"skipOnEmpty": false,
+						"chars": false
+					}, value);
+				}
+			}, {
+				"id": "loginform-password",
+				"name": "password",
+				"container": ".field-loginform-password",
+				"input": "#loginform-password",
+				"error": ".help-block.help-block-error",
+				"enableAjaxValidation": true,
+				"validate": function (attribute, value, messages, deferred, $form) {
+					yii.validation.required(value, messages, { "message": "Поле не може бути незаповненим" });
+					value = yii.validation.trim($form, attribute, {
+						"skipOnArray": true,
+						"skipOnEmpty": false,
+						"chars": false
+					}, value);
+				}
+			}], { "validationUrl": "files/auth\/login-validate" });
+		});</script>
+</body>
+
+</html>

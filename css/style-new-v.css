@@ -4903,11 +4903,11 @@ textarea::placeholder {
           flex-direction: column;
 }
 
-.choice-car .choice-help__seacrh-number-car--wrap.error .choice-help__seacrh-number-car {
+.choice-car .choice-help__seacrh-number-car--wrap.active .choice-help__seacrh-number-car {
   border-radius: 8px 8px 0 0;
 }
 
-.choice-car .choice-help__seacrh-number-car--wrap.error .tip {
+.choice-car .choice-help__seacrh-number-car--wrap.active .tip {
   display: block;
 }
 
@@ -7125,6 +7125,10 @@ textarea::placeholder {
   .loan-leasing .leasing__swiper .swiper-wrapper,
   .loan-leasing .loan__swiper .swiper-wrapper {
     padding-left: 12px;
+  }
+
+  .a-main .item-loop__txtblock .heading {
+    height: auto !important;
   }
 }
 
