@@ -5157,6 +5157,10 @@ textarea::placeholder {
   display: none;
 }
 
+.car-buyout-wrapper .choice-car__main {
+  padding-bottom: 40px;
+}
+
 /* mobile */
 
 @media only screen and (min-width: 992px) {
@@ -5752,6 +5756,10 @@ textarea::placeholder {
 
   .filter-sort-box .type-list-buttons {
     display: none;
+  }
+
+  .car-buyout-wrapper .choice-car__main {
+    padding-bottom: 32px;
   }
 }
 
@@ -6385,6 +6393,10 @@ textarea::placeholder {
     top: 9px;
     width: 13px;
     height: 13px;
+  }
+
+  .car-buyout-wrapper .choice-car__main {
+    padding-bottom: 20px;
   }
 }
 

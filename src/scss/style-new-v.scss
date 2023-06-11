@@ -3865,6 +3865,11 @@ textarea {
 		}
 	}
 }
+.car-buyout-wrapper {
+	.choice-car__main {
+		padding-bottom: 40px;
+	}
+}
 /* mobile */
 @media only screen and (min-width: 1441px) {
 	.why-we-about__swiper {
@@ -4301,6 +4306,11 @@ textarea {
 	}
 	.filter-sort-box .type-list-buttons {
 		display: none;
+	}
+	.car-buyout-wrapper {
+		.choice-car__main {
+			padding-bottom: 32px;
+		}
 	}
 }
 @media (min-width: 992px) and (max-width: 1279px) {
@@ -4842,6 +4852,11 @@ textarea {
 					height: 13px;
 				}
 			}
+		}
+	}
+	.car-buyout-wrapper {
+		.choice-car__main {
+			padding-bottom: 20px;
 		}
 	}
 }
