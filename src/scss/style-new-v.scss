@@ -3814,16 +3814,17 @@ textarea {
 							}
 							.item-loop__txtblock-content {
 								display: flex;
-								align-items: center;
+								flex-direction: column;
 								width: 100%;
 							}
 							> .heading-link {
 								width: 100%;
 							}
 							.sell-car__button {
-								flex-direction: column;
-								max-width: 210px;
 								width: 100%;
+								.btn {
+									max-width: 210px;
+								}
 							}
 							.item-loop__txtblock-info {
 								display: flex;
@@ -3839,7 +3840,12 @@ textarea {
 								}
 								.il-param {
 									order: 2;
-									max-width: 280px;
+									max-width: max-content;
+									gap: 30px;
+									p {
+										flex-basis: auto;
+										max-width: max-content;
+									}
 								}
 							}
 						}

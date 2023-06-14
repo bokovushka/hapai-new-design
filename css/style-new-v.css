@@ -5085,9 +5085,10 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
@@ -5096,12 +5097,11 @@ textarea::placeholder {
 }
 
 .a-main.active .loop-wrap .loop-cover .item-loop .item-loop__link .item-loop__txtblock .sell-car__button {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 210px;
   width: 100%;
+}
+
+.a-main.active .loop-wrap .loop-cover .item-loop .item-loop__link .item-loop__txtblock .sell-car__button .btn {
+  max-width: 210px;
 }
 
 .a-main.active .loop-wrap .loop-cover .item-loop .item-loop__link .item-loop__txtblock .item-loop__txtblock-info {
@@ -5133,7 +5133,18 @@ textarea::placeholder {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  max-width: 280px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  gap: 30px;
+}
+
+.a-main.active .loop-wrap .loop-cover .item-loop .item-loop__link .item-loop__txtblock .item-loop__txtblock-info .il-param p {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .a-main.active .loop-wrap .loop-cover .item-loop .item-loop__link .item-loop__img {
