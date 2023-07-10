@@ -198,10 +198,11 @@ new Swiper(".company-partners__swiper", {
 
 
 //loan-leasing
-new Swiper(".loan-leasing .leasing__swiper", {
+var SwiperWallpaperCollectionThumbs = new Swiper(".loan-leasing .leasing__swiper", {
 	spaceBetween: 20,
 	grabCursor: true,
 	loop: true,
+	watchSlidesProgress: true,
 	breakpoints: {
 		992: {
 			slidesPerView: 3,
@@ -212,14 +213,10 @@ new Swiper(".loan-leasing .leasing__swiper", {
 		360: {
 			slidesPerView: 1.15,
 		}
-	},
-	navigation: {
-		prevEl: ".loan-leasing .leasing-swiper__buttons .icon-u_arrow-left",
-		nextEl: ".loan-leasing .leasing-swiper__buttons .icon-u_arrow-right"
 	},
 })
 
-new Swiper(".loan-leasing .loan__swiper", {
+var SwiperWallpaperCollection = new Swiper(".loan-leasing .loan__swiper", {
 	spaceBetween: 20,
 	grabCursor: true,
 	loop: true,
@@ -233,6 +230,9 @@ new Swiper(".loan-leasing .loan__swiper", {
 		360: {
 			slidesPerView: 1.15,
 		}
+	},
+	thumbs: {
+		swiper: SwiperWallpaperCollectionThumbs,
 	},
 	navigation: {
 		prevEl: ".loan-leasing .leasing-swiper__buttons .icon-u_arrow-left",

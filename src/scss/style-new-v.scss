@@ -3682,6 +3682,8 @@ textarea {
 	.choice-help__seacrh-number-car--wrap {
 		display: flex;
 		flex-direction: column;
+		max-width: 480px;
+		width: 100%;
 		&.active {
 			.choice-help__seacrh-number-car {
 				border-radius: 8px 8px 0 0;
@@ -3706,7 +3708,6 @@ textarea {
 		height: auto;
 		gap: 24px;
 		width: 100%;
-		max-width: 438px;
 		.title {
 			margin-bottom: 16px;
 		}
@@ -3876,6 +3877,33 @@ textarea {
 		padding-bottom: 40px;
 	}
 }
+.choice-help__sell-car-info {
+	padding: 0 !important;
+	display: none !important;
+	gap: 0 !important;
+	width: 100%;
+	p {
+		color: #777777;
+		font-weight: 600;
+		margin-bottom: 8px !important;
+		display: flex;
+		flex-direction: column;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		span {
+			color: #000000;
+			font-weight: 700;
+			padding: 0;
+			text-align: left;
+			width: 100%;
+		}
+	}
+	&.active-search {
+		display: flex !important;
+	}
+}
+
 /* mobile */
 @media only screen and (min-width: 1441px) {
 	.why-we-about__swiper {
@@ -4316,6 +4344,11 @@ textarea {
 	.car-buyout-wrapper {
 		.choice-car__main {
 			padding-bottom: 32px;
+		}
+	}
+	.choice-car {
+		.choice-help__seacrh-number-car--wrap {
+			max-width: 560px;
 		}
 	}
 }

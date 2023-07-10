@@ -527,3 +527,10 @@ $(document).ready(function () {
 		}
 	});
 });
+
+//block active-search sell-car page
+$(".choice-help__seacrh-number-car .btn-style-3").click(function () {
+	$('.choice-help__sell-car-info').addClass("active-search");
+	$('.choice-help__seacrh-number-car').addClass("hide");
+	$('.choice-car .choice-help__seacrh-number-car--wrap .tip').addClass("hide");
+});

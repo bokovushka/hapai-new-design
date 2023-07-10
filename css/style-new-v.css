@@ -4901,6 +4901,8 @@ textarea::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 480px;
+  width: 100%;
 }
 
 .choice-car .choice-help__seacrh-number-car--wrap.active .choice-help__seacrh-number-car {
@@ -4930,7 +4932,6 @@ textarea::placeholder {
   height: auto;
   gap: 24px;
   width: 100%;
-  max-width: 438px;
 }
 
 .choice-car .choice-help__seacrh-number-car .title {
@@ -5170,6 +5171,44 @@ textarea::placeholder {
 
 .car-buyout-wrapper .choice-car__main {
   padding-bottom: 40px;
+}
+
+.choice-help__sell-car-info {
+  padding: 0 !important;
+  display: none !important;
+  gap: 0 !important;
+  width: 100%;
+}
+
+.choice-help__sell-car-info p {
+  color: #777777;
+  font-weight: 600;
+  margin-bottom: 8px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.choice-help__sell-car-info p:last-child {
+  margin-bottom: 0;
+}
+
+.choice-help__sell-car-info p span {
+  color: #000000;
+  font-weight: 700;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.choice-help__sell-car-info.active-search {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 /* mobile */
@@ -5771,6 +5810,10 @@ textarea::placeholder {
 
   .car-buyout-wrapper .choice-car__main {
     padding-bottom: 32px;
+  }
+
+  .choice-car .choice-help__seacrh-number-car--wrap {
+    max-width: 560px;
   }
 }
 
